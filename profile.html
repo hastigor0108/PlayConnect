@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | PlayConnect</title>
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet"
+          href="css/profile.css">
+          <link rel="stylesheet" href="css/global.css">
+
+</head>
+
+<body>
+
+    <!-- Loader -->
+
+    <div class="loader" id="loader">
+
+        <div class="loader-circle"></div>
+
+    </div>
+
+    <!-- Progress Bar -->
+
+    <div class="progress-bar"
+         id="progressBar"></div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+            <span>PlayConnect</span>
+
+        </div>
+
+        <nav id="navbar">
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="create-match.html">Create Match</a></li>
+                <li><a href="match-details.html">Match Details</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="tournaments.html">Tournaments</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="header-buttons">
+
+            <a href="profile.html"
+               class="signup-btn active">
+
+                My Profile
+
+            </a>
+
+        </div>
+
+        <div class="menu-btn"
+             id="menuBtn">
+
+            <i class="fas fa-bars"></i>
+
+        </div>
+
+    </header>
+
+    <!-- ================= PROFILE HERO ================= -->
+
+    <section class="profile-hero">
+
+        <div class="profile-banner"></div>
+
+        <div class="profile-header">
+
+            <div class="profile-image">
+
+                <img src="images/user.png"
+                     alt="Profile">
+
+                <button class="edit-photo">
+
+                    <i class="fa-solid fa-camera"></i>
+
+                </button>
+
+            </div>
+
+            <div class="profile-info">
+
+                <h1>
+
+                    Rahul Patel
+
+                </h1>
+
+                <p>
+
+                    Cricket • Badminton • Football Player
+
+                </p>
+
+                <div class="profile-location">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Ahmedabad, Gujarat
+
+                </div>
+
+            </div>
+
+            <div class="profile-actions">
+
+                <button class="primary-btn">
+
+                    <i class="fa-solid fa-pen"></i>
+
+                    Edit Profile
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROFILE STATS ================= -->
+
+    <section class="profile-stats">
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <h2>156</h2>
+
+                <p>Matches Played</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2>121</h2>
+
+                <p>Matches Won</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2>#18</h2>
+
+                <p>Leaderboard Rank</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2>12</h2>
+
+                <p>Tournaments</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROFILE DETAILS ================= -->
+
+    <section class="profile-details">
+
+        <div class="profile-container">
+
+            <div class="profile-sidebar">
+
+                <ul>
+
+                    <li class="active">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        Personal Info
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-trophy"></i>
+
+                        Achievements
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                        Upcoming Matches
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+
+                        Match History
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-gear"></i>
+
+                        Settings
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="profile-content">
+
+                <h2>
+
+                    Personal Information
+
+                </h2>
+
+                <div class="info-grid">
+
+                    <div class="info-box">
+
+                        <label>
+
+                            Full Name
+
+                        </label>
+
+                        <input type="text"
+                               value="Rahul Patel">
+
+                    </div>
+
+                    <div class="info-box">
+
+                        <label>
+
+                            Email
+
+                        </label>
+
+                        <input type="email"
+                               value="rahul@example.com">
+
+                    </div>
+
+                    <!-- Continue in Part 2 -->
+                                         <div class="info-box">
+
+                        <label>
+
+                            Mobile Number
+
+                        </label>
+
+                        <input
+                            type="tel"
+                            value="+91 98765 43210">
+
+                    </div>
+
+                    <div class="info-box">
+
+                        <label>
+
+                            City
+
+                        </label>
+
+                        <input
+                            type="text"
+                            value="Ahmedabad">
+
+                    </div>
+
+                    <div class="info-box">
+
+                        <label>
+
+                            Favorite Sport
+
+                        </label>
+
+                        <input
+                            type="text"
+                            value="Cricket">
+
+                    </div>
+
+                    <div class="info-box">
+
+                        <label>
+
+                            Skill Level
+
+                        </label>
+
+                        <select>
+
+                            <option>Beginner</option>
+
+                            <option selected>Intermediate</option>
+
+                            <option>Advanced</option>
+
+                            <option>Professional</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="info-box full-width">
+
+                        <label>
+
+                            About Me
+
+                        </label>
+
+                        <textarea rows="5">
+
+Passionate sports enthusiast who enjoys playing cricket, badminton, and football. Always looking to meet new players, participate in tournaments, and improve my skills.
+
+                        </textarea>
+
+                    </div>
+
+                </div>
+
+                <button class="primary-btn">
+
+                    <i class="fa-solid fa-floppy-disk"></i>
+
+                    Save Changes
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+
+    <section class="achievements-section">
+
+        <div class="section-title">
+
+            <span>
+
+                Milestones
+
+            </span>
+
+            <h2>
+
+                Achievements & Badges
+
+            </h2>
+
+        </div>
+
+        <div class="badge-grid">
+
+            <div class="badge-card">
+
+                <i class="fa-solid fa-medal"></i>
+
+                <h3>
+
+                    Champion
+
+                </h3>
+
+                <p>
+
+                    Won 10 local tournaments.
+
+                </p>
+
+            </div>
+
+            <div class="badge-card">
+
+                <i class="fa-solid fa-star"></i>
+
+                <h3>
+
+                    Rising Star
+
+                </h3>
+
+                <p>
+
+                    Achieved Top 20 ranking.
+
+                </p>
+
+            </div>
+
+            <div class="badge-card">
+
+                <i class="fa-solid fa-handshake"></i>
+
+                <h3>
+
+                    Team Player
+
+                </h3>
+
+                <p>
+
+                    Played with 100+ partners.
+
+                </p>
+
+            </div>
+
+            <div class="badge-card">
+
+                <i class="fa-solid fa-fire"></i>
+
+                <h3>
+
+                    Winning Streak
+
+                </h3>
+
+                <p>
+
+                    Won 15 matches consecutively.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= UPCOMING MATCHES ================= -->
+
+    <section class="upcoming-matches">
+
+        <div class="section-title">
+
+            <span>
+
+                Schedule
+
+            </span>
+
+            <h2>
+
+                Upcoming Matches
+
+            </h2>
+
+        </div>
+
+        <div class="match-list">
+
+            <div class="match-card">
+
+                <h3>
+
+                    Cricket Friendly Match
+
+                </h3>
+
+                <p>
+
+                    📍 Ahmedabad Sports Club
+
+                </p>
+
+                <p>
+
+                    📅 12 August 2026 • 7:00 AM
+
+                </p>
+
+            </div>
+
+            <div class="match-card">
+
+                <h3>
+
+                    Badminton Doubles
+
+                </h3>
+
+                <p>
+
+                    📍 Indoor Arena
+
+                </p>
+
+                <p>
+
+                    📅 16 August 2026 • 6:00 PM
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= MATCH HISTORY START ================= -->
+         <!-- ================= MATCH HISTORY ================= -->
+
+    <section class="match-history">
+
+        <div class="section-title">
+
+            <span>
+
+                Recent Activity
+
+            </span>
+
+            <h2>
+
+                Match History
+
+            </h2>
+
+        </div>
+
+        <div class="history-table">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Date</th>
+
+                        <th>Sport</th>
+
+                        <th>Opponent</th>
+
+                        <th>Result</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>04 Aug 2026</td>
+
+                        <td>Cricket</td>
+
+                        <td>Royal Warriors</td>
+
+                        <td class="win">
+
+                            Win
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>29 Jul 2026</td>
+
+                        <td>Badminton</td>
+
+                        <td>Rohan Shah</td>
+
+                        <td class="loss">
+
+                            Loss
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>21 Jul 2026</td>
+
+                        <td>Football</td>
+
+                        <td>United Club</td>
+
+                        <td class="win">
+
+                            Win
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>15 Jul 2026</td>
+
+                        <td>Table Tennis</td>
+
+                        <td>Jay Patel</td>
+
+                        <td class="win">
+
+                            Win
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PERFORMANCE ================= -->
+
+    <section class="performance-section">
+
+        <div class="section-title">
+
+            <span>
+
+                Statistics
+
+            </span>
+
+            <h2>
+
+                Performance Overview
+
+            </h2>
+
+        </div>
+
+        <div class="performance-grid">
+
+            <div class="performance-card">
+
+                <h3>
+
+                    Win Rate
+
+                </h3>
+
+                <h2>
+
+                    77%
+
+                </h2>
+
+            </div>
+
+            <div class="performance-card">
+
+                <h3>
+
+                    Current Streak
+
+                </h3>
+
+                <h2>
+
+                    5 Wins
+
+                </h2>
+
+            </div>
+
+            <div class="performance-card">
+
+                <h3>
+
+                    Sports Played
+
+                </h3>
+
+                <h2>
+
+                    6
+
+                </h2>
+
+            </div>
+
+            <div class="performance-card">
+
+                <h3>
+
+                    Community Rating
+
+                </h3>
+
+                <h2>
+
+                    ⭐ 4.9
+
+                </h2>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PLAYER REVIEWS ================= -->
+
+    <section class="player-reviews">
+
+        <div class="section-title">
+
+            <span>
+
+                Reviews
+
+            </span>
+
+            <h2>
+
+                What Other Players Say
+
+            </h2>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Excellent team player and always
+                    arrives on time for matches.
+
+                </p>
+
+                <h4>
+
+                    Karan Mehta
+
+                </h4>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Friendly, skilled, and very supportive
+                    during tournaments.
+
+                </p>
+
+                <h4>
+
+                    Neha Patel
+
+                </h4>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    One of the best cricket partners
+                    I've played with.
+
+                </p>
+
+                <h4>
+
+                    Aman Verma
+
+                </h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FAVORITE SPORTS ================= -->
+
+    <section class="favorite-sports">
+
+        <div class="section-title">
+
+            <span>
+
+                Interests
+
+            </span>
+
+            <h2>
+
+                Favorite Sports
+
+            </h2>
+
+        </div>
+
+        <div class="sports-tags">
+
+            <span>🏏 Cricket</span>
+
+            <span>🏸 Badminton</span>
+
+            <span>⚽ Football</span>
+
+            <span>🏀 Basketball</span>
+
+            <span>🏓 Table Tennis</span>
+
+            <span>♟ Chess</span>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CTA ================= -->
+
+    <section class="profile-cta">
+
+        <div class="cta-content">
+
+            <h2>
+
+                Ready for Your Next Match?
+
+            </h2>
+
+            <p>
+
+                Discover nearby players, organize exciting
+                games, and improve your ranking with
+                PlayConnect.
+
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="create-match.html"
+                   class="primary-btn">
+
+                    Create Match
+
+                </a>
+
+                <a href="players.html"
+                   class="secondary-btn">
+
+                    Find Players
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer Starts -->
+         <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Company -->
+
+            <div class="footer-box">
+
+                <div class="logo">
+
+                    <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+                    <span>PlayConnect</span>
+
+                </div>
+
+                <p>
+
+                    PlayConnect connects sports lovers with local players,
+                    tournaments, indoor games, and community events.
+                    Find teammates, improve your skills, and enjoy
+                    playing together.
+
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-box">
+
+                <h3>
+
+                    Quick Links
+
+                </h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="players.html">Players</a></li>
+                    <li><a href="create-match.html">Create Match</a></li>
+                    <li><a href="match-details.html">Match Details</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                    <li><a href="tournaments.html">Tournaments</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Sports -->
+
+            <div class="footer-box">
+
+                <h3>
+
+                    Popular Sports
+
+                </h3>
+
+                <ul>
+
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Badminton</a></li>
+                    <li><a href="#">Basketball</a></li>
+                    <li><a href="#">Volleyball</a></li>
+                    <li><a href="#">Table Tennis</a></li>
+                    <li><a href="#">Chess</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="footer-box">
+
+                <h3>
+
+                    Contact Us
+
+                </h3>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Ahmedabad, Gujarat, India
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +91 98765 43210
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    info@playconnect.com
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    Monday – Saturday<br>
+
+                    9:00 AM – 7:00 PM
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 PlayConnect. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= BACK TO TOP ================= -->
+
+    <button id="backToTop"
+            class="back-to-top"
+            aria-label="Back To Top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- ================= JAVASCRIPT FILES ================= -->
+
+    <script src="js/app.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/profile.js"></script>
+
+</body>
+
+</html>

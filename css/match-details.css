@@ -1,0 +1,2075 @@
+/* =========================================================
+   MATCH DETAILS PAGE
+   PlayConnect
+   Part 1/5
+========================================================= */
+
+
+/* ================= MATCH HERO ================= */
+
+.match-hero {
+    min-height: 560px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(15, 23, 42, 0.92),
+            rgba(30, 41, 59, 0.78)
+        ),
+        url("../images/match1.jpg") center / cover no-repeat;
+    overflow: hidden;
+}
+
+.match-hero::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    top: -180px;
+    right: -100px;
+}
+
+.match-hero::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.04);
+    bottom: -150px;
+    left: -100px;
+}
+
+.match-hero .overlay {
+    width: 100%;
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 6%;
+    position: relative;
+    z-index: 2;
+}
+
+.match-hero .hero-content {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.match-category {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 22px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    margin-bottom: 22px;
+}
+
+.match-hero h1 {
+    margin: 0 auto 20px;
+    font-size: clamp(38px, 5vw, 68px);
+    line-height: 1.12;
+    font-weight: 800;
+    max-width: 850px;
+}
+
+.match-hero .hero-content > p {
+    max-width: 700px;
+    margin: 0 auto 32px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* ================= MATCH DETAILS SECTION ================= */
+
+.match-details-section {
+    padding: 90px 6%;
+    background: #f8fafc;
+}
+
+.match-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 30px;
+    align-items: start;
+}
+
+
+/* ================= MATCH INFORMATION CARD ================= */
+
+.match-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.07);
+}
+
+.match-card > h2 {
+    margin: 0 0 30px;
+    font-size: 27px;
+    font-weight: 700;
+    color: #111827;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.match-card > h2::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background: currentColor;
+}
+
+
+/* ================= DETAILS GRID ================= */
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.details-grid > div {
+    padding: 24px 18px;
+    border-radius: 15px;
+    background: #f8fafc;
+    border: 1px solid #eef2f7;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.details-grid > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.details-grid i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    font-size: 19px;
+    background: #ffffff;
+}
+
+.details-grid h4 {
+    margin: 0 0 7px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.details-grid p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+
+/* ================= ORGANIZER CARD ================= */
+
+.organizer-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px 25px;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.07);
+}
+
+.organizer-card img {
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 18px;
+    border: 4px solid #f1f5f9;
+}
+
+.organizer-card h3 {
+    margin: 0 0 5px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.organizer-card > span {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.organizer-card > p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #475569;
+}
+
+.organizer-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.organizer-buttons .primary-btn,
+.organizer-buttons .secondary-btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* ================= MATCH STATUS ================= */
+
+.match-status {
+    padding: 0 6% 90px;
+    background: #f8fafc;
+}
+
+.status-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.status-item {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+    transition: 0.3s ease;
+}
+
+.status-item:hover {
+    transform: translateY(-5px);
+}
+
+.status-item i {
+    width: 55px;
+    height: 55px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    font-size: 22px;
+    background: #f1f5f9;
+}
+
+.status-item h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    color: #111827;
+}
+
+.status-item p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* ================= REGISTERED PLAYERS ================= */
+
+.registered-players {
+    padding: 90px 6%;
+    background: #ffffff;
+}
+
+.registered-players .section-title {
+    margin-bottom: 45px;
+}
+
+.players-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.player-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    transition: 0.3s ease;
+}
+
+.player-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 35px rgba(15, 23, 42, 0.1);
+}
+
+.player-card img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: block;
+    border: 4px solid #f1f5f9;
+}
+
+.player-card h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #111827;
+}
+
+.player-card p {
+    margin: 0 0 8px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.player-card span {
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .match-main {
+        grid-template-columns: 1fr;
+    }
+
+    .organizer-card {
+        max-width: 420px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .players-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .match-hero,
+    .match-hero .overlay {
+        min-height: 500px;
+    }
+
+    .match-hero .overlay {
+        padding: 70px 5%;
+    }
+
+    .match-hero .hero-content > p {
+        font-size: 15px;
+    }
+
+    .match-details-section,
+    .registered-players {
+        padding: 65px 5%;
+    }
+
+    .match-card {
+        padding: 25px 18px;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .status-card {
+        grid-template-columns: 1fr;
+    }
+
+    .players-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons .primary-btn,
+    .hero-buttons .secondary-btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .match-hero h1 {
+        font-size: 34px;
+    }
+
+    .match-category {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .match-card > h2 {
+        font-size: 23px;
+    }
+
+    .organizer-card {
+        padding: 25px 18px;
+    }
+
+}
+/* =========================================================
+   MATCH DETAILS PAGE
+   PART 2/5
+   ========================================================= */
+
+
+/* ================= MATCH INFORMATION ================= */
+
+.match-details-section {
+    padding: 90px 7%;
+    background: #f8fafc;
+}
+
+.match-main {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.match-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.match-card h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #172033;
+}
+
+
+/* ================= DETAILS GRID ================= */
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.details-grid > div {
+    padding: 22px 18px;
+    border-radius: 14px;
+    background: #f8fafc;
+    border: 1px solid #e7ebf2;
+    transition: all 0.3s ease;
+}
+
+.details-grid > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.details-grid i {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.details-grid h4 {
+    margin: 0 0 7px;
+    font-size: 15px;
+    color: #172033;
+}
+
+.details-grid p {
+    margin: 0;
+    font-size: 14px;
+    color: #687386;
+    line-height: 1.5;
+}
+
+
+/* ================= ORGANIZER CARD ================= */
+
+.organizer-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.organizer-card img {
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 18px;
+    border: 4px solid #f1f4f8;
+}
+
+.organizer-card h3 {
+    margin: 0 0 5px;
+    font-size: 22px;
+    color: #172033;
+}
+
+.organizer-card > span {
+    display: block;
+    color: #7a8495;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.organizer-card p {
+    margin: 8px 0;
+    color: #596579;
+    font-size: 14px;
+}
+
+.organizer-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.organizer-buttons .primary-btn,
+.organizer-buttons .secondary-btn {
+    flex: 1;
+    text-align: center;
+    padding: 11px 12px;
+}
+
+
+/* ================= MATCH STATUS ================= */
+
+.match-status {
+    padding: 0 7% 90px;
+    background: #f8fafc;
+}
+
+.status-card {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.status-item {
+    background: #ffffff;
+    padding: 28px 25px;
+    text-align: center;
+    border-radius: 16px;
+    border: 1px solid #e8edf3;
+    transition: all 0.3s ease;
+}
+
+.status-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+.status-item i {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.status-item h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    color: #172033;
+}
+
+.status-item p {
+    margin: 0;
+    color: #707b8d;
+    font-size: 14px;
+}
+
+
+/* ================= REGISTERED PLAYERS ================= */
+
+.registered-players {
+    padding: 90px 7%;
+    background: #ffffff;
+}
+
+.players-grid {
+    max-width: 1200px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.player-card {
+    background: #ffffff;
+    padding: 25px;
+    text-align: center;
+    border-radius: 18px;
+    border: 1px solid #e7ebf0;
+    transition: all 0.3s ease;
+}
+
+.player-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.player-card img {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.player-card h3 {
+    margin: 0 0 5px;
+    color: #172033;
+    font-size: 18px;
+}
+
+.player-card p {
+    margin: 0 0 8px;
+    color: #727d8e;
+    font-size: 14px;
+}
+
+.player-card span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* ================= AVAILABLE SLOTS ================= */
+
+.available-slots {
+    padding: 90px 7%;
+    background: #f8fafc;
+}
+
+.slots-box {
+    max-width: 900px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.slot-card {
+    background: #ffffff;
+    padding: 35px 20px;
+    text-align: center;
+    border-radius: 18px;
+    border: 1px solid #e7ebf0;
+    transition: all 0.3s ease;
+}
+
+.slot-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+.slot-card h3 {
+    margin: 0;
+    font-size: 42px;
+    color: #172033;
+}
+
+.slot-card p {
+    margin: 8px 0 0;
+    color: #6d7788;
+    font-size: 15px;
+}
+
+
+/* ================= MATCH RULES ================= */
+
+.match-rules {
+    padding: 90px 7%;
+    background: #ffffff;
+}
+
+.rules-list {
+    max-width: 850px;
+    margin: 45px auto 0;
+    background: #f8fafc;
+    padding: 35px 45px;
+    border-radius: 18px;
+    border: 1px solid #e7ebf0;
+}
+
+.rules-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.rules-list li {
+    padding: 15px 0;
+    color: #4f5a6d;
+    font-size: 15px;
+    line-height: 1.6;
+    border-bottom: 1px solid #e4e8ee;
+}
+
+.rules-list li:last-child {
+    border-bottom: none;
+}
+
+
+/* ================= EQUIPMENT ================= */
+
+.equipment-section {
+    padding: 90px 7%;
+    background: #f8fafc;
+}
+
+.equipment-grid {
+    max-width: 1100px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.equipment-card {
+    background: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 16px;
+    border: 1px solid #e7ebf0;
+    transition: all 0.3s ease;
+}
+
+.equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+.equipment-card i {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.equipment-card h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #172033;
+}
+
+
+/* ================= RESPONSIVE - PART 2 ================= */
+
+@media (max-width: 1000px) {
+
+    .match-main {
+        grid-template-columns: 1fr;
+    }
+
+    .details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .players-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .equipment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .match-details-section,
+    .registered-players,
+    .available-slots,
+    .match-rules,
+    .equipment-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .status-card {
+        grid-template-columns: 1fr;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .players-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .slots-box {
+        grid-template-columns: 1fr;
+    }
+
+    .equipment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .match-card {
+        padding: 25px 20px;
+    }
+
+    .organizer-buttons {
+        flex-direction: column;
+    }
+
+    .rules-list {
+        padding: 25px 20px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .match-card h2 {
+        font-size: 23px;
+    }
+
+    .details-grid > div {
+        padding: 18px 15px;
+    }
+
+    .organizer-card {
+        padding: 25px 18px;
+    }
+
+    .slot-card h3 {
+        font-size: 35px;
+    }
+
+}
+/* =========================================================
+   REGISTERED PLAYERS
+========================================================= */
+
+.registered-players {
+    padding: 90px 7%;
+    background: var(--section-bg);
+}
+
+.registered-players .section-title {
+    margin-bottom: 45px;
+}
+
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.player-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    padding: 28px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+}
+
+.player-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.player-card img {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.player-card h3 {
+    font-size: 19px;
+    margin-bottom: 6px;
+    color: var(--heading-color);
+}
+
+.player-card p {
+    color: var(--text-color);
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.player-card span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   AVAILABLE SLOTS
+========================================================= */
+
+.available-slots {
+    padding: 90px 7%;
+    background: var(--bg-color);
+}
+
+.slots-box {
+    max-width: 900px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.slot-card {
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 18px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.slot-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+
+.slot-card h3 {
+    font-size: 42px;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.slot-card p {
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   MATCH RULES
+========================================================= */
+
+.match-rules {
+    padding: 90px 7%;
+    background: var(--section-bg);
+}
+
+.rules-list {
+    max-width: 850px;
+    margin: 45px auto 0;
+    background: var(--card-bg);
+    border-radius: 18px;
+    padding: 35px 45px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+.rules-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rules-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.rules-list li:last-child {
+    border-bottom: none;
+}
+
+.rules-list li::first-letter {
+    color: var(--primary-color);
+}
+
+
+/* =========================================================
+   EQUIPMENT SECTION
+========================================================= */
+
+.equipment-section {
+    padding: 90px 7%;
+    background: var(--bg-color);
+}
+
+.equipment-grid {
+    max-width: 1100px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.equipment-card {
+    padding: 32px 20px;
+    text-align: center;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.equipment-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-hover);
+}
+
+.equipment-card i {
+    width: 65px;
+    height: 65px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--primary-light);
+    color: var(--primary-color);
+    font-size: 25px;
+    margin-bottom: 16px;
+}
+
+.equipment-card h4 {
+    color: var(--heading-color);
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   MATCH STATISTICS
+========================================================= */
+
+.match-statistics {
+    padding: 90px 7%;
+    background: var(--section-bg);
+}
+
+.match-statistics .stats-grid {
+    max-width: 1100px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.match-statistics .stat-card {
+    padding: 32px 20px;
+    text-align: center;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.match-statistics .stat-card:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--shadow-hover);
+}
+
+.match-statistics .stat-card i {
+    font-size: 26px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.match-statistics .stat-card h3 {
+    font-size: 30px;
+    color: var(--heading-color);
+    margin-bottom: 5px;
+}
+
+.match-statistics .stat-card p {
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   PRIZE SECTION
+========================================================= */
+
+.prize-section {
+    padding: 90px 7%;
+    background: var(--bg-color);
+}
+
+.prize-card {
+    max-width: 850px;
+    margin: auto;
+    padding: 50px 35px;
+    text-align: center;
+    border-radius: 22px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.prize-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+
+.prize-card > i {
+    font-size: 55px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.prize-card h2 {
+    font-size: 30px;
+    color: var(--heading-color);
+    margin-bottom: 12px;
+}
+
+.prize-card h3 {
+    font-size: 21px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.prize-card p {
+    max-width: 650px;
+    margin: auto;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.timeline-section {
+    padding: 90px 7%;
+    background: var(--section-bg);
+}
+
+.timeline {
+    max-width: 850px;
+    margin: 50px auto 0;
+    position: relative;
+    padding-left: 45px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+.timeline-item {
+    position: relative;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 22px 25px;
+    margin-bottom: 25px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 28px;
+    width: 14px;
+    height: 14px;
+    background: var(--primary-color);
+    border: 4px solid var(--card-bg);
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+.timeline-item:hover {
+    transform: translateX(6px);
+    box-shadow: var(--shadow-hover);
+}
+
+.timeline-item strong {
+    display: block;
+    color: var(--primary-color);
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.timeline-item p {
+    color: var(--text-color);
+    margin: 0;
+}
+
+
+/* =========================================================
+   GOOGLE MAP
+========================================================= */
+
+.map-section {
+    padding: 90px 7%;
+    background: var(--bg-color);
+}
+
+.map-container {
+    max-width: 1150px;
+    height: 420px;
+    margin: 45px auto 0;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .players-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .equipment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .match-statistics .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slots-box {
+        max-width: 700px;
+    }
+
+}
+/* =========================================================
+   DISCUSSION SECTION
+========================================================= */
+
+.discussion-section {
+    padding: 90px 7%;
+    background: var(--section-bg);
+}
+
+.discussion-list {
+    max-width: 900px;
+    margin: 45px auto 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.comment-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 22px 25px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.comment-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+.comment-card img {
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+}
+
+.comment-card h4 {
+    color: var(--heading-color);
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.comment-card p {
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.comment-form {
+    max-width: 900px;
+    margin: 30px auto 0;
+}
+
+.comment-form textarea {
+    width: 100%;
+    min-height: 130px;
+    padding: 18px 20px;
+    resize: vertical;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    background: var(--card-bg);
+    color: var(--heading-color);
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.comment-form textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.comment-form .primary-btn {
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+   REVIEWS SECTION
+========================================================= */
+
+.reviews-section {
+    padding: 90px 7%;
+    background: var(--bg-color);
+}
+
+.reviews-grid {
+    max-width: 1100px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.review-card {
+    position: relative;
+    padding: 32px 28px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--shadow-hover);
+}
+
+.review-card > i {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 18px;
+}
+
+.review-card p {
+    color: var(--text-color);
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.review-card h4 {
+    color: var(--primary-color);
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.review-card span {
+    color: var(--text-color);
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   SIMILAR MATCHES
+========================================================= */
+
+.similar-matches {
+    padding: 90px 7%;
+    background: var(--section-bg);
+}
+
+.match-grid {
+    max-width: 1150px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.similar-matches .match-card {
+    overflow: hidden;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.similar-matches .match-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.similar-matches .match-card img {
+    width: 100%;
+    height: 210px;
+    display: block;
+    object-fit: cover;
+}
+
+.match-info {
+    padding: 24px;
+}
+
+.match-info h3 {
+    color: var(--heading-color);
+    font-size: 19px;
+    margin-bottom: 13px;
+}
+
+.match-info p {
+    color: var(--text-color);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.card-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.card-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   MATCH CTA
+========================================================= */
+
+.match-cta {
+    padding: 100px 7%;
+    background: var(--primary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.match-cta::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    top: -160px;
+    left: -100px;
+}
+
+.match-cta::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    bottom: -150px;
+    right: -80px;
+}
+
+.match-cta .cta-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.match-cta h2 {
+    color: #fff;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.match-cta p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.8;
+}
+
+.match-cta .cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.match-cta .primary-btn {
+    background: #fff;
+    color: var(--primary-color);
+}
+
+.match-cta .primary-btn:hover {
+    background: #f5f5f5;
+}
+
+.match-cta .secondary-btn {
+    border-color: #fff;
+    color: #fff;
+}
+
+.match-cta .secondary-btn:hover {
+    background: #fff;
+    color: var(--primary-color);
+}
+
+
+/* =========================================================
+   FOOTER SUPPORT
+========================================================= */
+
+.footer {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.back-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    box-shadow: var(--shadow);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    transform: translateY(-4px);
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .registered-players,
+    .available-slots,
+    .match-rules,
+    .equipment-section,
+    .match-statistics,
+    .prize-section,
+    .timeline-section,
+    .map-section,
+    .discussion-section,
+    .reviews-section,
+    .similar-matches {
+        padding: 70px 5%;
+    }
+
+    .players-grid,
+    .equipment-grid,
+    .reviews-grid,
+    .match-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .slots-box {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+    }
+
+    .match-statistics .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rules-list {
+        padding: 25px;
+    }
+
+    .timeline {
+        padding-left: 35px;
+    }
+
+    .timeline::before {
+        left: 8px;
+    }
+
+    .timeline-item::before {
+        left: -33px;
+    }
+
+    .map-container {
+        height: 320px;
+    }
+
+    .match-cta {
+        padding: 80px 5%;
+    }
+
+    .match-cta h2 {
+        font-size: 30px;
+    }
+
+    .comment-card {
+        padding: 18px;
+    }
+
+    .similar-matches .match-card img {
+        height: 220px;
+    }
+}
+@media (max-width: 576px) {
+
+    .registered-players,
+    .available-slots,
+    .match-rules,
+    .equipment-section,
+    .match-statistics,
+    .prize-section,
+    .timeline-section,
+    .map-section,
+    .discussion-section,
+    .reviews-section,
+    .similar-matches {
+        padding: 60px 4%;
+    }
+
+    .players-grid,
+    .equipment-grid,
+    .reviews-grid,
+    .match-grid,
+    .slots-box {
+        gap: 18px;
+    }
+
+    .player-card {
+        padding: 24px 18px;
+    }
+
+    .player-card img {
+        width: 82px;
+        height: 82px;
+    }
+
+    .slot-card {
+        padding: 28px 18px;
+    }
+
+    .slot-card h3 {
+        font-size: 36px;
+    }
+
+    .rules-list {
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    .rules-list li {
+        font-size: 13px;
+        padding: 12px 0;
+    }
+
+    .equipment-card {
+        padding: 25px 15px;
+    }
+
+    .equipment-card i {
+        width: 55px;
+        height: 55px;
+        font-size: 21px;
+    }
+
+    .match-statistics .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .match-statistics .stat-card {
+        padding: 27px 18px;
+    }
+
+    .match-statistics .stat-card h3 {
+        font-size: 27px;
+    }
+
+    .prize-card {
+        padding: 35px 20px;
+        border-radius: 17px;
+    }
+
+    .prize-card > i {
+        font-size: 45px;
+    }
+
+    .prize-card h2 {
+        font-size: 25px;
+    }
+
+    .prize-card h3 {
+        font-size: 18px;
+    }
+
+    .prize-card p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .timeline {
+        padding-left: 28px;
+        margin-top: 35px;
+    }
+
+    .timeline::before {
+        left: 7px;
+    }
+
+    .timeline-item {
+        padding: 18px;
+        border-radius: 13px;
+    }
+
+    .timeline-item::before {
+        left: -27px;
+        width: 11px;
+        height: 11px;
+        top: 23px;
+    }
+
+    .timeline-item strong {
+        font-size: 15px;
+    }
+
+    .timeline-item p {
+        font-size: 13px;
+    }
+
+    .map-container {
+        height: 270px;
+        border-radius: 14px;
+        margin-top: 30px;
+    }
+
+    .comment-card {
+        gap: 12px;
+        padding: 15px;
+        border-radius: 14px;
+    }
+
+    .comment-card img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .comment-card h4 {
+        font-size: 14px;
+    }
+
+    .comment-card p {
+        font-size: 13px;
+    }
+
+    .comment-form textarea {
+        min-height: 110px;
+        padding: 14px;
+    }
+
+    .review-card {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .review-card p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .similar-matches .match-card img {
+        height: 190px;
+    }
+
+    .match-info {
+        padding: 20px;
+    }
+
+    .match-info h3 {
+        font-size: 17px;
+    }
+
+    .match-info p {
+        font-size: 13px;
+    }
+
+    .card-btn {
+        padding: 9px 17px;
+        font-size: 13px;
+    }
+
+    .match-cta {
+        padding: 65px 5%;
+    }
+
+    .match-cta h2 {
+        font-size: 26px;
+    }
+
+    .match-cta p {
+        font-size: 14px;
+    }
+
+    .match-cta .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .match-cta .cta-buttons a {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    .back-to-top {
+        width: 42px;
+        height: 42px;
+        right: 15px;
+        bottom: 15px;
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL DEVICES
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .player-card h3 {
+        font-size: 17px;
+    }
+
+    .slot-card h3 {
+        font-size: 32px;
+    }
+
+    .equipment-card h4 {
+        font-size: 15px;
+    }
+
+    .prize-card h2 {
+        font-size: 22px;
+    }
+
+    .match-cta h2 {
+        font-size: 23px;
+    }
+
+    .comment-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .comment-card img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .player-card,
+    .slot-card,
+    .equipment-card,
+    .match-statistics .stat-card,
+    .prize-card,
+    .timeline-item,
+    .comment-card,
+    .review-card,
+    .similar-matches .match-card,
+    .card-btn,
+    .back-to-top {
+        transition: none;
+    }
+}
+
+
+/* =========================================================
+   PRINT STYLES
+========================================================= */
+
+@media print {
+
+    .loader,
+    .progress-bar,
+    header,
+    .back-to-top,
+    .match-cta,
+    .footer,
+    .comment-form {
+        display: none !important;
+    }
+
+    .registered-players,
+    .available-slots,
+    .match-rules,
+    .equipment-section,
+    .match-statistics,
+    .prize-section,
+    .timeline-section,
+    .map-section,
+    .discussion-section,
+    .reviews-section,
+    .similar-matches {
+        padding: 25px 0;
+        background: #fff;
+    }
+
+    .player-card,
+    .slot-card,
+    .equipment-card,
+    .review-card,
+    .similar-matches .match-card,
+    .prize-card,
+    .timeline-item,
+    .comment-card {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+}

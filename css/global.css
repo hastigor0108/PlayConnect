@@ -1,0 +1,2457 @@
+/*==================================================
+  PlayConnect - Main Stylesheet
+  Part 1/20
+  CSS Reset • Variables • Base Styles • Loader
+==================================================*/
+
+/*==============================
+  GOOGLE FONT
+==============================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*==============================
+  CSS RESET
+==============================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8fafc;
+    color:#222;
+    overflow-x:hidden;
+    line-height:1.6;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+button,
+input,
+textarea,
+select{
+    font-family:inherit;
+    outline:none;
+    border:none;
+}
+
+button{
+    cursor:pointer;
+}
+
+table{
+    border-collapse:collapse;
+    width:100%;
+}
+
+/*==============================
+  ROOT VARIABLES
+==============================*/
+
+:root{
+
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+    --secondary:#0f172a;
+    --accent:#22c55e;
+
+    --white:#ffffff;
+    --light:#f8fafc;
+    --light-2:#eef2f7;
+
+    --gray:#64748b;
+    --gray-light:#94a3b8;
+
+    --border:#dbe4ee;
+
+    --danger:#ef4444;
+    --warning:#f59e0b;
+    --success:#16a34a;
+
+    --shadow:0 8px 25px rgba(0,0,0,.08);
+    --shadow-lg:0 15px 40px rgba(0,0,0,.12);
+
+    --radius:14px;
+    --radius-sm:8px;
+    --radius-lg:20px;
+
+    --transition:.35s ease;
+
+    --container:1200px;
+
+}
+
+/*==============================
+  COMMON CONTAINER
+==============================*/
+
+.container{
+    width:90%;
+    max-width:var(--container);
+    margin:auto;
+}
+
+/*==============================
+  SECTION
+==============================*/
+
+section{
+    padding:80px 0;
+}
+
+/*==============================
+  HEADINGS
+==============================*/
+
+h1{
+    font-size:3rem;
+    font-weight:700;
+}
+
+h2{
+    font-size:2.2rem;
+    font-weight:700;
+}
+
+h3{
+    font-size:1.2rem;
+    font-weight:600;
+}
+
+p{
+    color:var(--gray);
+}
+
+/*==============================
+  SECTION TITLE
+==============================*/
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title span{
+    color:var(--primary);
+    font-weight:600;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.section-title h2{
+    margin-top:12px;
+    color:var(--secondary);
+}
+
+/*==============================
+  BADGE
+==============================*/
+
+.section-badge{
+    display:inline-block;
+    background:#dbeafe;
+    color:var(--primary);
+    padding:8px 18px;
+    border-radius:50px;
+    font-size:.9rem;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+/*==============================
+  BUTTONS
+==============================*/
+
+.primary-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    padding:14px 30px;
+
+    background:var(--primary);
+    color:var(--white);
+
+    border-radius:50px;
+
+    transition:var(--transition);
+
+    font-weight:600;
+
+}
+
+.primary-btn:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-3px);
+
+}
+
+.secondary-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:14px 30px;
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+    border-radius:50px;
+
+    transition:var(--transition);
+
+    font-weight:600;
+
+}
+
+.secondary-btn:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/*==============================
+  CARD
+==============================*/
+
+.card{
+
+    background:#fff;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/*==============================
+  LOADER
+==============================*/
+
+.loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+}
+
+.loader-circle{
+
+    width:70px;
+
+    height:70px;
+
+    border:6px solid #dbeafe;
+
+    border-top:6px solid var(--primary);
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    100%{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/*==============================
+  PROGRESS BAR
+==============================*/
+
+.progress-bar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:0;
+
+    height:4px;
+
+    background:var(--primary);
+
+    z-index:9999;
+
+}
+
+/*==============================
+  UTILITIES
+==============================*/
+
+.text-center{
+    text-align:center;
+}
+
+.mt-1{margin-top:10px;}
+.mt-2{margin-top:20px;}
+.mt-3{margin-top:30px;}
+.mt-4{margin-top:40px;}
+.mt-5{margin-top:50px;}
+
+.mb-1{margin-bottom:10px;}
+.mb-2{margin-bottom:20px;}
+.mb-3{margin-bottom:30px;}
+.mb-4{margin-bottom:40px;}
+.mb-5{margin-bottom:50px;}
+
+.d-flex{
+    display:flex;
+}
+
+.align-center{
+    align-items:center;
+}
+
+.justify-between{
+    justify-content:space-between;
+}
+
+.gap-1{
+    gap:10px;
+}
+
+.gap-2{
+    gap:20px;
+}
+
+.gap-3{
+    gap:30px;
+}
+/*==================================================
+  PlayConnect - Main Stylesheet
+  Part 2/20
+  Header • Navigation • Mobile Menu • Hero
+==================================================*/
+
+/*==============================
+  HEADER
+==============================*/
+
+header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    height:80px;
+
+    background:var(--white);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 6%;
+
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+
+    z-index:999;
+
+    transition:var(--transition);
+
+}
+
+header.sticky{
+
+    height:70px;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.10);
+
+}
+
+/*==============================
+  LOGO
+==============================*/
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:1.6rem;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+    user-select:none;
+
+}
+
+.logo i{
+
+    font-size:2rem;
+
+}
+
+/*==============================
+  NAVIGATION
+==============================*/
+
+nav{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:28px;
+
+}
+
+nav ul li{
+
+    position:relative;
+
+}
+
+nav ul li a{
+
+    color:var(--secondary);
+
+    font-size:1rem;
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+    padding:8px 0;
+
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+
+    color:var(--primary);
+
+}
+
+nav ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-4px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:var(--transition);
+
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after{
+
+    width:100%;
+
+}
+
+/*==============================
+  HEADER BUTTONS
+==============================*/
+
+.header-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.login-btn{
+
+    padding:10px 22px;
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.login-btn:hover{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+}
+
+.signup-btn{
+
+    padding:10px 24px;
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.signup-btn:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-2px);
+
+}
+
+.signup-btn.active{
+
+    background:var(--accent);
+
+}
+
+/*==============================
+  MOBILE MENU BUTTON
+==============================*/
+
+.menu-btn{
+
+    display:none;
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:1.3rem;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+.menu-btn:hover{
+
+    background:var(--primary-dark);
+
+}
+
+/*==============================
+  HERO SECTION
+==============================*/
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:140px 8% 80px;
+
+    background:linear-gradient(135deg,#eef5ff,#ffffff);
+
+}
+
+.hero-container{
+
+    width:100%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.hero-content h1{
+
+    color:var(--secondary);
+
+    margin-bottom:20px;
+
+    line-height:1.2;
+
+}
+
+.hero-content h1 span{
+
+    color:var(--primary);
+
+}
+
+.hero-content p{
+
+    font-size:1.05rem;
+
+    margin-bottom:35px;
+
+    max-width:550px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-image{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:520px;
+
+    animation:floatImage 4s ease-in-out infinite;
+
+}
+
+@keyframes floatImage{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==============================
+  HERO STATS
+==============================*/
+
+.hero-stats{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-top:45px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-stat{
+
+    background:#fff;
+
+    padding:20px 24px;
+
+    border-radius:14px;
+
+    box-shadow:var(--shadow);
+
+    min-width:140px;
+
+    text-align:center;
+
+}
+
+.hero-stat h2{
+
+    color:var(--primary);
+
+    font-size:2rem;
+
+}
+
+.hero-stat p{
+
+    margin-top:8px;
+
+    font-size:.95rem;
+
+    color:var(--gray);
+
+}
+
+/*==============================
+  RESPONSIVE NAVIGATION
+==============================*/
+
+@media(max-width:992px){
+
+    .menu-btn{
+
+        display:flex;
+
+    }
+
+    nav{
+
+        position:fixed;
+
+        top:80px;
+
+        right:-100%;
+
+        width:300px;
+
+        height:calc(100vh - 80px);
+
+        background:#fff;
+
+        box-shadow:-5px 0 20px rgba(0,0,0,.08);
+
+        transition:.4s;
+
+        padding:30px;
+
+    }
+
+    nav.active{
+
+        right:0;
+
+    }
+
+    nav ul{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:22px;
+
+    }
+
+    .header-buttons{
+
+        display:none;
+
+    }
+
+    .hero-container{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .hero-content p{
+
+        margin:auto auto 30px;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-stats{
+
+        justify-content:center;
+
+    }
+
+    .hero-image{
+
+        order:-1;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    header{
+
+        padding:0 5%;
+
+    }
+
+    .hero{
+
+        padding-top:120px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:2.4rem;
+
+    }
+
+    .hero-content p{
+
+        font-size:.98rem;
+
+    }
+
+    .hero-image img{
+
+        max-width:360px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .hero-content h1{
+
+        font-size:2rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .primary-btn,
+    .secondary-btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .hero-stat{
+
+        width:100%;
+
+    }
+
+}
+/*==================================================
+  PlayConnect - Main Stylesheet
+  Part 3/20
+  Cards • Grids • Sports • Players • Matches
+==================================================*/
+
+/*==============================
+  COMMON GRID
+==============================*/
+
+.grid-2{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+.grid-3{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.grid-4{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+/*==============================
+  SPORTS GRID
+==============================*/
+
+.sports-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+
+}
+
+.sport-card{
+
+    background:var(--white);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+    padding:35px 25px;
+
+}
+
+.sport-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.sport-card img{
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+
+}
+
+.sport-card i{
+
+    font-size:3rem;
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.sport-card h3{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.sport-card p{
+
+    margin-bottom:20px;
+
+    font-size:.95rem;
+
+}
+
+/*==============================
+  PLAYER GRID
+==============================*/
+
+.players-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.player-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.player-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.player-card img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+}
+
+.player-content{
+
+    padding:25px;
+
+}
+
+.player-content h3{
+
+    margin-bottom:8px;
+
+}
+
+.player-location{
+
+    color:var(--gray);
+
+    margin-bottom:15px;
+
+    font-size:.9rem;
+
+}
+
+.player-location i{
+
+    color:var(--primary);
+
+    margin-right:6px;
+
+}
+
+.player-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin:18px 0;
+
+}
+
+.player-tags span{
+
+    background:#eef5ff;
+
+    color:var(--primary);
+
+    padding:8px 14px;
+
+    border-radius:50px;
+
+    font-size:.82rem;
+
+    font-weight:500;
+
+}
+
+/*==============================
+  MATCH CARDS
+==============================*/
+
+.matches-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.match-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:28px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+    border-left:5px solid var(--primary);
+
+}
+
+.match-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.match-card h3{
+
+    margin-bottom:15px;
+
+    color:var(--secondary);
+
+}
+
+.match-card p{
+
+    margin-bottom:10px;
+
+}
+
+.match-card i{
+
+    color:var(--primary);
+
+    margin-right:8px;
+
+}
+
+/*==============================
+  TOURNAMENT CARDS
+==============================*/
+
+.tournament-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.tournament-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.tournament-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.tournament-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.tournament-content{
+
+    padding:25px;
+
+}
+
+.tournament-content h3{
+
+    margin-bottom:12px;
+
+}
+
+.tournament-meta{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin:20px 0;
+
+}
+
+.tournament-meta span{
+
+    color:var(--gray);
+
+    font-size:.9rem;
+
+}
+
+/*==============================
+  FEATURE CARDS
+==============================*/
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.feature-card{
+
+    text-align:center;
+
+    background:#fff;
+
+    padding:40px 25px;
+
+    border-radius:18px;
+
+    transition:var(--transition);
+
+    box-shadow:var(--shadow);
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.feature-card i{
+
+    width:80px;
+
+    height:80px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#eef5ff;
+
+    color:var(--primary);
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+}
+
+/*==============================
+  STAT CARDS
+==============================*/
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.stat-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.stat-card h2{
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+/*==============================
+  HOVER EFFECTS
+==============================*/
+
+.hover-scale{
+
+    transition:var(--transition);
+
+}
+
+.hover-scale:hover{
+
+    transform:scale(1.05);
+
+}
+
+.shadow-hover:hover{
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/*==============================
+  RESPONSIVE
+==============================*/
+
+@media(max-width:992px){
+
+    .grid-4{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .grid-2,
+    .grid-3,
+    .grid-4{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .sport-card,
+    .player-card,
+    .match-card,
+    .tournament-card{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .sports-grid,
+    .players-grid,
+    .matches-grid,
+    .tournament-grid{
+
+        gap:20px;
+
+    }
+
+    .sport-card,
+    .player-content,
+    .match-card,
+    .tournament-content{
+
+        padding:20px;
+
+    }
+
+}
+/*==================================================
+  PlayConnect - Main Stylesheet
+  Part 4/20
+  Forms • Inputs • Search • Filters
+==================================================*/
+
+/*==============================
+  FORM CONTAINER
+==============================*/
+
+form{
+    width:100%;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.form-group label{
+    font-size:.95rem;
+    font-weight:600;
+    color:var(--secondary);
+    margin-bottom:8px;
+}
+
+/*==============================
+  INPUTS
+==============================*/
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    background:#fff;
+
+    color:var(--secondary);
+
+    transition:var(--transition);
+
+    font-size:.95rem;
+
+}
+
+.form-group textarea{
+
+    resize:vertical;
+
+    min-height:140px;
+
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+/*==============================
+  INPUT WITH ICON
+==============================*/
+
+.input-box{
+
+    position:relative;
+
+}
+
+.input-box input{
+
+    padding-left:48px;
+    padding-right:48px;
+
+}
+
+.input-box i:first-child{
+
+    position:absolute;
+
+    left:16px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:var(--gray);
+
+}
+
+.toggle-password{
+
+    position:absolute;
+
+    right:16px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    color:var(--gray);
+
+}
+
+/*==============================
+  SEARCH BAR
+==============================*/
+
+.search-box{
+
+    display:flex;
+
+    gap:15px;
+
+    margin:30px auto;
+
+    max-width:800px;
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    padding:16px 20px;
+
+    border:1px solid var(--border);
+
+    border-radius:50px;
+
+    background:#fff;
+
+}
+
+.search-box button{
+
+    min-width:170px;
+
+}
+
+/*==============================
+  FILTER BAR
+==============================*/
+
+.filter-bar{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-bottom:40px;
+
+    justify-content:center;
+
+}
+
+.filter-bar select,
+.filter-bar input{
+
+    min-width:180px;
+
+    padding:14px 18px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    background:#fff;
+
+}
+
+/*==============================
+  LOGIN / SIGNUP CARD
+==============================*/
+
+.login-card,
+.signup-card{
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.login-card h2,
+.signup-card h2{
+
+    text-align:center;
+
+    color:var(--secondary);
+
+    margin-bottom:10px;
+
+}
+
+.login-card p,
+.signup-card p{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+/*==============================
+  REMEMBER / TERMS
+==============================*/
+
+.remember-box,
+.terms-box{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    margin:20px 0;
+
+    flex-wrap:wrap;
+
+}
+
+.remember-box label,
+.terms-box label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--gray);
+
+    cursor:pointer;
+
+}
+
+.remember-box input,
+.terms-box input{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+.terms-box a,
+.remember-box a{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+/*==============================
+  SOCIAL LOGIN
+==============================*/
+
+.divider{
+
+    position:relative;
+
+    text-align:center;
+
+    margin:35px 0;
+
+}
+
+.divider::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:50%;
+
+    width:100%;
+
+    height:1px;
+
+    background:var(--border);
+
+}
+
+.divider span{
+
+    position:relative;
+
+    background:#fff;
+
+    padding:0 18px;
+
+    color:var(--gray);
+
+}
+
+.social-login{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.social-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    padding:14px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    background:#fff;
+
+    transition:var(--transition);
+
+    font-weight:600;
+
+}
+
+.social-btn:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/*==============================
+  PROFILE FORM
+==============================*/
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.info-box{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.info-box label{
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.info-box input,
+.info-box textarea,
+.info-box select{
+
+    padding:14px 16px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+}
+
+.full-width{
+
+    grid-column:1/-1;
+
+}
+
+/*==============================
+  VALIDATION
+==============================*/
+
+input:invalid{
+
+    border-color:#f87171;
+
+}
+
+input:valid{
+
+    border-color:#22c55e;
+
+}
+
+.error-message{
+
+    color:#ef4444;
+
+    font-size:.85rem;
+
+    margin-top:6px;
+
+}
+
+.success-message{
+
+    color:#16a34a;
+
+    font-size:.85rem;
+
+    margin-top:6px;
+
+}
+
+/*==============================
+  RESPONSIVE
+==============================*/
+
+@media(max-width:768px){
+
+    .form-row,
+    .info-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .search-box{
+
+        flex-direction:column;
+
+    }
+
+    .search-box button{
+
+        width:100%;
+
+    }
+
+    .login-card,
+    .signup-card{
+
+        padding:25px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .filter-bar{
+
+        flex-direction:column;
+
+    }
+
+    .filter-bar input,
+    .filter-bar select{
+
+        width:100%;
+
+    }
+
+}
+/*==================================================
+  PlayConnect - Main Stylesheet
+  Part 5/20
+  Footer • Social Icons • Back To Top • Animations
+==================================================*/
+
+/*==============================
+  FOOTER
+==============================*/
+
+.footer{
+
+    background:var(--secondary);
+
+    color:var(--white);
+
+    padding:80px 0 0;
+
+    margin-top:80px;
+
+}
+
+.footer-container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:40px;
+
+}
+
+.footer-box h3{
+
+    color:var(--white);
+
+    margin-bottom:22px;
+
+    font-size:1.25rem;
+
+}
+
+.footer-box p{
+
+    color:#cbd5e1;
+
+    margin-bottom:15px;
+
+    line-height:1.8;
+
+}
+
+.footer-box ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.footer-box ul li a{
+
+    color:#cbd5e1;
+
+    transition:var(--transition);
+
+}
+
+.footer-box ul li a:hover{
+
+    color:var(--primary);
+
+    padding-left:8px;
+
+}
+
+.footer-box .logo{
+
+    color:var(--white);
+
+    margin-bottom:20px;
+
+}
+
+/*==============================
+  CONTACT INFO
+==============================*/
+
+.footer-box p i{
+
+    width:24px;
+
+    color:var(--primary);
+
+    margin-right:10px;
+
+}
+
+/*==============================
+  SOCIAL LINKS
+==============================*/
+
+.social-links{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.social-links a{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(255,255,255,.08);
+
+    color:var(--white);
+
+    transition:var(--transition);
+
+    font-size:1rem;
+
+}
+
+.social-links a:hover{
+
+    background:var(--primary);
+
+    transform:translateY(-5px);
+
+}
+
+/*==============================
+  FOOTER BOTTOM
+==============================*/
+
+.footer-bottom{
+
+    margin-top:60px;
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+    text-align:center;
+
+    padding:25px 20px;
+
+}
+
+.footer-bottom p{
+
+    color:#cbd5e1;
+
+    font-size:.95rem;
+
+}
+
+/*==============================
+  BACK TO TOP
+==============================*/
+
+.back-to-top{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:52px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:1.2rem;
+
+    cursor:pointer;
+
+    box-shadow:var(--shadow);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:var(--transition);
+
+    z-index:999;
+
+}
+
+.back-to-top.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.back-to-top:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-5px);
+
+}
+
+/*==============================
+  FADE ANIMATION
+==============================*/
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==============================
+  SCALE ANIMATION
+==============================*/
+
+.scale-in{
+
+    animation:scaleIn .6s ease;
+
+}
+
+@keyframes scaleIn{
+
+    from{
+
+        transform:scale(.8);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/*==============================
+  FLOAT ANIMATION
+==============================*/
+
+.float{
+
+    animation:floating 4s ease-in-out infinite;
+
+}
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==============================
+  PULSE EFFECT
+==============================*/
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/*==============================
+  HOVER UTILITIES
+==============================*/
+
+.hover-lift{
+
+    transition:var(--transition);
+
+}
+
+.hover-lift:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.rounded{
+
+    border-radius:var(--radius);
+
+}
+
+.shadow{
+
+    box-shadow:var(--shadow);
+
+}
+
+.shadow-lg{
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/*==============================
+  RESPONSIVE
+==============================*/
+
+@media(max-width:768px){
+
+    .footer{
+
+        padding-top:60px;
+
+    }
+
+    .footer-container{
+
+        gap:35px;
+
+    }
+
+    .footer-bottom{
+
+        margin-top:40px;
+
+    }
+
+    .back-to-top{
+
+        width:48px;
+
+        height:48px;
+
+        right:20px;
+
+        bottom:20px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .footer-container{
+
+        width:92%;
+
+    }
+
+    .social-links{
+
+        justify-content:flex-start;
+
+    }
+
+    .footer-box{
+
+        text-align:left;
+
+    }
+
+}

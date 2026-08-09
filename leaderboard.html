@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Leaderboard | PlayConnect</title>
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet"
+          href="css/leaderboard.css">
+          <link rel="stylesheet" href="css/global.css">
+
+</head>
+
+<body>
+
+    <!-- Loader -->
+
+    <div class="loader" id="loader">
+
+        <div class="loader-circle"></div>
+
+    </div>
+
+    <!-- Progress Bar -->
+
+    <div class="progress-bar"
+         id="progressBar"></div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+            <span>PlayConnect</span>
+
+        </div>
+
+        <nav id="navbar">
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="sports.html">Sports</a></li>
+
+                <li><a href="players.html">Players</a></li>
+
+                <li><a href="create-match.html">Create Match</a></li>
+
+                <li><a href="match-details.html">Match Details</a></li>
+
+                <li>
+                    <a href="leaderboard.html"
+                       class="active">
+                        Leaderboard
+                    </a>
+                </li>
+
+                <li><a href="tournaments.html">Tournaments</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="header-buttons">
+
+            <a href="login.html"
+               class="login-btn">
+
+                Login
+
+            </a>
+
+            <a href="signup.html"
+               class="signup-btn">
+
+                Sign Up
+
+            </a>
+
+        </div>
+
+        <div class="menu-btn"
+             id="menuBtn">
+
+            <i class="fas fa-bars"></i>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="leaderboard-hero">
+
+        <div class="hero-content">
+
+            <span>
+
+                Community Rankings
+
+            </span>
+
+            <h1>
+
+                PlayConnect Leaderboard
+
+            </h1>
+
+            <p>
+
+                Discover the highest-ranked players,
+                monthly champions, and community legends.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TOP PODIUM ================= -->
+
+    <section class="podium-section">
+
+        <div class="section-title">
+
+            <span>
+
+                Champions
+
+            </span>
+
+            <h2>
+
+                Top 3 Players
+
+            </h2>
+
+        </div>
+
+        <div class="podium-container">
+
+            <!-- 2nd Place -->
+
+            <div class="podium-card silver">
+
+                <img src="images/player2.jpeg"
+                     alt="Second Place">
+
+                <span class="medal">
+
+                    🥈
+
+                </span>
+
+                <h3>
+
+                    Priya Shah
+
+                </h3>
+
+                <p>
+
+                    Cricket
+
+                </p>
+
+                <strong>
+
+                    2,480 Points
+
+                </strong>
+
+            </div>
+
+            <!-- 1st Place -->
+
+            <div class="podium-card gold">
+
+                <img src="images/player1.jpeg"
+                     alt="Champion">
+
+                <span class="medal">
+
+                    🥇
+
+                </span>
+
+                <h3>
+
+                    Riya Kapoor
+
+                </h3>
+
+                <p>
+
+                    Badminton
+
+                </p>
+
+                <strong>
+
+                    2,860 Points
+
+                </strong>
+
+            </div>
+
+            <!-- 3rd Place -->
+
+            <div class="podium-card bronze">
+
+                <img src="images/player3.jpeg"
+                     alt="Third Place">
+
+                <span class="medal">
+
+                    🥉
+
+                </span>
+
+                <h3>
+
+                    Aman Verma
+
+                </h3>
+
+                <p>
+
+                    Football
+
+                </p>
+
+                <strong>
+
+                    2,350 Points
+
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FILTERS ================= -->
+
+    <section class="leaderboard-filter">
+
+        <div class="filter-box">
+
+            <select>
+
+                <option>All Sports</option>
+
+                <option>Cricket</option>
+
+                <option>Football</option>
+
+                <option>Badminton</option>
+
+                <option>Basketball</option>
+
+                <option>Chess</option>
+
+                <option>Table Tennis</option>
+
+            </select>
+
+            <select>
+
+                <option>All Time</option>
+
+                <option>This Month</option>
+
+                <option>This Week</option>
+
+                <option>Today</option>
+
+            </select>
+
+            <select>
+
+                <option>All Cities</option>
+
+                <option>Ahmedabad</option>
+
+                <option>Surat</option>
+
+                <option>Vadodara</option>
+
+                <option>Rajkot</option>
+
+                <option>Bhuj</option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SEARCH ================= -->
+
+    <section class="leaderboard-search">
+
+        <form class="search-form">
+
+            <input
+                type="text"
+                placeholder="Search player...">
+
+            <button type="submit">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                Search
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= PLAYER RANKINGS START ================= -->
+         <section class="leaderboard-rankings">
+
+        <div class="section-title">
+
+            <span>Global Rankings</span>
+
+            <h2>Top Players</h2>
+
+        </div>
+
+        <div class="ranking-table">
+
+            <!-- Header -->
+
+            <div class="ranking-header">
+
+                <div>Rank</div>
+
+                <div>Player</div>
+
+                <div>Sport</div>
+
+                <div>Rating</div>
+
+                <div>Wins</div>
+
+                <div>Matches</div>
+
+                <div>Points</div>
+
+                <div>Badge</div>
+
+            </div>
+
+            <!-- Rank 1 -->
+
+            <div class="ranking-row">
+
+                <div>#1 🥇</div>
+
+                <div class="player-cell">
+
+                    <img src="images/player1.jpeg" alt="Player">
+
+                    <span>Riya Kapoor</span>
+
+                </div>
+
+                <div>Badminton</div>
+
+                <div>★★★★★</div>
+
+                <div>182</div>
+
+                <div>200</div>
+
+                <div>2860</div>
+
+                <div><span class="badge gold">Champion</span></div>
+
+            </div>
+
+            <!-- Rank 2 -->
+
+            <div class="ranking-row">
+
+                <div>#2 🥈</div>
+
+                <div class="player-cell">
+
+                    <img src="images/player2.jpeg" alt="Player">
+
+                    <span>Priya Shah</span>
+
+                </div>
+
+                <div>Cricket</div>
+
+                <div>★★★★☆</div>
+
+                <div>165</div>
+
+                <div>191</div>
+
+                <div>2480</div>
+
+                <div><span class="badge silver">Elite</span></div>
+
+            </div>
+
+            <!-- Rank 3 -->
+
+            <div class="ranking-row">
+
+                <div>#3 🥉</div>
+
+                <div class="player-cell">
+
+                    <img src="images/player3.jpeg" alt="Player">
+
+                    <span>Aman Verma</span>
+
+                </div>
+
+                <div>Football</div>
+
+                <div>★★★★★</div>
+
+                <div>160</div>
+
+                <div>188</div>
+
+                <div>2350</div>
+
+                <div><span class="badge bronze">Pro</span></div>
+
+            </div>
+
+            <!-- Rank 4 -->
+
+            <div class="ranking-row">
+
+                <div>#4</div>
+
+                <div class="player-cell">
+
+                    <img src="images/player4.jpeg" alt="Player">
+
+                    <span>Karan Mehta</span>
+
+                </div>
+
+                <div>Basketball</div>
+
+                <div>★★★★☆</div>
+
+                <div>150</div>
+
+                <div>180</div>
+
+                <div>2210</div>
+
+                <div><span class="badge">Star</span></div>
+
+            </div>
+
+            <!-- Rank 5 -->
+
+            <div class="ranking-row">
+
+                <div>#5</div>
+
+                <div class="player-cell">
+
+                    <img src="images/player5.jpeg" alt="Player">
+
+                    <span>Rahul Patel</span>
+
+                </div>
+
+                <div>Cricket</div>
+
+                <div>★★★★☆</div>
+
+                <div>145</div>
+
+                <div>172</div>
+
+                <div>2150</div>
+
+                <div><span class="badge">Top 5</span></div>
+
+            </div>
+
+            <!-- Rank 6 -->
+
+            <div class="ranking-row">
+
+                <div>#6</div>
+
+                <div class="player-cell">
+
+                    <img src="images/player6.jpeg" alt="Player">
+
+                    <span>Neha Joshi</span>
+
+                </div>
+
+                <div>Chess</div>
+
+                <div>★★★★☆</div>
+
+                <div>142</div>
+
+                <div>170</div>
+
+                <div>2095</div>
+
+                <div><span class="badge">Master</span></div>
+
+            </div>
+
+            <!-- Rank 7 -->
+
+            <div class="ranking-row">
+
+                <div>#7</div>
+
+                <div class="player-cell">
+
+                    <img src="images/player7.jpeg" alt="Player">
+
+                    <span>Yash Trivedi</span>
+
+                </div>
+
+                <div>Table Tennis</div>
+
+                <div>★★★★☆</div>
+
+                <div>136</div>
+
+                <div>164</div>
+
+                <div>2010</div>
+
+                <div><span class="badge">Advanced</span></div>
+
+            </div>
+
+            <!-- Rank 8 -->
+
+            <div class="ranking-row">
+
+                <div>#8</div>
+
+                <div class="player-cell">
+
+                    <img src="images/player8.jpeg" alt="Player">
+
+                    <span>Sneha Desai</span>
+
+                </div>
+
+                <div>Tennis</div>
+
+                <div>★★★★☆</div>
+
+                <div>132</div>
+
+                <div>160</div>
+
+                <div>1985</div>
+
+                <div><span class="badge">Ace</span></div>
+
+            </div>
+
+            <!-- Rank 9 -->
+
+            <div class="ranking-row">
+
+                <div>#9</div>
+
+                <div class="player-cell">
+
+                    <img src="images/player9.jpeg" alt="Player">
+
+                    <span>Harsh Solanki</span>
+
+                </div>
+
+                <div>Swimming</div>
+
+                <div>★★★★☆</div>
+
+                <div>128</div>
+
+                <div>155</div>
+
+                <div>1930</div>
+
+                <div><span class="badge">Elite</span></div>
+
+            </div>
+
+            <!-- Rank 10 -->
+
+            <div class="ranking-row">
+
+                <div>#10</div>
+
+                <div class="player-cell">
+
+                    <img src="images/player10.jpeg" alt="Player">
+
+                    <span>Dev Chauhan</span>
+
+                </div>
+
+                <div>Cricket</div>
+
+                <div>★★★★☆</div>
+
+                <div>125</div>
+
+                <div>150</div>
+
+                <div>1890</div>
+
+                <div><span class="badge">Rising</span></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PAGINATION ================= -->
+
+    <section class="pagination-section">
+
+        <div class="pagination">
+
+            <a href="#" class="active">1</a>
+
+            <a href="#">2</a>
+
+            <a href="#">3</a>
+
+            <a href="#">4</a>
+
+            <a href="#">Next <i class="fa-solid fa-angle-right"></i></a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= STATISTICS START ================= -->
+         <!-- ================= STATISTICS ================= -->
+
+    <section class="leaderboard-statistics">
+
+        <div class="section-title">
+
+            <span>Platform Insights</span>
+
+            <h2>Leaderboard Statistics</h2>
+
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>15,000+</h3>
+
+                <p>Registered Players</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-trophy"></i>
+
+                <h3>3,500+</h3>
+
+                <p>Matches Completed</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-medal"></i>
+
+                <h3>120+</h3>
+
+                <p>Tournaments</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-star"></i>
+
+                <h3>98%</h3>
+
+                <p>Positive Reviews</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= MONTHLY CHAMPIONS ================= -->
+
+    <section class="monthly-champions">
+
+        <div class="section-title">
+
+            <span>Monthly Winners</span>
+
+            <h2>Champions of the Month</h2>
+
+        </div>
+
+        <div class="champion-grid">
+
+            <div class="champion-card">
+
+                <img src="images/player1.jpeg" alt="Champion">
+
+                <h3>Riya Kapoor</h3>
+
+                <p>🏸 Badminton</p>
+
+                <span>August Champion</span>
+
+            </div>
+
+            <div class="champion-card">
+
+                <img src="images/player3.jpeg" alt="Champion">
+
+                <h3>Aman Verma</h3>
+
+                <p>⚽ Football</p>
+
+                <span>July Champion</span>
+
+            </div>
+
+            <div class="champion-card">
+
+                <img src="images/player2.jpeg" alt="Champion">
+
+                <h3>Priya Shah</h3>
+
+                <p>🏏 Cricket</p>
+
+                <span>June Champion</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= HALL OF FAME ================= -->
+
+    <section class="hall-of-fame">
+
+        <div class="section-title">
+
+            <span>Legends</span>
+
+            <h2>Hall of Fame</h2>
+
+        </div>
+
+        <div class="hall-grid">
+
+            <div class="hall-card">
+
+                <i class="fa-solid fa-crown"></i>
+
+                <h3>Highest Rated</h3>
+
+                <p>Riya Kapoor</p>
+
+            </div>
+
+            <div class="hall-card">
+
+                <i class="fa-solid fa-fire"></i>
+
+                <h3>Longest Win Streak</h3>
+
+                <p>Aman Verma - 24 Wins</p>
+
+            </div>
+
+            <div class="hall-card">
+
+                <i class="fa-solid fa-star"></i>
+
+                <h3>Most Valuable Player</h3>
+
+                <p>Rahul Patel</p>
+
+            </div>
+
+            <div class="hall-card">
+
+                <i class="fa-solid fa-handshake"></i>
+
+                <h3>Best Sportsmanship</h3>
+
+                <p>Neha Joshi</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= RECENT ACHIEVEMENTS ================= -->
+
+    <section class="achievements-section">
+
+        <div class="section-title">
+
+            <span>Latest Awards</span>
+
+            <h2>Recent Achievements</h2>
+
+        </div>
+
+        <div class="achievement-grid">
+
+            <div class="achievement-card">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h4>100 Match Wins</h4>
+
+                <p>Riya Kapoor reached 100 victories.</p>
+
+            </div>
+
+            <div class="achievement-card">
+
+                <i class="fa-solid fa-medal"></i>
+
+                <h4>Top Scorer</h4>
+
+                <p>Aman Verma scored the highest points this month.</p>
+
+            </div>
+
+            <div class="achievement-card">
+
+                <i class="fa-solid fa-shield-heart"></i>
+
+                <h4>Community Hero</h4>
+
+                <p>Rahul Patel organized 50 successful matches.</p>
+
+            </div>
+
+            <div class="achievement-card">
+
+                <i class="fa-solid fa-bolt"></i>
+
+                <h4>Fastest Rising</h4>
+
+                <p>Sneha Desai entered the Top 10 rankings.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PERFORMANCE ================= -->
+
+    <section class="performance-section">
+
+        <div class="section-title">
+
+            <span>Performance</span>
+
+            <h2>Top Player Performance</h2>
+
+        </div>
+
+        <div class="performance-grid">
+
+            <div class="performance-card">
+
+                <h3>Win Rate</h3>
+
+                <span>94%</span>
+
+            </div>
+
+            <div class="performance-card">
+
+                <h3>Average Rating</h3>
+
+                <span>4.9 ⭐</span>
+
+            </div>
+
+            <div class="performance-card">
+
+                <h3>Matches Played</h3>
+
+                <span>200+</span>
+
+            </div>
+
+            <div class="performance-card">
+
+                <h3>Active Streak</h3>
+
+                <span>18 Days</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CTA ================= -->
+
+    <section class="leaderboard-cta">
+
+        <div class="cta-content">
+
+            <h2>
+
+                Think You Can Reach the Top?
+
+            </h2>
+
+            <p>
+
+                Join tournaments, win matches,
+                improve your ranking, and become
+                the next PlayConnect Champion.
+
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="create-match.html"
+                   class="primary-btn">
+
+                    Play Now
+
+                </a>
+
+                <a href="tournaments.html"
+                   class="secondary-btn">
+
+                    View Tournaments
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer Starts -->
+         <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Company -->
+
+            <div class="footer-box">
+
+                <div class="logo">
+
+                    <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+                    <span>PlayConnect</span>
+
+                </div>
+
+                <p>
+
+                    PlayConnect helps sports enthusiasts discover nearby
+                    players, organize matches, join tournaments, and build
+                    a strong local sports community.
+
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="players.html">Players</a></li>
+                    <li><a href="create-match.html">Create Match</a></li>
+                    <li><a href="match-details.html">Match Details</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                    <li><a href="tournaments.html">Tournaments</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Support -->
+
+            <div class="footer-box">
+
+                <h3>Support</h3>
+
+                <ul>
+
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Community Guidelines</a></li>
+                    <li><a href="#">Help Center</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="footer-box">
+
+                <h3>Contact</h3>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Ahmedabad, Gujarat, India
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +91 98765 43210
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    info@playconnect.com
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    Mon – Sat | 9:00 AM – 7:00 PM
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 PlayConnect. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= BACK TO TOP ================= -->
+
+    <button id="backToTop"
+            class="back-to-top"
+            aria-label="Back to Top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/app.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/leaderboard.js"></script>
+
+</body>
+
+</html>

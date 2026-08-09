@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Tournaments | PlayConnect</title>
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet"
+          href="css/turnaments.css">
+          <link rel="stylesheet" href="css/global.css">
+
+</head>
+
+<body>
+
+    <!-- Loader -->
+
+    <div class="loader" id="loader">
+
+        <div class="loader-circle"></div>
+
+    </div>
+
+    <!-- Progress Bar -->
+
+    <div class="progress-bar"
+         id="progressBar"></div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+            <span>PlayConnect</span>
+
+        </div>
+
+        <nav id="navbar">
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="sports.html">Sports</a></li>
+
+                <li><a href="players.html">Players</a></li>
+
+                <li><a href="create-match.html">Create Match</a></li>
+
+                <li><a href="match-details.html">Match Details</a></li>
+
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+
+                <li>
+
+                    <a href="tournaments.html"
+                       class="active">
+
+                        Tournaments
+
+                    </a>
+
+                </li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="header-buttons">
+
+            <a href="login.html"
+               class="login-btn">
+
+                Login
+
+            </a>
+
+            <a href="signup.html"
+               class="signup-btn">
+
+                Sign Up
+
+            </a>
+
+        </div>
+
+        <div class="menu-btn"
+             id="menuBtn">
+
+            <i class="fas fa-bars"></i>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="tournament-hero">
+
+        <div class="hero-content">
+
+            <span>
+
+                Compete • Win • Celebrate
+
+            </span>
+
+            <h1>
+
+                Local Sports Tournaments
+
+            </h1>
+
+            <p>
+
+                Participate in exciting indoor and outdoor tournaments,
+                compete with talented players, and win amazing prizes.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#upcoming-tournaments"
+                   class="primary-btn">
+
+                    Explore Tournaments
+
+                </a>
+
+                <a href="create-match.html"
+                   class="secondary-btn">
+
+                    Organize Tournament
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FEATURED TOURNAMENT ================= -->
+
+    <section class="featured-tournament">
+
+        <div class="section-title">
+
+            <span>
+
+                Featured Event
+
+            </span>
+
+            <h2>
+
+                Gujarat Sports Championship 2026
+
+            </h2>
+
+        </div>
+
+        <div class="featured-card">
+
+            <div class="featured-image">
+
+                <img src="images/tournament-featured.png"
+                     alt="Featured Tournament">
+
+            </div>
+
+            <div class="featured-content">
+
+                <div class="badge">
+
+                    Registration Open
+
+                </div>
+
+                <h3>
+
+                    Gujarat Sports Championship
+
+                </h3>
+
+                <p>
+
+                    One of the biggest local sports competitions featuring
+                    Cricket, Football, Badminton, Volleyball, Basketball,
+                    Chess, Table Tennis, and more.
+
+                </p>
+
+                <div class="featured-info">
+
+                    <div>
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                        <span>15 Sept 2026</span>
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span>Ahmedabad</span>
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-users"></i>
+
+                        <span>500+ Participants</span>
+
+                    </div>
+
+                </div>
+
+                <a href="#"
+                   class="primary-btn">
+
+                    Register Now
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SEARCH & FILTER ================= -->
+
+    <section class="tournament-filter">
+
+        <div class="filter-container">
+
+            <input
+                type="text"
+                placeholder="Search tournaments...">
+
+            <select>
+
+                <option>All Sports</option>
+
+                <option>Cricket</option>
+
+                <option>Football</option>
+
+                <option>Badminton</option>
+
+                <option>Basketball</option>
+
+                <option>Volleyball</option>
+
+                <option>Chess</option>
+
+                <option>Table Tennis</option>
+
+            </select>
+
+            <select>
+
+                <option>All Cities</option>
+
+                <option>Ahmedabad</option>
+
+                <option>Surat</option>
+
+                <option>Vadodara</option>
+
+                <option>Rajkot</option>
+
+                <option>Bhuj</option>
+
+            </select>
+
+            <button class="primary-btn">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                Search
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= UPCOMING TOURNAMENTS START ================= -->
+         <!-- ================= UPCOMING TOURNAMENTS ================= -->
+
+    <section class="upcoming-tournaments"
+             id="upcoming-tournaments">
+
+        <div class="section-title">
+
+            <span>
+
+                Upcoming Events
+
+            </span>
+
+            <h2>
+
+                Join Your Favorite Tournament
+
+            </h2>
+
+        </div>
+
+        <div class="tournament-grid">
+
+            <!-- Tournament 1 -->
+
+            <div class="tournament-card">
+
+                <img src="images/cricket-tournament.jpeg"
+                     alt="Cricket Tournament">
+
+                <div class="tournament-content">
+
+                    <span class="sport-tag">
+
+                        Cricket
+
+                    </span>
+
+                    <h3>
+
+                        Champions Cricket Cup
+
+                    </h3>
+
+                    <p>
+
+                        Compete with the best local cricket teams
+                        and win exciting prizes.
+
+                    </p>
+
+                    <ul>
+
+                        <li><i class="fa-solid fa-calendar"></i> 20 Sept 2026</li>
+
+                        <li><i class="fa-solid fa-location-dot"></i> Surat</li>
+
+                        <li><i class="fa-solid fa-trophy"></i> Prize: ₹50,000</li>
+
+                    </ul>
+
+                    <a href="match-details.html"
+                       class="primary-btn">
+
+                        Register
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Tournament 2 -->
+
+            <div class="tournament-card">
+
+                <img src="images/football-tournament.jpeg"
+                     alt="Football Tournament">
+
+                <div class="tournament-content">
+
+                    <span class="sport-tag">
+
+                        Football
+
+                    </span>
+
+                    <h3>
+
+                        Football Premier League
+
+                    </h3>
+
+                    <p>
+
+                        Fast-paced football tournament with
+                        knockout rounds and grand finals.
+
+                    </p>
+
+                    <ul>
+
+                        <li><i class="fa-solid fa-calendar"></i> 28 Sept 2026</li>
+
+                        <li><i class="fa-solid fa-location-dot"></i> Rajkot</li>
+
+                        <li><i class="fa-solid fa-trophy"></i> Prize: ₹40,000</li>
+
+                    </ul>
+
+                    <a href="match-details.html"
+                       class="primary-btn">
+
+                        Register
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Tournament 3 -->
+
+            <div class="tournament-card">
+
+                <img src="images/badminton-tournament.jpeg"
+                     alt="Badminton Tournament">
+
+                <div class="tournament-content">
+
+                    <span class="sport-tag">
+
+                        Badminton
+
+                    </span>
+
+                    <h3>
+
+                        Open Badminton Championship
+
+                    </h3>
+
+                    <p>
+
+                        Singles & doubles tournament
+                        for players of every skill level.
+
+                    </p>
+
+                    <ul>
+
+                        <li><i class="fa-solid fa-calendar"></i> 05 Oct 2026</li>
+
+                        <li><i class="fa-solid fa-location-dot"></i> Ahmedabad</li>
+
+                        <li><i class="fa-solid fa-trophy"></i> Prize: ₹30,000</li>
+
+                    </ul>
+
+                    <a href="match-details.html"
+                       class="primary-btn">
+
+                        Register
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PRIZE POOL ================= -->
+
+    <section class="prize-pool">
+
+        <div class="section-title">
+
+            <span>
+
+                Rewards
+
+            </span>
+
+            <h2>
+
+                Tournament Prize Pool
+
+            </h2>
+
+        </div>
+
+        <div class="prize-grid">
+
+            <div class="prize-card">
+
+                <i class="fa-solid fa-trophy"></i>
+
+                <h3>1st Prize</h3>
+
+                <p>₹50,000 + Trophy</p>
+
+            </div>
+
+            <div class="prize-card">
+
+                <i class="fa-solid fa-medal"></i>
+
+                <h3>2nd Prize</h3>
+
+                <p>₹25,000 + Medal</p>
+
+            </div>
+
+            <div class="prize-card">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h3>3rd Prize</h3>
+
+                <p>₹10,000 + Certificate</p>
+
+            </div>
+
+            <div class="prize-card">
+
+                <i class="fa-solid fa-star"></i>
+
+                <h3>MVP Award</h3>
+
+                <p>Special Trophy</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= REGISTRATION STATUS ================= -->
+
+    <section class="registration-status">
+
+        <div class="section-title">
+
+            <span>
+
+                Live Registration
+
+            </span>
+
+            <h2>
+
+                Available Slots
+
+            </h2>
+
+        </div>
+
+        <div class="status-grid">
+
+            <div class="status-card">
+
+                <h3>500</h3>
+
+                <p>Total Slots</p>
+
+            </div>
+
+            <div class="status-card">
+
+                <h3>368</h3>
+
+                <p>Registered</p>
+
+            </div>
+
+            <div class="status-card">
+
+                <h3>132</h3>
+
+                <p>Remaining</p>
+
+            </div>
+
+            <div class="status-card">
+
+                <h3>73%</h3>
+
+                <p>Filled</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SPORTS CATEGORIES ================= -->
+
+    <section class="sports-categories">
+
+        <div class="section-title">
+
+            <span>
+
+                Categories
+
+            </span>
+
+            <h2>
+
+                Tournament Sports
+
+            </h2>
+
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category-card">
+
+                🏏
+                <h4>Cricket</h4>
+
+            </div>
+
+            <div class="category-card">
+
+                ⚽
+                <h4>Football</h4>
+
+            </div>
+
+            <div class="category-card">
+
+                🏸
+                <h4>Badminton</h4>
+
+            </div>
+
+            <div class="category-card">
+
+                🏀
+                <h4>Basketball</h4>
+
+            </div>
+
+            <div class="category-card">
+
+                🏐
+                <h4>Volleyball</h4>
+
+            </div>
+
+            <div class="category-card">
+
+                ♟️
+                <h4>Chess</h4>
+
+            </div>
+
+            <div class="category-card">
+
+                🏓
+                <h4>Table Tennis</h4>
+
+            </div>
+
+            <div class="category-card">
+
+                🎯
+                <h4>More Games</h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TOURNAMENT SCHEDULE START ================= -->
+         <!-- ================= TOURNAMENT SCHEDULE ================= -->
+
+    <section class="tournament-schedule">
+
+        <div class="section-title">
+
+            <span>Event Timeline</span>
+
+            <h2>Tournament Schedule</h2>
+
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+
+                    15 Sept
+
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>Registration Closes</h3>
+
+                    <p>
+
+                        Last date to complete tournament registration.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+
+                    16 Sept
+
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>Opening Ceremony</h3>
+
+                    <p>
+
+                        Welcome ceremony, player briefing, and fixture announcement.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+
+                    17–20 Sept
+
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>League Matches</h3>
+
+                    <p>
+
+                        Group stage matches across all sports categories.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+
+                    21 Sept
+
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>Finals & Prize Ceremony</h3>
+
+                    <p>
+
+                        Championship finals followed by award distribution.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= REGISTERED TEAMS ================= -->
+
+    <section class="registered-teams">
+
+        <div class="section-title">
+
+            <span>Participants</span>
+
+            <h2>Registered Teams</h2>
+
+        </div>
+
+        <div class="teams-grid">
+
+            <div class="team-card">
+
+                <img src="images/cricket-tournament.jpeg"
+                     alt="Team">
+
+                <h3>Royal Warriors</h3>
+
+                <p>Cricket</p>
+
+            </div>
+
+            <div class="team-card">
+
+                <img src="images/football-tournament.jpeg"
+                     alt="Team">
+
+                <h3>Thunder Strikers</h3>
+
+                <p>Football</p>
+
+            </div>
+
+            <div class="team-card">
+
+                <img src="images/badminton-tournament.jpeg"
+                     alt="Team">
+
+                <h3>Smash Masters</h3>
+
+                <p>Badminton</p>
+
+            </div>
+
+            <div class="team-card">
+
+                <img src="images/basketball-tournament.jpeg"
+                     alt="Team">
+
+                <h3>Elite Shooters</h3>
+
+                <p>Basketball</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= STATISTICS ================= -->
+
+    <section class="tournament-stats">
+
+        <div class="section-title">
+
+            <span>Numbers</span>
+
+            <h2>Tournament Statistics</h2>
+
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>500+</h3>
+
+                <p>Players</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-user-group"></i>
+
+                <h3>80+</h3>
+
+                <p>Teams</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-trophy"></i>
+
+                <h3>35</h3>
+
+                <p>Champions</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-medal"></i>
+
+                <h3>120</h3>
+
+                <p>Matches</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FAQ ================= -->
+
+    <section class="faq-section">
+
+        <div class="section-title">
+
+            <span>Need Help?</span>
+
+            <h2>Frequently Asked Questions</h2>
+
+        </div>
+
+        <div class="faq-list">
+
+            <div class="faq-item">
+
+                <h3>
+
+                    Can I register as an individual?
+
+                </h3>
+
+                <p>
+
+                    Yes. Individual registrations are accepted for selected sports.
+
+                </p>
+
+            </div>
+
+            <div class="faq-item">
+
+                <h3>
+
+                    Can I register multiple teams?
+
+                </h3>
+
+                <p>
+
+                    Yes, if tournament rules allow multiple team entries.
+
+                </p>
+
+            </div>
+
+            <div class="faq-item">
+
+                <h3>
+
+                    Will certificates be provided?
+
+                </h3>
+
+                <p>
+
+                    Every participant receives a digital participation certificate.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CTA ================= -->
+
+    <section class="tournament-cta">
+
+        <div class="cta-content">
+
+            <h2>
+
+                Ready to Compete?
+
+            </h2>
+
+            <p>
+
+                Register today, challenge the best players,
+                and compete for exciting prizes.
+
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="signup.html"
+                   class="primary-btn">
+
+                    Register Now
+
+                </a>
+
+                <a href="contact.html"
+                   class="secondary-btn">
+
+                    Contact Organizer
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer Starts -->
+         <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Company -->
+
+            <div class="footer-box">
+
+                <div class="logo">
+
+                    <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+                    <span>PlayConnect</span>
+
+                </div>
+
+                <p>
+
+                    PlayConnect connects sports enthusiasts with nearby
+                    players, tournaments, and local communities to make
+                    every game more exciting.
+
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="sports.html">Sports</a></li>
+
+                    <li><a href="players.html">Players</a></li>
+
+                    <li><a href="create-match.html">Create Match</a></li>
+
+                    <li><a href="match-details.html">Match Details</a></li>
+
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+
+                    <li><a href="tournaments.html">Tournaments</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Tournament Categories -->
+
+            <div class="footer-box">
+
+                <h3>Sports</h3>
+
+                <ul>
+
+                    <li><a href="#">Cricket</a></li>
+
+                    <li><a href="#">Football</a></li>
+
+                    <li><a href="#">Badminton</a></li>
+
+                    <li><a href="#">Basketball</a></li>
+
+                    <li><a href="#">Volleyball</a></li>
+
+                    <li><a href="#">Chess</a></li>
+
+                    <li><a href="#">Table Tennis</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="footer-box">
+
+                <h3>Contact Us</h3>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Ahmedabad, Gujarat, India
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +91 98765 43210
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    info@playconnect.com
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    Mon - Sat | 9:00 AM - 7:00 PM
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 PlayConnect. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= BACK TO TOP ================= -->
+
+    <button id="backToTop"
+            class="back-to-top"
+            aria-label="Back to Top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- ================= JAVASCRIPT FILES ================= -->
+
+    <script src="js/app.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/tournaments.js"></script>
+
+</body>
+
+</html>

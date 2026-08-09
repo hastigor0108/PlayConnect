@@ -1,0 +1,2300 @@
+/* =========================================================
+   404.CSS — PART 1/5
+   404 PAGE + HERO + QUICK LINKS
+   ========================================================= */
+
+
+/* ================= 404 PAGE ================= */
+
+.error-page {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 7%;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37, 99, 235, 0.05),
+            rgba(255, 255, 255, 0.95)
+        );
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* ================= BACKGROUND DECORATION ================= */
+
+.error-page::before {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(37, 99, 235, 0.06);
+
+    top: -150px;
+    left: -150px;
+
+    pointer-events: none;
+}
+
+.error-page::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    background: rgba(37, 99, 235, 0.05);
+
+    bottom: -150px;
+    right: -100px;
+
+    pointer-events: none;
+}
+
+
+/* ================= ERROR CONTAINER ================= */
+
+.error-container {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* ================= ERROR IMAGE ================= */
+
+.error-image {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.error-image img {
+    width: 100%;
+    max-width: 520px;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    animation: errorFloat 4s ease-in-out infinite;
+}
+
+
+/* ================= ERROR IMAGE ANIMATION ================= */
+
+@keyframes errorFloat {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ================= ERROR CONTENT ================= */
+
+.error-content {
+    max-width: 600px;
+}
+
+.error-content .section-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 8px 18px;
+
+    border-radius: 50px;
+
+    background: rgba(37, 99, 235, 0.1);
+
+    color: var(--primary-color, #2563eb);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+}
+
+
+/* ================= 404 NUMBER ================= */
+
+.error-content h1 {
+    margin: 0;
+
+    font-size: clamp(90px, 13vw, 180px);
+
+    line-height: 0.85;
+
+    font-weight: 800;
+
+    letter-spacing: -6px;
+
+    color: var(--primary-color, #2563eb);
+
+    text-shadow:
+        5px 5px 0 rgba(37, 99, 235, 0.08);
+}
+
+
+/* ================= ERROR HEADING ================= */
+
+.error-content h2 {
+    margin: 25px 0 15px;
+
+    font-size: clamp(30px, 4vw, 48px);
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    color: var(--heading-color, #111827);
+}
+
+
+/* ================= ERROR DESCRIPTION ================= */
+
+.error-content p {
+    margin: 0 0 30px;
+
+    max-width: 560px;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: var(--text-color, #6b7280);
+}
+
+
+/* ================= ERROR BUTTONS ================= */
+
+.error-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.error-buttons .primary-btn,
+.error-buttons .secondary-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    min-height: 48px;
+
+    padding: 12px 24px;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.error-buttons .primary-btn:hover,
+.error-buttons .secondary-btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ================= QUICK LINKS SECTION ================= */
+
+.error-links {
+    padding: 90px 7%;
+
+    background: var(--section-bg, #ffffff);
+}
+
+
+/* ================= SECTION TITLE ================= */
+
+.error-links .section-title {
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 0 auto 45px;
+}
+
+.error-links .section-title span {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: var(--primary-color, #2563eb);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.error-links .section-title h2 {
+    margin: 0;
+
+    font-size: clamp(28px, 4vw, 42px);
+
+    line-height: 1.2;
+
+    color: var(--heading-color, #111827);
+}
+
+
+/* ================= LINKS GRID ================= */
+
+.links-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ================= LINK CARD ================= */
+
+.link-card {
+    min-height: 180px;
+
+    padding: 30px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.link-card:hover {
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(37, 99, 235, 0.3);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ================= LINK ICON ================= */
+
+.link-card i {
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(37, 99, 235, 0.1);
+
+    color: var(--primary-color, #2563eb);
+
+    font-size: 25px;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease;
+}
+
+.link-card:hover i {
+    transform: scale(1.08);
+
+    background:
+        rgba(37, 99, 235, 0.15);
+}
+
+
+/* ================= LINK CARD HEADING ================= */
+
+.link-card h3 {
+    margin: 0;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: var(--heading-color, #111827);
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1000px) {
+
+    .error-page {
+        padding: 70px 5%;
+    }
+
+    .error-container {
+        gap: 45px;
+    }
+
+    .links-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        max-width: 750px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .error-page {
+        min-height: auto;
+
+        padding: 65px 20px;
+    }
+
+    .error-container {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 35px;
+    }
+
+    .error-image {
+        order: 1;
+    }
+
+    .error-content {
+        order: 2;
+
+        margin: auto;
+    }
+
+    .error-image img {
+        max-width: 380px;
+    }
+
+    .error-content h1 {
+        font-size: clamp(80px, 22vw, 130px);
+
+        letter-spacing: -4px;
+    }
+
+    .error-content h2 {
+        font-size: 30px;
+    }
+
+    .error-content p {
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 14px;
+    }
+
+    .error-buttons {
+        justify-content: center;
+    }
+
+    .error-links {
+        padding: 70px 20px;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+    .error-page {
+        padding: 50px 15px;
+    }
+
+    .error-image img {
+        max-width: 290px;
+    }
+
+    .error-content h1 {
+        font-size: 85px;
+
+        letter-spacing: -3px;
+    }
+
+    .error-content h2 {
+        font-size: 26px;
+    }
+
+    .error-content p {
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+
+    .error-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .error-buttons .primary-btn,
+    .error-buttons .secondary-btn {
+        width: 100%;
+    }
+
+    .links-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .link-card {
+        min-height: 150px;
+    }
+
+}
+/* =========================================================
+   404.CSS — PART 2/5
+   SEARCH + HELP + FEATURED SPORTS
+   ========================================================= */
+
+
+/* ================= SEARCH SECTION ================= */
+
+.error-search {
+    padding: 90px 7%;
+
+    background: #f8fafc;
+
+    text-align: center;
+}
+
+
+/* ================= SEARCH TITLE ================= */
+
+.error-search .section-title {
+    max-width: 750px;
+
+    margin: 0 auto 40px;
+}
+
+.error-search .section-title span {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: var(--primary-color, #2563eb);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.error-search .section-title h2 {
+    margin: 0;
+
+    color: var(--heading-color, #111827);
+
+    font-size: clamp(28px, 4vw, 42px);
+
+    line-height: 1.25;
+}
+
+
+/* ================= SEARCH BOX ================= */
+
+.search-box {
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.07);
+}
+
+
+/* ================= SEARCH INPUT ================= */
+
+.search-box input {
+    flex: 1;
+
+    min-width: 0;
+
+    height: 52px;
+
+    padding: 0 18px;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #111827;
+
+    font-family: inherit;
+
+    font-size: 15px;
+}
+
+.search-box input::placeholder {
+    color: #9ca3af;
+}
+
+
+/* ================= SEARCH BUTTON ================= */
+
+.search-box .primary-btn {
+    min-height: 52px;
+
+    padding: 0 28px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.search-box .primary-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.2);
+}
+
+
+/* ================= HELP SECTION ================= */
+
+.help-section {
+    padding: 90px 7%;
+
+    background: #ffffff;
+}
+
+
+/* ================= HELP TITLE ================= */
+
+.help-section .section-title {
+    max-width: 750px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.help-section .section-title span {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: var(--primary-color, #2563eb);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.help-section .section-title h2 {
+    margin: 0;
+
+    color: var(--heading-color, #111827);
+
+    font-size: clamp(28px, 4vw, 42px);
+
+    line-height: 1.25;
+}
+
+
+/* ================= HELP GRID ================= */
+
+.help-grid {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 24px;
+}
+
+
+/* ================= HELP CARD ================= */
+
+.help-card {
+    padding: 32px 25px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 28px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.help-card:hover {
+    transform: translateY(-7px);
+
+    border-color:
+        rgba(37, 99, 235, 0.25);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.09);
+}
+
+
+/* ================= HELP ICON ================= */
+
+.help-card i {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(37, 99, 235, 0.1);
+
+    color: var(--primary-color, #2563eb);
+
+    font-size: 25px;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease;
+}
+
+.help-card:hover i {
+    transform: scale(1.08);
+
+    background:
+        rgba(37, 99, 235, 0.15);
+}
+
+
+/* ================= HELP HEADING ================= */
+
+.help-card h3 {
+    margin: 0 0 12px;
+
+    color: var(--heading-color, #111827);
+
+    font-size: 19px;
+
+    font-weight: 600;
+}
+
+
+/* ================= HELP TEXT ================= */
+
+.help-card p {
+    margin: 0;
+
+    color: var(--text-color, #6b7280);
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* ================= FEATURED SPORTS ================= */
+
+.featured-sports {
+    padding: 90px 7%;
+
+    background: #f8fafc;
+}
+
+
+/* ================= FEATURED SPORTS TITLE ================= */
+
+.featured-sports .section-title {
+    max-width: 750px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.featured-sports .section-title span {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: var(--primary-color, #2563eb);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.featured-sports .section-title h2 {
+    margin: 0;
+
+    color: var(--heading-color, #111827);
+
+    font-size: clamp(28px, 4vw, 42px);
+
+    line-height: 1.25;
+}
+
+
+/* ================= SPORTS GRID ================= */
+
+.featured-sports .sports-grid {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ================= SPORT CARD ================= */
+
+.featured-sports .sport-card {
+    min-height: 180px;
+
+    padding: 30px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(0, 0, 0, 0.07);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 28px rgba(0, 0, 0, 0.05);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.featured-sports .sport-card:hover {
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(37, 99, 235, 0.25);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ================= SPORT ICON ================= */
+
+.featured-sports .sport-card i {
+    width: 68px;
+    height: 68px;
+
+    margin-bottom: 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(37, 99, 235, 0.1);
+
+    color: var(--primary-color, #2563eb);
+
+    font-size: 28px;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease;
+}
+
+.featured-sports .sport-card:hover i {
+    transform: scale(1.1) rotate(4deg);
+
+    background:
+        rgba(37, 99, 235, 0.15);
+}
+
+
+/* ================= SPORT HEADING ================= */
+
+.featured-sports .sport-card h3 {
+    margin: 0;
+
+    color: var(--heading-color, #111827);
+
+    font-size: 18px;
+
+    font-weight: 600;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1000px) {
+
+    .error-search,
+    .help-section,
+    .featured-sports {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .help-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        max-width: 800px;
+    }
+
+    .featured-sports .sports-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        max-width: 800px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .error-search,
+    .help-section,
+    .featured-sports {
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .search-box {
+        padding: 8px;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        border-radius: 12px;
+    }
+
+    .search-box input {
+        width: 100%;
+
+        height: 50px;
+    }
+
+    .search-box .primary-btn {
+        width: 100%;
+
+        min-height: 50px;
+    }
+
+    .help-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .help-card {
+        padding: 28px 22px;
+    }
+
+    .featured-sports .sports-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .featured-sports .sport-card {
+        min-height: 160px;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+    .error-search,
+    .help-section,
+    .featured-sports {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .search-box {
+        padding: 7px;
+    }
+
+    .search-box input {
+        font-size: 14px;
+    }
+
+    .help-card h3 {
+        font-size: 18px;
+    }
+
+    .help-card p {
+        font-size: 13px;
+    }
+
+    .featured-sports .sport-card h3 {
+        font-size: 17px;
+    }
+
+}
+/* =========================================================
+   404.CSS — PART 3/5
+   PLATFORM STATS + COMMUNITY + TESTIMONIALS
+   ========================================================= */
+
+
+/* ================= PLATFORM STATS ================= */
+
+.platform-stats {
+    padding: 75px 7%;
+
+    background: #ffffff;
+}
+
+
+/* ================= STATS GRID ================= */
+
+.platform-stats .stats-grid {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 24px;
+}
+
+
+/* ================= STAT CARD ================= */
+
+.platform-stats .stat-card {
+    padding: 35px 25px;
+
+    text-align: center;
+
+    background: #f8fafc;
+
+    border: 1px solid rgba(0, 0, 0, 0.07);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.04);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.platform-stats .stat-card:hover {
+    transform: translateY(-7px);
+
+    border-color:
+        rgba(37, 99, 235, 0.25);
+
+    box-shadow:
+        0 16px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================= STAT NUMBER ================= */
+
+.platform-stats .stat-card h2 {
+    margin: 0 0 8px;
+
+    color: var(--primary-color, #2563eb);
+
+    font-size: clamp(30px, 4vw, 42px);
+
+    line-height: 1;
+
+    font-weight: 800;
+}
+
+
+/* ================= STAT TEXT ================= */
+
+.platform-stats .stat-card p {
+    margin: 0;
+
+    color: var(--text-color, #6b7280);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* ================= COMMUNITY SECTION ================= */
+
+.community-section {
+    padding: 90px 7%;
+
+    background: #f8fafc;
+}
+
+
+/* ================= COMMUNITY TITLE ================= */
+
+.community-section .section-title {
+    max-width: 780px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.community-section .section-title span {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: var(--primary-color, #2563eb);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.community-section .section-title h2 {
+    margin: 0;
+
+    color: var(--heading-color, #111827);
+
+    font-size: clamp(28px, 4vw, 42px);
+
+    line-height: 1.25;
+}
+
+
+/* ================= COMMUNITY GRID ================= */
+
+.community-grid {
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ================= COMMUNITY CARD ================= */
+
+.community-card {
+    padding: 35px 28px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(0, 0, 0, 0.07);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 28px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.community-card:hover {
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(37, 99, 235, 0.25);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.09);
+}
+
+
+/* ================= COMMUNITY ICON ================= */
+
+.community-card i {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(37, 99, 235, 0.1);
+
+    color: var(--primary-color, #2563eb);
+
+    font-size: 27px;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease;
+}
+
+.community-card:hover i {
+    transform: scale(1.1);
+
+    background:
+        rgba(37, 99, 235, 0.15);
+}
+
+
+/* ================= COMMUNITY HEADING ================= */
+
+.community-card h3 {
+    margin: 0 0 12px;
+
+    color: var(--heading-color, #111827);
+
+    font-size: 20px;
+
+    font-weight: 600;
+}
+
+
+/* ================= COMMUNITY TEXT ================= */
+
+.community-card p {
+    margin: 0;
+
+    color: var(--text-color, #6b7280);
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* ================= TESTIMONIAL SECTION ================= */
+
+.error-testimonials {
+    padding: 90px 7%;
+
+    background: #ffffff;
+}
+
+
+/* ================= TESTIMONIAL TITLE ================= */
+
+.error-testimonials .section-title {
+    max-width: 780px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.error-testimonials .section-title span {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: var(--primary-color, #2563eb);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.error-testimonials .section-title h2 {
+    margin: 0;
+
+    color: var(--heading-color, #111827);
+
+    font-size: clamp(28px, 4vw, 42px);
+
+    line-height: 1.25;
+}
+
+
+/* ================= TESTIMONIAL GRID ================= */
+
+.error-testimonials .testimonial-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ================= TESTIMONIAL CARD ================= */
+
+.error-testimonials .testimonial-card {
+    position: relative;
+
+    padding: 35px 30px;
+
+    background: #f8fafc;
+
+    border: 1px solid rgba(0, 0, 0, 0.07);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 28px rgba(0, 0, 0, 0.04);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.error-testimonials .testimonial-card:hover {
+    transform: translateY(-7px);
+
+    border-color:
+        rgba(37, 99, 235, 0.25);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================= QUOTE ICON ================= */
+
+.error-testimonials .testimonial-card > i {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: var(--primary-color, #2563eb);
+
+    font-size: 28px;
+
+    opacity: 0.9;
+}
+
+
+/* ================= TESTIMONIAL TEXT ================= */
+
+.error-testimonials .testimonial-card p {
+    margin: 0 0 22px;
+
+    color: var(--text-color, #6b7280);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= TESTIMONIAL NAME ================= */
+
+.error-testimonials .testimonial-card h4 {
+    margin: 0;
+
+    color: var(--heading-color, #111827);
+
+    font-size: 17px;
+
+    font-weight: 600;
+}
+
+
+/* ================= TESTIMONIAL DECORATION ================= */
+
+.error-testimonials .testimonial-card::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 4px;
+    height: 100%;
+
+    border-radius: 16px 0 0 16px;
+
+    background:
+        var(--primary-color, #2563eb);
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+}
+
+.error-testimonials .testimonial-card:hover::after {
+    opacity: 1;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1000px) {
+
+    .platform-stats,
+    .community-section,
+    .error-testimonials {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .platform-stats .stats-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        max-width: 800px;
+    }
+
+    .community-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        max-width: 800px;
+    }
+
+    .error-testimonials .testimonial-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        max-width: 800px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .platform-stats,
+    .community-section,
+    .error-testimonials {
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .platform-stats .stats-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .platform-stats .stat-card {
+        padding: 30px 20px;
+    }
+
+    .community-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .community-card {
+        padding: 30px 22px;
+    }
+
+    .error-testimonials .testimonial-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .error-testimonials .testimonial-card {
+        padding: 30px 24px;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+    .platform-stats,
+    .community-section,
+    .error-testimonials {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .platform-stats .stat-card h2 {
+        font-size: 32px;
+    }
+
+    .community-card h3 {
+        font-size: 18px;
+    }
+
+    .community-card p {
+        font-size: 13px;
+    }
+
+    .error-testimonials .testimonial-card p {
+        font-size: 14px;
+    }
+
+    .error-testimonials .testimonial-card h4 {
+        font-size: 16px;
+    }
+
+}
+/* =========================================================
+   COMMUNITY SECTION
+========================================================= */
+
+.community-section {
+    padding: 100px 7%;
+    background: var(--bg-secondary, #f8fafc);
+}
+
+.community-grid {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.community-card {
+    background: var(--bg-primary, #ffffff);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid var(--border-color, #e5e7eb);
+    transition: all 0.3s ease;
+}
+
+.community-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.community-card i {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--primary-color, #2563eb);
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.community-card h3 {
+    margin-bottom: 12px;
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--heading-color, #111827);
+}
+
+.community-card p {
+    margin: 0;
+    color: var(--text-color, #6b7280);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   ERROR TESTIMONIALS
+========================================================= */
+
+.error-testimonials {
+    padding: 100px 7%;
+    background: var(--bg-primary, #ffffff);
+}
+
+.testimonial-grid {
+    max-width: 1150px;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testimonial-card {
+    position: relative;
+    padding: 35px 30px;
+    background: var(--bg-secondary, #f8fafc);
+    border-radius: 20px;
+    border: 1px solid var(--border-color, #e5e7eb);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-card > i {
+    color: var(--primary-color, #2563eb);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.testimonial-card p {
+    margin: 0 0 20px;
+    color: var(--text-color, #6b7280);
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.testimonial-card h4 {
+    margin: 0;
+    color: var(--heading-color, #111827);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   ERROR FAQ
+========================================================= */
+
+.error-faq {
+    padding: 100px 7%;
+    background: var(--bg-secondary, #f8fafc);
+}
+
+.faq-list {
+    max-width: 900px;
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.faq-item {
+    background: var(--bg-primary, #ffffff);
+    padding: 25px 30px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color, #e5e7eb);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: var(--primary-color, #2563eb);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.faq-item h3 {
+    margin: 0 0 10px;
+    color: var(--heading-color, #111827);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.faq-item p {
+    margin: 0;
+    color: var(--text-color, #6b7280);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   ERROR CTA
+========================================================= */
+
+.error-cta {
+    padding: 100px 7%;
+    position: relative;
+    overflow: hidden;
+    background: var(--primary-color, #2563eb);
+}
+
+.error-cta::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    top: -180px;
+    right: -100px;
+}
+
+.error-cta::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    bottom: -130px;
+    left: -80px;
+}
+
+.error-cta .cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+.error-cta .cta-content h2 {
+    margin: 0 0 18px;
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.error-cta .cta-content p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.error-cta .cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.error-cta .primary-btn,
+.error-cta .secondary-btn {
+    min-width: 160px;
+    text-decoration: none;
+}
+
+.error-cta .primary-btn {
+    background: #ffffff;
+    color: var(--primary-color, #2563eb);
+}
+
+.error-cta .primary-btn:hover {
+    background: #f1f5f9;
+    transform: translateY(-3px);
+}
+
+.error-cta .secondary-btn {
+    border-color: rgba(255, 255, 255, 0.7);
+    color: #ffffff;
+    background: transparent;
+}
+
+.error-cta .secondary-btn:hover {
+    background: #ffffff;
+    color: var(--primary-color, #2563eb);
+}
+
+
+/* =========================================================
+   FOOTER OVERRIDES
+========================================================= */
+
+.error-page ~ .footer,
+.error-links ~ .footer,
+.error-cta ~ .footer {
+    margin-top: 0;
+}
+
+.footer .footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.footer .footer-box {
+    min-width: 0;
+}
+
+.footer .footer-box .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.footer .footer-box .logo i {
+    font-size: 25px;
+}
+
+.footer .footer-box .logo span {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.footer .footer-box p {
+    line-height: 1.8;
+}
+
+.footer .footer-box ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer .footer-box ul li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-box ul li a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer .footer-box ul li a:hover {
+    padding-left: 5px;
+}
+
+.footer .social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer .social-links a {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    transform: translateY(-4px);
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.back-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================================================
+   TABLET RESPONSIVE
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .community-grid,
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .community-card:last-child,
+    .testimonial-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .error-cta .cta-content h2 {
+        font-size: 32px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .community-section,
+    .error-testimonials,
+    .error-faq,
+    .error-cta {
+        padding: 70px 5%;
+    }
+
+    .community-grid,
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .community-card:last-child,
+    .testimonial-card:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .community-card {
+        padding: 30px 25px;
+    }
+
+    .testimonial-card {
+        padding: 30px 25px;
+    }
+
+    .faq-list {
+        margin-top: 35px;
+    }
+
+    .faq-item {
+        padding: 22px;
+    }
+
+    .error-cta .cta-content h2 {
+        font-size: 28px;
+    }
+
+    .error-cta .cta-content p {
+        font-size: 14px;
+    }
+
+    .error-cta .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .error-cta .primary-btn,
+    .error-cta .secondary-btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .back-to-top {
+        right: 18px;
+        bottom: 18px;
+        width: 44px;
+        height: 44px;
+    }
+
+}
+ /* =========================================================
+   SMALL MOBILE DEVICES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .community-section,
+    .error-testimonials,
+    .error-faq,
+    .error-cta {
+        padding: 55px 4%;
+    }
+
+    .community-card {
+        padding: 25px 20px;
+    }
+
+    .community-card i {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .community-card h3 {
+        font-size: 19px;
+    }
+
+    .community-card p {
+        font-size: 14px;
+    }
+
+    .testimonial-card {
+        padding: 25px 20px;
+    }
+
+    .testimonial-card > i {
+        font-size: 26px;
+    }
+
+    .testimonial-card p {
+        font-size: 14px;
+    }
+
+    .testimonial-card h4 {
+        font-size: 16px;
+    }
+
+    .faq-list {
+        gap: 12px;
+    }
+
+    .faq-item {
+        padding: 20px;
+        border-radius: 13px;
+    }
+
+    .faq-item h3 {
+        font-size: 16px;
+    }
+
+    .faq-item p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .error-cta .cta-content h2 {
+        font-size: 24px;
+    }
+
+    .error-cta .cta-content p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .error-cta .primary-btn,
+    .error-cta .secondary-btn {
+        min-width: auto;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL DEVICES
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .community-card,
+    .testimonial-card,
+    .faq-item {
+        padding: 20px 16px;
+    }
+
+    .community-card h3 {
+        font-size: 18px;
+    }
+
+    .community-card p,
+    .testimonial-card p,
+    .faq-item p {
+        font-size: 13px;
+    }
+
+    .error-cta .cta-content h2 {
+        font-size: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.error-page a:focus-visible,
+.error-links a:focus-visible,
+.error-cta a:focus-visible,
+.faq-item:focus-visible,
+.back-to-top:focus-visible {
+    outline: 3px solid var(--primary-color, #2563eb);
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .community-card,
+    .testimonial-card,
+    .faq-item,
+    .error-cta .primary-btn,
+    .error-cta .secondary-btn,
+    .back-to-top {
+        transition: none;
+    }
+
+}
+
+
+/* =========================================================
+   PRINT
+========================================================= */
+
+@media print {
+
+    .loader,
+    .progress-bar,
+    .menu-btn,
+    .header-buttons,
+    .back-to-top,
+    .social-links,
+    .error-search,
+    .error-cta {
+        display: none !important;
+    }
+
+    .error-page,
+    .error-links,
+    .help-section,
+    .featured-sports,
+    .platform-stats,
+    .community-section,
+    .error-testimonials,
+    .error-faq {
+        padding: 30px 0;
+        background: #ffffff !important;
+    }
+
+    .community-card,
+    .testimonial-card,
+    .faq-item {
+        box-shadow: none !important;
+        border: 1px solid #cccccc;
+    }
+
+    * {
+        color: #000000 !important;
+    }
+
+}
+
+
+/* =========================================================
+   END OF 404.CSS
+========================================================= */

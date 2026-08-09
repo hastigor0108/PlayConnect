@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Match Details | PlayConnect</title>
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/match-details.css">
+
+</head>
+
+<body>
+
+    <!-- Loader -->
+
+    <div class="loader" id="loader">
+
+        <div class="loader-circle"></div>
+
+    </div>
+
+    <!-- Scroll Progress -->
+
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+            <span>PlayConnect</span>
+
+        </div>
+
+        <nav id="navbar">
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="sports.html">Sports</a></li>
+
+                <li><a href="players.html">Players</a></li>
+
+                <li><a href="create-match.html">Create Match</a></li>
+
+                <li><a href="match-details.html" class="active">Match Details</a></li>
+
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+
+                <li><a href="tournaments.html">Tournaments</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="header-buttons">
+
+            <a href="login.html" class="login-btn">
+
+                Login
+
+            </a>
+
+            <a href="signup.html" class="signup-btn">
+
+                Sign Up
+
+            </a>
+
+        </div>
+
+        <div class="menu-btn" id="menuBtn">
+
+            <i class="fas fa-bars"></i>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="match-hero">
+
+        <div class="overlay">
+
+            <div class="hero-content">
+
+                <span class="match-category">
+
+                    🏏 Cricket Match
+
+                </span>
+
+                <h1>
+
+                    Weekend Friendly Cricket Match
+
+                </h1>
+
+                <p>
+
+                    Join local cricket players for an exciting weekend
+                    match and enjoy a competitive yet friendly game.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn">
+
+                        Join Match
+
+                    </button>
+
+                    <button class="secondary-btn">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                        Save Match
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= MATCH INFO ================= -->
+
+    <section class="match-details-section">
+
+        <div class="match-main">
+
+            <div class="match-card">
+
+                <h2>
+
+                    Match Information
+
+                </h2>
+
+                <div class="details-grid">
+
+                    <div>
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                        <h4>Date</h4>
+
+                        <p>16 August 2026</p>
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        <h4>Time</h4>
+
+                        <p>7:00 AM</p>
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <h4>Venue</h4>
+
+                        <p>City Sports Complex</p>
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-users"></i>
+
+                        <h4>Players</h4>
+
+                        <p>10 / 22 Joined</p>
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-medal"></i>
+
+                        <h4>Skill Level</h4>
+
+                        <p>Intermediate</p>
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                        <h4>Entry Fee</h4>
+
+                        <p>₹100</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Organizer -->
+
+            <aside class="organizer-card">
+
+                <img src="images/player1.jpeg"
+                    alt="Organizer">
+
+                <h3>
+
+                    Rahul Patel
+
+                </h3>
+
+                <span>
+
+                    Match Organizer
+
+                </span>
+
+                <p>
+
+                    ⭐ 4.9 Rating
+
+                </p>
+
+                <p>
+
+                    📍 Ahmedabad
+
+                </p>
+
+                <div class="organizer-buttons">
+
+                    <a href="profile.html"
+                        class="primary-btn">
+
+                        View Profile
+
+                    </a>
+
+                    <a href="chat.html"
+                        class="secondary-btn">
+
+                        Message
+
+                    </a>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </section>
+
+    <!-- ================= STATUS ================= -->
+
+    <section class="match-status">
+
+        <div class="status-card">
+
+            <div class="status-item">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <h3>
+
+                    Registration Open
+
+                </h3>
+
+                <p>
+
+                    Join before seats are full.
+
+                </p>
+
+            </div>
+
+            <div class="status-item">
+
+                <i class="fa-solid fa-user-group"></i>
+
+                <h3>
+
+                    12 Seats Left
+
+                </h3>
+
+                <p>
+
+                    Register now.
+
+                </p>
+
+            </div>
+
+            <div class="status-item">
+
+                <i class="fa-solid fa-shield-heart"></i>
+
+                <h3>
+
+                    Verified Event
+
+                </h3>
+
+                <p>
+
+                    Organized by verified members.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Registered Players Starts -->
+         <!-- ================= REGISTERED PLAYERS ================= -->
+
+    <section class="registered-players">
+
+        <div class="section-title">
+
+            <span>Participants</span>
+
+            <h2>Registered Players</h2>
+
+        </div>
+
+        <div class="players-grid">
+
+            <div class="player-card">
+
+                <img src="images/player3.jpeg" alt="Rahul Patel">
+
+                <h3>Rahul Patel</h3>
+
+                <p>Captain</p>
+
+                <span>⭐ 4.9</span>
+
+            </div>
+
+            <div class="player-card">
+
+                <img src="images/player2.jpeg" alt="Priya Shah">
+
+                <h3>Priya Shah</h3>
+
+                <p>All Rounder</p>
+
+                <span>⭐ 4.8</span>
+
+            </div>
+
+            <div class="player-card">
+
+                <img src="images/player3.jpeg" alt="Aman Verma">
+
+                <h3>Aman Verma</h3>
+
+                <p>Batsman</p>
+
+                <span>⭐ 5.0</span>
+
+            </div>
+
+            <div class="player-card">
+
+                <img src="images/player6.jpeg" alt="Neha Joshi">
+
+                <h3>Neha Joshi</h3>
+
+                <p>Bowler</p>
+
+                <span>⭐ 4.7</span>
+
+            </div>
+
+            <div class="player-card">
+
+                <img src="images/player5.jpeg" alt="Karan Mehta">
+
+                <h3>Karan Mehta</h3>
+
+                <p>Wicket Keeper</p>
+
+                <span>⭐ 4.9</span>
+
+            </div>
+
+            <div class="player-card">
+
+                <img src="images/player8.jpeg" alt="Meera Patel">
+
+                <h3>Meera Patel</h3>
+
+                <p>Bowler</p>
+
+                <span>⭐ 4.6</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= AVAILABLE SLOTS ================= -->
+
+    <section class="available-slots">
+
+        <div class="section-title">
+
+            <span>Join the Match</span>
+
+            <h2>Remaining Slots</h2>
+
+        </div>
+
+        <div class="slots-box">
+
+            <div class="slot-card">
+
+                <h3>22</h3>
+
+                <p>Total Players</p>
+
+            </div>
+
+            <div class="slot-card">
+
+                <h3>10</h3>
+
+                <p>Registered</p>
+
+            </div>
+
+            <div class="slot-card">
+
+                <h3>12</h3>
+
+                <p>Available</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= MATCH RULES ================= -->
+
+    <section class="match-rules">
+
+        <div class="section-title">
+
+            <span>Important Information</span>
+
+            <h2>Match Rules</h2>
+
+        </div>
+
+        <div class="rules-list">
+
+            <ul>
+
+                <li>✔ Report 30 minutes before match time.</li>
+
+                <li>✔ Carry your own sports equipment whenever possible.</li>
+
+                <li>✔ Respect all players and organizers.</li>
+
+                <li>✔ Fair play and sportsmanship are mandatory.</li>
+
+                <li>✔ Any misconduct may lead to removal from the match.</li>
+
+                <li>✔ Entry fee is non-refundable after registration.</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- ================= EQUIPMENT ================= -->
+
+    <section class="equipment-section">
+
+        <div class="section-title">
+
+            <span>Facilities</span>
+
+            <h2>Equipment Available</h2>
+
+        </div>
+
+        <div class="equipment-grid">
+
+            <div class="equipment-card">
+
+                <i class="fa-solid fa-baseball"></i>
+
+                <h4>Cricket Balls</h4>
+
+            </div>
+
+            <div class="equipment-card">
+
+                <i class="fa-solid fa-shirt"></i>
+
+                <h4>Practice Bibs</h4>
+
+            </div>
+
+            <div class="equipment-card">
+
+                <i class="fa-solid fa-bottle-water"></i>
+
+                <h4>Drinking Water</h4>
+
+            </div>
+
+            <div class="equipment-card">
+
+                <i class="fa-solid fa-kit-medical"></i>
+
+                <h4>First Aid</h4>
+
+            </div>
+
+            <div class="equipment-card">
+
+                <i class="fa-solid fa-car"></i>
+
+                <h4>Parking</h4>
+
+            </div>
+
+            <div class="equipment-card">
+
+                <i class="fa-solid fa-restroom"></i>
+
+                <h4>Washrooms</h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= MATCH STATS ================= -->
+
+    <section class="match-statistics">
+
+        <div class="section-title">
+
+            <span>Statistics</span>
+
+            <h2>Match Overview</h2>
+
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>150+</h3>
+
+                <p>Interested Players</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-eye"></i>
+
+                <h3>2.4K</h3>
+
+                <p>Match Views</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-heart"></i>
+
+                <h3>520</h3>
+
+                <p>Saved Matches</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-share-nodes"></i>
+
+                <h3>310</h3>
+
+                <p>Shares</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PRIZE ================= -->
+
+    <section class="prize-section">
+
+        <div class="prize-card">
+
+            <i class="fa-solid fa-trophy"></i>
+
+            <h2>Winner Prize</h2>
+
+            <h3>🏆 Trophy + Certificates</h3>
+
+            <p>
+
+                The winning team will receive a championship trophy,
+                participation certificates, and community recognition.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= MATCH TIMELINE ================= -->
+
+    <section class="timeline-section">
+
+        <div class="section-title">
+
+            <span>Schedule</span>
+
+            <h2>Event Timeline</h2>
+
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <strong>06:30 AM</strong>
+
+                <p>Player Reporting</p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <strong>07:00 AM</strong>
+
+                <p>Warm-up Session</p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <strong>07:30 AM</strong>
+
+                <p>Match Starts</p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <strong>10:00 AM</strong>
+
+                <p>Prize Distribution</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Google Map Starts -->
+         <!-- ================= GOOGLE MAP ================= -->
+
+    <section class="map-section">
+
+        <div class="section-title">
+
+            <span>Venue Location</span>
+
+            <h2>Find the Ground</h2>
+
+        </div>
+
+        <div class="map-container">
+
+            <iframe
+                src="https://www.google.com/maps?q=Ahmedabad&output=embed"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </section>
+
+    <!-- ================= DISCUSSION ================= -->
+
+    <section class="discussion-section">
+
+        <div class="section-title">
+
+            <span>Community</span>
+
+            <h2>Match Discussion</h2>
+
+        </div>
+
+        <div class="discussion-list">
+
+            <div class="comment-card">
+
+                <img src="images/player1.jpeg" alt="User">
+
+                <div>
+
+                    <h4>Priya Shah</h4>
+
+                    <p>
+
+                        Looking forward to the match.
+                        Hope everyone reaches on time!
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="comment-card">
+
+                <img src="images/player5.jpeg" alt="User">
+
+                <div>
+
+                    <h4>Karan Mehta</h4>
+
+                    <p>
+
+                        Will cricket balls be available
+                        at the venue?
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="comment-card">
+
+                <img src="images/player3.jpeg" alt="Organizer">
+
+                <div>
+
+                    <h4>Rahul Patel (Organizer)</h4>
+
+                    <p>
+
+                        Yes, all required equipment
+                        will be provided.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <form class="comment-form">
+
+            <textarea
+                rows="4"
+                placeholder="Write your comment..."></textarea>
+
+            <button
+                type="submit"
+                class="primary-btn">
+
+                Post Comment
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= PLAYER REVIEWS ================= -->
+
+    <section class="reviews-section">
+
+        <div class="section-title">
+
+            <span>Reviews</span>
+
+            <h2>Player Feedback</h2>
+
+        </div>
+
+        <div class="reviews-grid">
+
+            <div class="review-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Very well organized event with
+                    friendly players.
+
+                </p>
+
+                <h4>⭐⭐⭐⭐⭐</h4>
+
+                <span>- Aman Verma</span>
+
+            </div>
+
+            <div class="review-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Excellent venue and smooth
+                    registration process.
+
+                </p>
+
+                <h4>⭐⭐⭐⭐⭐</h4>
+
+                <span>- Meera Patel</span>
+
+            </div>
+
+            <div class="review-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Great experience. Looking
+                    forward to future matches.
+
+                </p>
+
+                <h4>⭐⭐⭐⭐⭐</h4>
+
+                <span>- Neha Joshi</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SIMILAR MATCHES ================= -->
+
+    <section class="similar-matches">
+
+        <div class="section-title">
+
+            <span>You May Also Like</span>
+
+            <h2>Similar Matches</h2>
+
+        </div>
+
+        <div class="match-grid">
+
+            <div class="match-card">
+
+                <img src="images/ground3.jpeg" alt="Football">
+
+                <div class="match-info">
+
+                    <h3>Football Friendly</h3>
+
+                    <p>📍 Vadodara</p>
+
+                    <p>📅 20 August 2026</p>
+
+                    <a href="match-details.html"
+                        class="card-btn">
+
+                        View Match
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="match-card">
+
+                <img src="images/ground1.jpeg" alt="Badminton">
+
+                <div class="match-info">
+
+                    <h3>Badminton Doubles</h3>
+
+                    <p>📍 Surat</p>
+
+                    <p>📅 23 August 2026</p>
+
+                    <a href="match-details.html"
+                        class="card-btn">
+
+                        View Match
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="match-card">
+
+                <img src="images/ground2.jpeg" alt="Cricket">
+
+                <div class="match-info">
+
+                    <h3>Night Cricket League</h3>
+
+                    <p>📍 Rajkot</p>
+
+                    <p>📅 28 August 2026</p>
+
+                    <a href="match-details.html"
+                        class="card-btn">
+
+                        View Match
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CTA ================= -->
+
+    <section class="match-cta">
+
+        <div class="cta-content">
+
+            <h2>
+
+                Ready to Play?
+
+            </h2>
+
+            <p>
+
+                Join this match today and connect with
+                local sports enthusiasts.
+
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="signup.html"
+                    class="primary-btn">
+
+                    Join Match
+
+                </a>
+
+                <a href="#"
+                    class="secondary-btn">
+
+                    <i class="fa-solid fa-share-nodes"></i>
+
+                    Share Match
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer Starts -->
+         <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Company -->
+
+            <div class="footer-box">
+
+                <div class="logo">
+
+                    <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+                    <span>PlayConnect</span>
+
+                </div>
+
+                <p>
+
+                    PlayConnect is a community-driven platform that helps
+                    sports lovers discover local matches, connect with players,
+                    organize events, and enjoy indoor and outdoor games together.
+
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="players.html">Players</a></li>
+                    <li><a href="create-match.html">Create Match</a></li>
+                    <li><a href="match-details.html">Match Details</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                    <li><a href="tournaments.html">Tournaments</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Support -->
+
+            <div class="footer-box">
+
+                <h3>Support</h3>
+
+                <ul>
+
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Community Guidelines</a></li>
+                    <li><a href="#">Help Center</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="footer-box">
+
+                <h3>Contact</h3>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Ahmedabad, Gujarat, India
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +91 98765 43210
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    info@playconnect.com
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    Mon - Sat | 9:00 AM - 7:00 PM
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 PlayConnect. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= BACK TO TOP ================= -->
+
+    <button
+        id="backToTop"
+        class="back-to-top"
+        aria-label="Back to Top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- ================= JAVASCRIPT FILES ================= -->
+
+    <script src="js/app.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/matches.js"></script>
+    <script src="js/comments.js"></script>
+
+</body>
+
+</html>

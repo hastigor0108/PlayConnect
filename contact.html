@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | PlayConnect</title>
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet"
+          href="css/contact.css">
+          <link rel="stylesheet" href="css/global.css">
+
+</head>
+
+<body>
+
+    <!-- Loader -->
+
+    <div class="loader" id="loader">
+
+        <div class="loader-circle"></div>
+
+    </div>
+
+    <!-- Progress Bar -->
+
+    <div class="progress-bar"
+         id="progressBar"></div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+            <span>PlayConnect</span>
+
+        </div>
+
+        <nav id="navbar">
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="sports.html">Sports</a></li>
+
+                <li><a href="players.html">Players</a></li>
+
+                <li><a href="create-match.html">Create Match</a></li>
+
+                <li><a href="match-details.html">Match Details</a></li>
+
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+
+                <li><a href="tournaments.html">Tournaments</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li>
+
+                    <a href="contact.html"
+                       class="active">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="header-buttons">
+
+            <a href="login.html"
+               class="login-btn">
+
+                Login
+
+            </a>
+
+            <a href="signup.html"
+               class="signup-btn">
+
+                Sign Up
+
+            </a>
+
+        </div>
+
+        <div class="menu-btn"
+             id="menuBtn">
+
+            <i class="fas fa-bars"></i>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="contact-hero">
+
+        <div class="hero-content">
+
+            <span>
+
+                Get In Touch
+
+            </span>
+
+            <h1>
+
+                We'd Love to Hear From You
+
+            </h1>
+
+            <p>
+
+                Have questions, suggestions, or need help?
+                Contact the PlayConnect team and we'll
+                get back to you as soon as possible.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT INFO ================= -->
+
+    <section class="contact-info">
+
+        <div class="section-title">
+
+            <span>
+
+                Contact Information
+
+            </span>
+
+            <h2>
+
+                Reach Us Anytime
+
+            </h2>
+
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3>
+
+                    Address
+
+                </h3>
+
+                <p>
+
+                    Ahmedabad,
+                    Gujarat,
+                    India
+
+                </p>
+
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <h3>
+
+                    Phone
+
+                </h3>
+
+                <p>
+
+                    +91 98765 43210
+
+                </p>
+
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <h3>
+
+                    Email
+
+                </h3>
+
+                <p>
+
+                    info@playconnect.com
+
+                </p>
+
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h3>
+
+                    Working Hours
+
+                </h3>
+
+                <p>
+
+                    Monday – Saturday
+                    <br>
+
+                    9:00 AM – 7:00 PM
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT FORM ================= -->
+
+    <section class="contact-form-section">
+
+        <div class="section-title">
+
+            <span>
+
+                Send Message
+
+            </span>
+
+            <h2>
+
+                Contact Our Team
+
+            </h2>
+
+        </div>
+
+        <div class="contact-wrapper">
+
+            <div class="contact-form">
+
+                <form id="contactForm">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Full Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="Enter your name"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Email Address
+
+                            </label>
+
+                            <input
+                                type="email"
+                                placeholder="Enter your email"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Continue in Part 2 -->
+                                         <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Phone Number
+
+                            </label>
+
+                            <input
+                                type="tel"
+                                placeholder="Enter your phone number">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Subject
+
+                            </label>
+
+                            <select required>
+
+                                <option value="">Select Subject</option>
+
+                                <option>General Inquiry</option>
+
+                                <option>Report an Issue</option>
+
+                                <option>Tournament Support</option>
+
+                                <option>Match Registration</option>
+
+                                <option>Partnership</option>
+
+                                <option>Feedback</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>
+
+                            Message
+
+                        </label>
+
+                        <textarea
+                            rows="7"
+                            placeholder="Write your message here..."
+                            required></textarea>
+
+                    </div>
+
+                    <button type="submit"
+                            class="primary-btn">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- Contact Illustration -->
+
+            <div class="contact-image">
+
+                <img src="images/mobile-app.png"
+                     alt="Contact Illustration">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= GOOGLE MAP ================= -->
+
+    <section class="map-section">
+
+        <div class="section-title">
+
+            <span>
+
+                Find Us
+
+            </span>
+
+            <h2>
+
+                Our Location
+
+            </h2>
+
+        </div>
+
+        <div class="map-container">
+
+            <iframe
+                src="https://www.google.com/maps?q=Ahmedabad,Gujarat&output=embed"
+                loading="lazy"
+                allowfullscreen>
+
+            </iframe>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SOCIAL LINKS ================= -->
+
+    <section class="social-connect">
+
+        <div class="section-title">
+
+            <span>
+
+                Stay Connected
+
+            </span>
+
+            <h2>
+
+                Follow PlayConnect
+
+            </h2>
+
+        </div>
+
+        <div class="social-grid">
+
+            <a href="#" class="social-card">
+
+                <i class="fab fa-facebook-f"></i>
+
+                <h3>Facebook</h3>
+
+            </a>
+
+            <a href="#" class="social-card">
+
+                <i class="fab fa-instagram"></i>
+
+                <h3>Instagram</h3>
+
+            </a>
+
+            <a href="#" class="social-card">
+
+                <i class="fab fa-x-twitter"></i>
+
+                <h3>X (Twitter)</h3>
+
+            </a>
+
+            <a href="#" class="social-card">
+
+                <i class="fab fa-linkedin-in"></i>
+
+                <h3>LinkedIn</h3>
+
+            </a>
+
+            <a href="#" class="social-card">
+
+                <i class="fab fa-youtube"></i>
+
+                <h3>YouTube</h3>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= QUICK HELP ================= -->
+
+    <section class="quick-help">
+
+        <div class="section-title">
+
+            <span>
+
+                Need Assistance?
+
+            </span>
+
+            <h2>
+
+                Quick Help Center
+
+            </h2>
+
+        </div>
+
+        <div class="help-grid">
+
+            <div class="help-card">
+
+                <i class="fa-solid fa-user-plus"></i>
+
+                <h3>Account Support</h3>
+
+                <p>
+
+                    Get help with login,
+                    registration, and account settings.
+
+                </p>
+
+            </div>
+
+            <div class="help-card">
+
+                <i class="fa-solid fa-trophy"></i>
+
+                <h3>Tournament Help</h3>
+
+                <p>
+
+                    Assistance for tournament
+                    registration and participation.
+
+                </p>
+
+            </div>
+
+            <div class="help-card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>Community Support</h3>
+
+                <p>
+
+                    Connect with our support team
+                    for community-related questions.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SUPPORT SECTION START ================= -->
+         <!-- ================= CUSTOMER SUPPORT ================= -->
+
+    <section class="customer-support">
+
+        <div class="section-title">
+
+            <span>
+
+                Support Center
+
+            </span>
+
+            <h2>
+
+                We're Here to Help
+
+            </h2>
+
+        </div>
+
+        <div class="support-grid">
+
+            <div class="support-card">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h3>
+
+                    24/7 Email Support
+
+                </h3>
+
+                <p>
+
+                    Send us your questions anytime,
+                    and our team will respond as soon
+                    as possible.
+
+                </p>
+
+            </div>
+
+            <div class="support-card">
+
+                <i class="fa-solid fa-comments"></i>
+
+                <h3>
+
+                    Community Assistance
+
+                </h3>
+
+                <p>
+
+                    Get support from experienced
+                    players and tournament organizers
+                    in the PlayConnect community.
+
+                </p>
+
+            </div>
+
+            <div class="support-card">
+
+                <i class="fa-solid fa-circle-question"></i>
+
+                <h3>
+
+                    Help Center
+
+                </h3>
+
+                <p>
+
+                    Browse guides and FAQs to quickly
+                    solve common issues and learn how
+                    to use the platform.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FAQ ================= -->
+
+    <section class="contact-faq">
+
+        <div class="section-title">
+
+            <span>
+
+                Frequently Asked Questions
+
+            </span>
+
+            <h2>
+
+                Find Quick Answers
+
+            </h2>
+
+        </div>
+
+        <div class="faq-list">
+
+            <div class="faq-item">
+
+                <h3>
+
+                    How can I register for a tournament?
+
+                </h3>
+
+                <p>
+
+                    Create your PlayConnect account,
+                    browse available tournaments,
+                    and click the Register button.
+
+                </p>
+
+            </div>
+
+            <div class="faq-item">
+
+                <h3>
+
+                    Can I create my own match?
+
+                </h3>
+
+                <p>
+
+                    Yes. After signing in, visit the
+                    Create Match page and fill in the
+                    required match details.
+
+                </p>
+
+            </div>
+
+            <div class="faq-item">
+
+                <h3>
+
+                    Is PlayConnect free?
+
+                </h3>
+
+                <p>
+
+                    Yes. Browsing sports, joining the
+                    community, and many features are
+                    available free of charge.
+
+                </p>
+
+            </div>
+
+            <div class="faq-item">
+
+                <h3>
+
+                    How long does support take?
+
+                </h3>
+
+                <p>
+
+                    Most email inquiries receive a
+                    response within one business day.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter-section">
+
+        <div class="newsletter-box">
+
+            <h2>
+
+                Subscribe to Our Newsletter
+
+            </h2>
+
+            <p>
+
+                Receive updates about tournaments,
+                new features, sports events,
+                and community activities.
+
+            </p>
+
+            <form class="newsletter-form">
+
+                <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    required>
+
+                <button
+                    type="submit"
+                    class="primary-btn">
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CTA ================= -->
+
+    <section class="contact-cta">
+
+        <div class="cta-content">
+
+            <h2>
+
+                Join the PlayConnect Community
+
+            </h2>
+
+            <p>
+
+                Discover local players, organize
+                exciting matches, participate in
+                tournaments, and enjoy sports together.
+
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="signup.html"
+                   class="primary-btn">
+
+                    Create Account
+
+                </a>
+
+                <a href="sports.html"
+                   class="secondary-btn">
+
+                    Explore Sports
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer Starts -->
+         <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Company -->
+
+            <div class="footer-box">
+
+                <div class="logo">
+
+                    <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+                    <span>PlayConnect</span>
+
+                </div>
+
+                <p>
+
+                    PlayConnect helps sports enthusiasts connect with nearby
+                    players, organize matches, participate in tournaments,
+                    and build stronger local sports communities.
+
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="sports.html">Sports</a></li>
+
+                    <li><a href="players.html">Players</a></li>
+
+                    <li><a href="create-match.html">Create Match</a></li>
+
+                    <li><a href="match-details.html">Match Details</a></li>
+
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+
+                    <li><a href="tournaments.html">Tournaments</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Sports -->
+
+            <div class="footer-box">
+
+                <h3>Sports</h3>
+
+                <ul>
+
+                    <li><a href="#">Cricket</a></li>
+
+                    <li><a href="#">Football</a></li>
+
+                    <li><a href="#">Badminton</a></li>
+
+                    <li><a href="#">Basketball</a></li>
+
+                    <li><a href="#">Volleyball</a></li>
+
+                    <li><a href="#">Chess</a></li>
+
+                    <li><a href="#">Table Tennis</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="footer-box">
+
+                <h3>Contact Us</h3>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Ahmedabad, Gujarat, India
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +91 98765 43210
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    info@playconnect.com
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    Mon – Sat | 9:00 AM – 7:00 PM
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 PlayConnect. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= BACK TO TOP ================= -->
+
+    <button id="backToTop"
+            class="back-to-top"
+            aria-label="Back to Top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- ================= JAVASCRIPT FILES ================= -->
+
+    <script src="js/app.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/contact.js"></script>
+
+</body>
+
+</html>

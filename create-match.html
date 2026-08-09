@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Create Match | PlayConnect</title>
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="css/create-match.css">
+<link rel="stylesheet" href="css/match-details.css">
+        <link rel="stylesheet" href="css/global.css">
+
+</head>
+
+<body>
+
+    <!-- Loader -->
+
+    <div class="loader" id="loader">
+
+        <div class="loader-circle"></div>
+
+    </div>
+
+    <!-- Progress Bar -->
+
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+            <span>PlayConnect</span>
+
+        </div>
+
+        <nav id="navbar">
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="sports.html">Sports</a></li>
+
+                <li><a href="players.html">Players</a></li>
+
+                <li>
+                    <a href="create-match.html"
+                        class="active">
+                        Create Match
+                    </a>
+                </li>
+
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+
+                <li><a href="tournaments.html">Tournaments</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="header-buttons">
+
+            <a href="login.html"
+                class="login-btn">
+
+                Login
+
+            </a>
+
+            <a href="signup.html"
+                class="signup-btn">
+
+                Sign Up
+
+            </a>
+
+        </div>
+
+        <div class="menu-btn"
+            id="menuBtn">
+
+            <i class="fas fa-bars"></i>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="page-hero">
+
+        <div class="hero-text">
+
+            <span>
+
+                Organize Your Own Game
+
+            </span>
+
+            <h1>
+
+                Create a Sports Match
+
+            </h1>
+
+            <p>
+
+                Invite nearby players, select your venue,
+                set the rules and start playing today.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FORM ================= -->
+
+    <section class="create-match-section">
+
+        <div class="section-title">
+
+            <span>
+
+                Match Details
+
+            </span>
+
+            <h2>
+
+                Fill in the Match Information
+
+            </h2>
+
+        </div>
+
+        <form class="match-form">
+
+            <div class="form-grid">
+
+                <!-- Match Name -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Match Title
+
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Weekend Cricket Match">
+
+                </div>
+
+                <!-- Sport -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Sport
+
+                    </label>
+
+                    <select>
+
+                        <option>Select Sport</option>
+
+                        <option>Cricket</option>
+
+                        <option>Football</option>
+
+                        <option>Badminton</option>
+
+                        <option>Basketball</option>
+
+                        <option>Volleyball</option>
+
+                        <option>Chess</option>
+
+                        <option>Table Tennis</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Date -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Match Date
+
+                    </label>
+
+                    <input
+                        type="date">
+
+                </div>
+
+                <!-- Time -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Start Time
+
+                    </label>
+
+                    <input
+                        type="time">
+
+                </div>
+
+                <!-- City -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        City
+
+                    </label>
+
+                    <select>
+
+                        <option>Select City</option>
+
+                        <option>Ahmedabad</option>
+
+                        <option>Vadodara</option>
+
+                        <option>Surat</option>
+
+                        <option>Rajkot</option>
+
+                        <option>Bhuj</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Area -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Area / Locality
+
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Satellite, Navrangpura">
+
+                </div>
+
+                <!-- Organizer -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Organizer Name
+
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Your Name">
+
+                </div>
+
+                <!-- Phone -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Contact Number
+
+                    </label>
+
+                    <input
+                        type="tel"
+                        placeholder="+91 9876543210">
+
+                </div>
+
+            </div>
+
+            <!-- Description -->
+
+            <div class="input-group full-width">
+
+                <label>
+
+                    Match Description
+
+                </label>
+
+                <textarea
+                    rows="6"
+                    placeholder="Write important details about your match..."></textarea>
+
+            </div>
+
+            <!-- Match Type -->
+
+            <div class="match-type">
+
+                <h3>
+
+                    Match Type
+
+                </h3>
+
+                <div class="radio-group">
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="matchType"
+                            checked>
+
+                        Friendly Match
+
+                    </label>
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="matchType">
+
+                        Practice Session
+
+                    </label>
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="matchType">
+
+                        Tournament
+
+                    </label>
+
+                </div>
+
+            </div>
+
+            <!-- Continue in Part 2 -->
+                         <!-- Continue in Part 2 -->
+
+            <!-- ================= Venue Selection ================= -->
+
+            <div class="venue-section">
+
+                <h3>
+
+                    Select Venue
+
+                </h3>
+
+                <div class="venue-grid">
+
+                    <label class="venue-card">
+
+                        <input
+                            type="radio"
+                            name="venue"
+                            checked>
+
+                        <div class="venue-content">
+
+                            <i class="fa-solid fa-futbol"></i>
+
+                            <h4>City Sports Complex</h4>
+
+                            <p>Ahmedabad</p>
+
+                            <span>Indoor & Outdoor</span>
+
+                        </div>
+
+                    </label>
+
+                    <label class="venue-card">
+
+                        <input
+                            type="radio"
+                            name="venue">
+
+                        <div class="venue-content">
+
+                            <i class="fa-solid fa-baseball-bat-ball"></i>
+
+                            <h4>Victory Cricket Ground</h4>
+
+                            <p>Surat</p>
+
+                            <span>Outdoor</span>
+
+                        </div>
+
+                    </label>
+
+                    <label class="venue-card">
+
+                        <input
+                            type="radio"
+                            name="venue">
+
+                        <div class="venue-content">
+
+                            <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+                            <h4>Elite Sports Arena</h4>
+
+                            <p>Vadodara</p>
+
+                            <span>Indoor</span>
+
+                        </div>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+            <!-- ================= Match Settings ================= -->
+
+            <div class="form-grid">
+
+                <div class="input-group">
+
+                    <label>
+
+                        Maximum Players
+
+                    </label>
+
+                    <input
+                        type="number"
+                        min="2"
+                        max="50"
+                        value="10">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>
+
+                        Skill Level
+
+                    </label>
+
+                    <select>
+
+                        <option>All Levels</option>
+
+                        <option>Beginner</option>
+
+                        <option>Intermediate</option>
+
+                        <option>Advanced</option>
+
+                        <option>Professional</option>
+
+                    </select>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>
+
+                        Entry Fee (₹)
+
+                    </label>
+
+                    <input
+                        type="number"
+                        placeholder="0">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>
+
+                        Match Duration
+
+                    </label>
+
+                    <select>
+
+                        <option>30 Minutes</option>
+
+                        <option>1 Hour</option>
+
+                        <option>2 Hours</option>
+
+                        <option>3 Hours</option>
+
+                        <option>Full Day</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <!-- ================= Google Maps ================= -->
+
+            <div class="input-group full-width">
+
+                <label>
+
+                    Google Maps Location
+
+                </label>
+
+                <input
+                    type="url"
+                    placeholder="Paste Google Maps link">
+
+            </div>
+
+            <!-- ================= Upload Banner ================= -->
+
+            <div class="input-group full-width">
+
+                <label>
+
+                    Match Banner / Poster
+
+                </label>
+
+                <input
+                    type="file"
+                    accept="image/*">
+
+            </div>
+
+            <!-- ================= Equipment ================= -->
+
+            <div class="equipment-section">
+
+                <h3>
+
+                    Available Equipment
+
+                </h3>
+
+                <div class="checkbox-grid">
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Balls
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Nets
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Stumps
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Scoreboard
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Water Facility
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Parking
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Washrooms
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        First Aid
+
+                    </label>
+
+                </div>
+
+            </div>
+
+            <!-- ================= Match Rules ================= -->
+
+            <div class="rules-section">
+
+                <h3>
+
+                    Match Rules
+
+                </h3>
+
+                <textarea
+                    rows="8"
+                    placeholder="Mention match rules, dress code, reporting time, cancellation policy and any other important information..."></textarea>
+
+            </div>
+
+            <!-- ================= Terms ================= -->
+
+            <div class="terms-box">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        required>
+
+                    I confirm that all match information is correct and I agree
+                    to follow PlayConnect community guidelines.
+
+                </label>
+
+            </div>
+
+            <!-- Continue in Part 3 -->
+                         <!-- ================= Match Preview ================= -->
+
+            <div class="preview-section">
+
+                <h3>
+
+                    Live Match Preview
+
+                </h3>
+
+                <div class="preview-card">
+
+                    <div class="preview-header">
+
+                        <h2>🏏 Weekend Cricket Match</h2>
+
+                        <span class="match-status">
+
+                            Open for Registration
+
+                        </span>
+
+                    </div>
+
+                    <div class="preview-grid">
+
+                        <div>
+
+                            <strong>📅 Date</strong>
+
+                            <p>16 August 2026</p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>🕒 Time</strong>
+
+                            <p>7:00 AM</p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>📍 Venue</strong>
+
+                            <p>City Sports Complex</p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>👥 Players</strong>
+
+                            <p>10 / 22</p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>💰 Entry Fee</strong>
+
+                            <p>₹100</p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>🎯 Skill</strong>
+
+                            <p>Intermediate</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================= Match Summary ================= -->
+
+            <section class="summary-section">
+
+                <div class="summary-card">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <h4>Expected Players</h4>
+
+                    <span>22 Players</span>
+
+                </div>
+
+                <div class="summary-card">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    <h4>Duration</h4>
+
+                    <span>2 Hours</span>
+
+                </div>
+
+                <div class="summary-card">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <h4>Ground</h4>
+
+                    <span>Verified Venue</span>
+
+                </div>
+
+                <div class="summary-card">
+
+                    <i class="fa-solid fa-trophy"></i>
+
+                    <h4>Competition</h4>
+
+                    <span>Friendly Match</span>
+
+                </div>
+
+            </section>
+
+            <!-- ================= Organizer Tips ================= -->
+
+            <section class="tips-section">
+
+                <h3>
+
+                    Organizer Tips
+
+                </h3>
+
+                <div class="tips-grid">
+
+                    <div class="tip-card">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <p>
+
+                            Reach the venue at least
+                            30 minutes before the match.
+
+                        </p>
+
+                    </div>
+
+                    <div class="tip-card">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <p>
+
+                            Carry all required sports
+                            equipment and water.
+
+                        </p>
+
+                    </div>
+
+                    <div class="tip-card">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <p>
+
+                            Share the exact location
+                            with participants.
+
+                        </p>
+
+                    </div>
+
+                    <div class="tip-card">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <p>
+
+                            Respect fair play and
+                            community guidelines.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ================= FAQ ================= -->
+
+            <section class="faq-section">
+
+                <h2>
+
+                    Frequently Asked Questions
+
+                </h2>
+
+                <div class="faq-item">
+
+                    <h4>
+
+                        Can I edit my match later?
+
+                    </h4>
+
+                    <p>
+
+                        Yes. You can update venue,
+                        date, time and player limit
+                        before the match starts.
+
+                    </p>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <h4>
+
+                        Can I cancel a match?
+
+                    </h4>
+
+                    <p>
+
+                        Yes. Inform registered
+                        players before cancelling.
+
+                    </p>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <h4>
+
+                        Are entry fees mandatory?
+
+                    </h4>
+
+                    <p>
+
+                        No. Entry fees are optional
+                        and can be set to ₹0.
+
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- ================= Community Guidelines ================= -->
+
+            <section class="guidelines">
+
+                <h2>
+
+                    Community Guidelines
+
+                </h2>
+
+                <ul>
+
+                    <li>
+
+                        ✔ Respect every player.
+
+                    </li>
+
+                    <li>
+
+                        ✔ Arrive on time.
+
+                    </li>
+
+                    <li>
+
+                        ✔ Keep the venue clean.
+
+                    </li>
+
+                    <li>
+
+                        ✔ Follow safety rules.
+
+                    </li>
+
+                    <li>
+
+                        ✔ Avoid abusive language.
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <!-- ================= Publish ================= -->
+
+            <div class="publish-box">
+
+                <h2>
+
+                    Ready to Publish?
+
+                </h2>
+
+                <p>
+
+                    Your match will become visible
+                    to nearby players immediately.
+
+                </p>
+
+                <div class="publish-buttons">
+
+                    <button
+                        type="submit"
+                        class="primary-btn">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                        Publish Match
+
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="secondary-btn">
+
+                        Reset Form
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </section>
+
+    <!-- Footer Starts -->
+         <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Company -->
+
+            <div class="footer-box">
+
+                <div class="logo">
+
+                    <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+                    <span>PlayConnect</span>
+
+                </div>
+
+                <p>
+
+                    PlayConnect is your local sports community where you can
+                    discover players, organize matches, join tournaments,
+                    and enjoy your favorite games with nearby sports enthusiasts.
+
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="sports.html">Sports</a></li>
+
+                    <li><a href="players.html">Players</a></li>
+
+                    <li><a href="create-match.html">Create Match</a></li>
+
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+
+                    <li><a href="tournaments.html">Tournaments</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Support -->
+
+            <div class="footer-box">
+
+                <h3>Support</h3>
+
+                <ul>
+
+                    <li><a href="about.html">About Us</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li><a href="#">Privacy Policy</a></li>
+
+                    <li><a href="#">Terms & Conditions</a></li>
+
+                    <li><a href="#">Community Guidelines</a></li>
+
+                    <li><a href="#">Help Center</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="footer-box">
+
+                <h3>Contact</h3>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Ahmedabad, Gujarat, India
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +91 98765 43210
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    info@playconnect.com
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    Mon – Sat | 9:00 AM – 7:00 PM
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 PlayConnect. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= Back To Top ================= -->
+
+    <button
+        id="backToTop"
+        class="back-to-top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- ================= JavaScript ================= -->
+
+    <script src="js/app.js"></script>
+
+    <script src="js/search.js"></script>
+
+    <script src="js/filter.js"></script>
+
+    <script src="js/storage.js"></script>
+    <script src="js/matches.js"></script>
+
+</body>
+
+</html>

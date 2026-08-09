@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up | PlayConnect</title>
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet"
+          href="css/signup.css">
+          <link rel="stylesheet" href="css/global.css">
+
+</head>
+
+<body>
+
+    <!-- Loader -->
+
+    <div class="loader" id="loader">
+
+        <div class="loader-circle"></div>
+
+    </div>
+
+    <!-- Progress Bar -->
+
+    <div class="progress-bar"
+         id="progressBar"></div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+            <span>PlayConnect</span>
+
+        </div>
+
+        <nav id="navbar">
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="create-match.html">Create Match</a></li>
+                <li><a href="match-details.html">Match Details</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="tournaments.html">Tournaments</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="header-buttons">
+
+            <a href="login.html"
+               class="login-btn">
+
+                Login
+
+            </a>
+
+            <a href="signup.html"
+               class="signup-btn active">
+
+                Sign Up
+
+            </a>
+
+        </div>
+
+        <div class="menu-btn"
+             id="menuBtn">
+
+            <i class="fas fa-bars"></i>
+
+        </div>
+
+    </header>
+
+    <!-- ================= SIGNUP SECTION ================= -->
+
+    <section class="signup-page">
+
+        <div class="signup-container">
+
+            <!-- Left -->
+
+            <div class="signup-left">
+
+                <span class="section-badge">
+
+                    Join PlayConnect
+
+                </span>
+
+                <h1>
+
+                    Create Your Sports Account
+
+                </h1>
+
+                <p>
+
+                    Join thousands of sports enthusiasts,
+                    find teammates, create matches,
+                    participate in tournaments,
+                    and build your sports profile.
+
+                </p>
+
+                <img src="images/signup-illustration.png"
+                     alt="Signup Illustration">
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="signup-right">
+
+                <div class="signup-card">
+
+                    <h2>
+
+                        Create Account
+
+                    </h2>
+
+                    <p>
+
+                        Fill in your information to get started.
+
+                    </p>
+
+                    <form id="signupForm">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label>
+
+                                    First Name
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    placeholder="First Name"
+                                    required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>
+
+                                    Last Name
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    placeholder="Last Name"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Email Address
+
+                            </label>
+
+                            <input
+                                type="email"
+                                placeholder="Enter your email"
+                                required>
+
+                        </div>
+
+                        <!-- Continue in Part 2 -->
+                                                 <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label>
+
+                                    Mobile Number
+
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    placeholder="+91 98765 43210"
+                                    required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>
+
+                                    Date of Birth
+
+                                </label>
+
+                                <input
+                                    type="date"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Favorite Sport
+
+                            </label>
+
+                            <select required>
+
+                                <option value="">
+
+                                    Select Sport
+
+                                </option>
+
+                                <option>Cricket</option>
+
+                                <option>Football</option>
+
+                                <option>Badminton</option>
+
+                                <option>Basketball</option>
+
+                                <option>Volleyball</option>
+
+                                <option>Chess</option>
+
+                                <option>Table Tennis</option>
+
+                                <option>Tennis</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+
+                                City
+
+                            </label>
+
+                            <select required>
+
+                                <option value="">
+
+                                    Select City
+
+                                </option>
+
+                                <option>Ahmedabad</option>
+
+                                <option>Surat</option>
+
+                                <option>Vadodara</option>
+
+                                <option>Rajkot</option>
+
+                                <option>Bhuj</option>
+
+                                <option>Jamnagar</option>
+
+                                <option>Gandhinagar</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label>
+
+                                    Password
+
+                                </label>
+
+                                <div class="input-box">
+
+                                    <i class="fa-solid fa-lock"></i>
+
+                                    <input
+                                        type="password"
+                                        id="signupPassword"
+                                        placeholder="Create Password"
+                                        required>
+
+                                    <i class="fa-solid fa-eye toggle-password"></i>
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>
+
+                                    Confirm Password
+
+                                </label>
+
+                                <div class="input-box">
+
+                                    <i class="fa-solid fa-lock"></i>
+
+                                    <input
+                                        type="password"
+                                        id="confirmPassword"
+                                        placeholder="Confirm Password"
+                                        required>
+
+                                    <i class="fa-solid fa-eye toggle-password"></i>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="terms-box">
+
+                            <label>
+
+                                <input
+                                    type="checkbox"
+                                    required>
+
+                                I agree to the
+
+                                <a href="#">
+
+                                    Terms & Conditions
+
+                                </a>
+
+                                and
+
+                                <a href="#">
+
+                                    Privacy Policy
+
+                                </a>
+
+                            </label>
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="primary-btn signup-btn-full">
+
+                            <i class="fa-solid fa-user-plus"></i>
+
+                            Create Account
+
+                        </button>
+
+                    </form>
+
+                    <!-- Divider -->
+
+                    <div class="divider">
+
+                        <span>
+
+                            OR
+
+                        </span>
+
+                    </div>
+
+                    <!-- Social Signup -->
+
+                    <div class="social-login">
+
+                        <button class="social-btn google">
+
+                            <i class="fab fa-google"></i>
+
+                            Sign up with Google
+
+                        </button>
+
+                        <button class="social-btn facebook">
+
+                            <i class="fab fa-facebook-f"></i>
+
+                            Sign up with Facebook
+
+                        </button>
+
+                        <button class="social-btn github">
+
+                            <i class="fab fa-github"></i>
+
+                            Sign up with GitHub
+
+                        </button>
+
+                    </div>
+
+                    <div class="login-link">
+
+                        <p>
+
+                            Already have an account?
+
+                            <a href="login.html">
+
+                                Login Here
+
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= BENEFITS START ================= -->
+         <!-- ================= MEMBER BENEFITS ================= -->
+
+    <section class="member-benefits">
+
+        <div class="section-title">
+
+            <span>
+
+                Why Join?
+
+            </span>
+
+            <h2>
+
+                Benefits of Becoming a Member
+
+            </h2>
+
+        </div>
+
+        <div class="benefits-grid">
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>
+
+                    Find Sports Partners
+
+                </h3>
+
+                <p>
+
+                    Connect with nearby players who share
+                    your interests and skill level.
+
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <h3>
+
+                    Create Matches
+
+                </h3>
+
+                <p>
+
+                    Organize local games and invite players
+                    with just a few clicks.
+
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-trophy"></i>
+
+                <h3>
+
+                    Join Tournaments
+
+                </h3>
+
+                <p>
+
+                    Participate in exciting competitions
+                    and win prizes.
+
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-ranking-star"></i>
+
+                <h3>
+
+                    Improve Rankings
+
+                </h3>
+
+                <p>
+
+                    Earn points after every match and
+                    climb the leaderboard.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SECURITY ================= -->
+
+    <section class="security-section">
+
+        <div class="section-title">
+
+            <span>
+
+                Privacy & Security
+
+            </span>
+
+            <h2>
+
+                Your Data is Safe
+
+            </h2>
+
+        </div>
+
+        <div class="security-grid">
+
+            <div class="security-card">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <h3>
+
+                    Secure Registration
+
+                </h3>
+
+                <p>
+
+                    We use secure methods to protect your
+                    account information.
+
+                </p>
+
+            </div>
+
+            <div class="security-card">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <h3>
+
+                    Encrypted Information
+
+                </h3>
+
+                <p>
+
+                    Personal details remain protected
+                    using secure technologies.
+
+                </p>
+
+            </div>
+
+            <div class="security-card">
+
+                <i class="fa-solid fa-user-check"></i>
+
+                <h3>
+
+                    Trusted Community
+
+                </h3>
+
+                <p>
+
+                    Join a growing network of verified
+                    sports enthusiasts.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+
+    <section class="signup-testimonials">
+
+        <div class="section-title">
+
+            <span>
+
+                Community Feedback
+
+            </span>
+
+            <h2>
+
+                What Members Say
+
+            </h2>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    I found great badminton partners within
+                    my city in just two days.
+
+                </p>
+
+                <h4>
+
+                    Rahul Patel
+
+                </h4>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Creating tournaments is quick,
+                    simple, and professional.
+
+                </p>
+
+                <h4>
+
+                    Priya Shah
+
+                </h4>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    The leaderboard motivates me
+                    to keep improving every week.
+
+                </p>
+
+                <h4>
+
+                    Aman Verma
+
+                </h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FAQ ================= -->
+
+    <section class="signup-faq">
+
+        <div class="section-title">
+
+            <span>
+
+                FAQ
+
+            </span>
+
+            <h2>
+
+                Frequently Asked Questions
+
+            </h2>
+
+        </div>
+
+        <div class="faq-list">
+
+            <div class="faq-item">
+
+                <h3>
+
+                    Is registration free?
+
+                </h3>
+
+                <p>
+
+                    Yes, creating a PlayConnect account
+                    is completely free.
+
+                </p>
+
+            </div>
+
+            <div class="faq-item">
+
+                <h3>
+
+                    Can I change my favorite sport later?
+
+                </h3>
+
+                <p>
+
+                    Yes. You can update your profile
+                    anytime after logging in.
+
+                </p>
+
+            </div>
+
+            <div class="faq-item">
+
+                <h3>
+
+                    Can I participate in multiple sports?
+
+                </h3>
+
+                <p>
+
+                    Absolutely! You can join matches
+                    and tournaments across different sports.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CTA ================= -->
+
+    <section class="signup-cta">
+
+        <div class="cta-content">
+
+            <h2>
+
+                Start Your Sports Journey Today
+
+            </h2>
+
+            <p>
+
+                Create your account, connect with players,
+                organize matches, and compete in exciting
+                tournaments.
+
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="sports.html"
+                   class="primary-btn">
+
+                    Explore Sports
+
+                </a>
+
+                <a href="contact.html"
+                   class="secondary-btn">
+
+                    Contact Us
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer Starts -->
+         <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Company -->
+
+            <div class="footer-box">
+
+                <div class="logo">
+
+                    <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+                    <span>PlayConnect</span>
+
+                </div>
+
+                <p>
+
+                    PlayConnect is your trusted platform for finding local
+                    sports partners, organizing matches, joining tournaments,
+                    and growing an active sports community.
+
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-box">
+
+                <h3>
+
+                    Quick Links
+
+                </h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="players.html">Players</a></li>
+                    <li><a href="create-match.html">Create Match</a></li>
+                    <li><a href="match-details.html">Match Details</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                    <li><a href="tournaments.html">Tournaments</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Popular Sports -->
+
+            <div class="footer-box">
+
+                <h3>
+
+                    Popular Sports
+
+                </h3>
+
+                <ul>
+
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Badminton</a></li>
+                    <li><a href="#">Basketball</a></li>
+                    <li><a href="#">Volleyball</a></li>
+                    <li><a href="#">Chess</a></li>
+                    <li><a href="#">Table Tennis</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="footer-box">
+
+                <h3>
+
+                    Contact Us
+
+                </h3>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Ahmedabad, Gujarat, India
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +91 98765 43210
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    info@playconnect.com
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    Mon – Sat | 9:00 AM – 7:00 PM
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 PlayConnect. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= BACK TO TOP ================= -->
+
+    <button id="backToTop"
+            class="back-to-top"
+            aria-label="Back to Top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- ================= JAVASCRIPT FILES ================= -->
+
+    <script src="js/app.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/signup.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Sports | PlayConnect</title>
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet"
+        href="css/sports.css">
+        <link rel="stylesheet" href="css/global.css">
+
+</head>
+
+<body>
+
+    <!-- Loader -->
+
+    <div class="loader" id="loader">
+
+        <div class="loader-circle"></div>
+
+    </div>
+
+    <!-- Scroll Progress -->
+
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+            <span>PlayConnect</span>
+
+        </div>
+
+        <nav id="navbar">
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="sports.html" class="active">Sports</a></li>
+
+                <li><a href="players.html">Players</a></li>
+
+                <li><a href="create-match.html">Create Match</a></li>
+
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+
+                <li><a href="tournaments.html">Tournaments</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="header-buttons">
+
+            <a href="login.html" class="login-btn">
+
+                Login
+
+            </a>
+
+            <a href="signup.html"
+                class="signup-btn">
+
+                Sign Up
+
+            </a>
+
+        </div>
+
+        <div class="menu-btn"
+            id="menuBtn">
+
+            <i class="fas fa-bars"></i>
+
+        </div>
+
+    </header>
+
+    <!-- ================= PAGE HERO ================= -->
+
+    <section class="page-hero">
+
+        <div class="hero-text">
+
+            <span>
+
+                Explore Every Sport
+
+            </span>
+
+            <h1>
+
+                Find Your Favorite Game
+
+            </h1>
+
+            <p>
+
+                Browse indoor and outdoor sports, discover active players,
+                explore nearby venues and join exciting local matches.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SEARCH ================= -->
+
+    <section class="sports-search">
+
+        <div class="search-wrapper">
+
+            <h2>
+
+                Search Sports
+
+            </h2>
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Search any sport...">
+
+                <button>
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    Search
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FILTERS ================= -->
+
+    <section class="filters">
+
+        <div class="filter-container">
+
+            <button class="filter-btn active">
+
+                All
+
+            </button>
+
+            <button class="filter-btn">
+
+                Indoor
+
+            </button>
+
+            <button class="filter-btn">
+
+                Outdoor
+
+            </button>
+
+            <button class="filter-btn">
+
+                Team Games
+
+            </button>
+
+            <button class="filter-btn">
+
+                Solo Games
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SPORTS GRID ================= -->
+
+    <section class="sports-list">
+
+        <div class="section-title">
+
+            <span>
+
+                Sports Categories
+
+            </span>
+
+            <h2>
+
+                Choose Your Favorite Sport
+
+            </h2>
+
+        </div>
+
+        <div class="sports-grid">
+
+            <!-- Cricket -->
+
+            <div class="sport-card">
+
+                <i class="fa-solid fa-baseball-bat-ball"></i>
+
+                <h3>
+
+                    Cricket
+
+                </h3>
+
+                <p>
+
+                    Outdoor Team Sport
+
+                </p>
+
+                <ul>
+
+                    <li>👥 2,500+ Players</li>
+
+                    <li>📍 180 Grounds</li>
+
+                    <li>⭐ Advanced & Beginner</li>
+
+                </ul>
+
+                <a href="players.html">
+
+                    Find Players
+
+                </a>
+
+            </div>
+
+            <!-- Football -->
+
+            <div class="sport-card">
+
+                <i class="fa-solid fa-futbol"></i>
+
+                <h3>
+
+                    Football
+
+                </h3>
+
+                <p>
+
+                    Outdoor Team Sport
+
+                </p>
+
+                <ul>
+
+                    <li>👥 1,800+ Players</li>
+
+                    <li>📍 95 Turfs</li>
+
+                    <li>⭐ All Skill Levels</li>
+
+                </ul>
+
+                <a href="players.html">
+
+                    Find Players
+
+                </a>
+
+            </div>
+
+            <!-- Badminton -->
+
+            <div class="sport-card">
+
+                <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+                <h3>
+
+                    Badminton
+
+                </h3>
+
+                <p>
+
+                    Indoor Sport
+
+                </p>
+
+                <ul>
+
+                    <li>👥 3,000+ Players</li>
+
+                    <li>📍 210 Courts</li>
+
+                    <li>⭐ Beginner to Pro</li>
+
+                </ul>
+
+                <a href="players.html">
+
+                    Find Players
+
+                </a>
+
+            </div>
+
+            <!-- Basketball -->
+
+            <div class="sport-card">
+
+                <i class="fa-solid fa-basketball"></i>
+
+                <h3>
+
+                    Basketball
+
+                </h3>
+
+                <p>
+
+                    Indoor / Outdoor
+
+                </p>
+
+                <ul>
+
+                    <li>👥 950+ Players</li>
+
+                    <li>📍 55 Courts</li>
+
+                    <li>⭐ Intermediate</li>
+
+                </ul>
+
+                <a href="players.html">
+
+                    Find Players
+
+                </a>
+
+            </div>
+
+            <!-- More Sports Continue Below -->
+                         <!-- Volleyball -->
+
+            <div class="sport-card">
+
+                <i class="fa-solid fa-volleyball"></i>
+
+                <h3>Volleyball</h3>
+
+                <p>Outdoor Team Sport</p>
+
+                <ul>
+                    <li>👥 1,250+ Players</li>
+                    <li>📍 75 Courts</li>
+                    <li>⭐ Beginner Friendly</li>
+                </ul>
+
+                <a href="players.html">
+                    Find Players
+                </a>
+
+            </div>
+
+            <!-- Chess -->
+
+            <div class="sport-card">
+
+                <i class="fa-solid fa-chess"></i>
+
+                <h3>Chess</h3>
+
+                <p>Indoor Mind Sport</p>
+
+                <ul>
+                    <li>👥 650+ Players</li>
+                    <li>📍 30 Clubs</li>
+                    <li>⭐ All Ages</li>
+                </ul>
+
+                <a href="players.html">
+                    Find Players
+                </a>
+
+            </div>
+
+            <!-- Table Tennis -->
+
+            <div class="sport-card">
+
+                <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+                <h3>Table Tennis</h3>
+
+                <p>Indoor Sport</p>
+
+                <ul>
+                    <li>👥 900+ Players</li>
+                    <li>📍 65 Clubs</li>
+                    <li>⭐ Intermediate</li>
+                </ul>
+
+                <a href="players.html">
+                    Find Players
+                </a>
+
+            </div>
+
+            <!-- Tennis -->
+
+            <div class="sport-card">
+
+                <i class="fa-solid fa-baseball"></i>
+
+                <h3>Tennis</h3>
+
+                <p>Outdoor Individual Sport</p>
+
+                <ul>
+                    <li>👥 540+ Players</li>
+                    <li>📍 45 Courts</li>
+                    <li>⭐ Advanced</li>
+                </ul>
+
+                <a href="players.html">
+                    Find Players
+                </a>
+
+            </div>
+
+            <!-- Carrom -->
+
+            <div class="sport-card">
+
+                <i class="fa-solid fa-circle-dot"></i>
+
+                <h3>Carrom</h3>
+
+                <p>Indoor Board Game</p>
+
+                <ul>
+                    <li>👥 480+ Players</li>
+                    <li>📍 20 Clubs</li>
+                    <li>⭐ Casual Play</li>
+                </ul>
+
+                <a href="players.html">
+                    Find Players
+                </a>
+
+            </div>
+
+            <!-- Snooker -->
+
+            <div class="sport-card">
+
+                <i class="fa-solid fa-circle"></i>
+
+                <h3>Snooker</h3>
+
+                <p>Indoor Cue Sport</p>
+
+                <ul>
+                    <li>👥 350+ Players</li>
+                    <li>📍 18 Clubs</li>
+                    <li>⭐ Intermediate</li>
+                </ul>
+
+                <a href="players.html">
+                    Find Players
+                </a>
+
+            </div>
+
+            <!-- Pool -->
+
+            <div class="sport-card">
+
+                <i class="fa-solid fa-bowling-ball"></i>
+
+                <h3>Pool</h3>
+
+                <p>Indoor Cue Sport</p>
+
+                <ul>
+                    <li>👥 420+ Players</li>
+                    <li>📍 22 Clubs</li>
+                    <li>⭐ All Levels</li>
+                </ul>
+
+                <a href="players.html">
+                    Find Players
+                </a>
+
+            </div>
+
+            <!-- Kabaddi -->
+
+            <div class="sport-card">
+
+                <i class="fa-solid fa-people-group"></i>
+
+                <h3>Kabaddi</h3>
+
+                <p>Outdoor Team Sport</p>
+
+                <ul>
+                    <li>👥 1,050+ Players</li>
+                    <li>📍 60 Grounds</li>
+                    <li>⭐ Advanced</li>
+                </ul>
+
+                <a href="players.html">
+                    Find Players
+                </a>
+
+            </div>
+
+            <!-- Kho Kho -->
+
+            <div class="sport-card">
+
+                <i class="fa-solid fa-person-running"></i>
+
+                <h3>Kho Kho</h3>
+
+                <p>Outdoor Traditional Sport</p>
+
+                <ul>
+                    <li>👥 900+ Players</li>
+                    <li>📍 40 Grounds</li>
+                    <li>⭐ Beginner Friendly</li>
+                </ul>
+
+                <a href="players.html">
+                    Find Players
+                </a>
+
+            </div>
+
+            <!-- Athletics -->
+
+            <div class="sport-card">
+
+                <i class="fa-solid fa-person-running"></i>
+
+                <h3>Athletics</h3>
+
+                <p>Track & Field</p>
+
+                <ul>
+                    <li>👥 730+ Players</li>
+                    <li>📍 28 Stadiums</li>
+                    <li>⭐ Competitive</li>
+                </ul>
+
+                <a href="players.html">
+                    Find Players
+                </a>
+
+            </div>
+
+            <!-- Cycling -->
+
+            <div class="sport-card">
+
+                <i class="fa-solid fa-bicycle"></i>
+
+                <h3>Cycling</h3>
+
+                <p>Outdoor Fitness Sport</p>
+
+                <ul>
+                    <li>👥 810+ Riders</li>
+                    <li>📍 32 Routes</li>
+                    <li>⭐ Weekend Groups</li>
+                </ul>
+
+                <a href="players.html">
+                    Find Players
+                </a>
+
+            </div>
+
+            <!-- Swimming -->
+
+            <div class="sport-card">
+
+                <i class="fa-solid fa-person-swimming"></i>
+
+                <h3>Swimming</h3>
+
+                <p>Indoor / Outdoor</p>
+
+                <ul>
+                    <li>👥 620+ Players</li>
+                    <li>📍 27 Pools</li>
+                    <li>⭐ Beginner to Pro</li>
+                </ul>
+
+                <a href="players.html">
+                    Find Players
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Why Choose Us ================= -->
+
+    <section class="why-choose">
+
+        <div class="section-title">
+
+            <span>Why PlayConnect</span>
+
+            <h2>Why Sports Lovers Choose Us</h2>
+
+        </div>
+
+        <div class="features-grid">
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3>Nearby Players</h3>
+
+                <p>
+                    Instantly discover sports partners and teams around your location.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <h3>Easy Match Scheduling</h3>
+
+                <p>
+                    Create matches and invite players in just a few clicks.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-shield-heart"></i>
+
+                <h3>Verified Community</h3>
+
+                <p>
+                    Connect with genuine players through verified profiles and ratings.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-trophy"></i>
+
+                <h3>Tournaments</h3>
+
+                <p>
+                    Participate in exciting local competitions and win prizes.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Sports Statistics Starts -->
+         <!-- ================= Sports Statistics ================= -->
+
+    <section class="sports-stats">
+
+        <div class="section-title">
+
+            <span>Platform Statistics</span>
+
+            <h2>Growing Sports Community</h2>
+
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <i class="fa-solid fa-users"></i>
+                <h3>15,000+</h3>
+                <p>Active Players</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-baseball-bat-ball"></i>
+                <h3>18</h3>
+                <p>Sports Categories</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>700+</h3>
+                <p>Sports Venues</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-calendar-check"></i>
+                <h3>3,500+</h3>
+                <p>Matches Hosted</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Popular Venues ================= -->
+
+    <section class="venues">
+
+        <div class="section-title">
+
+            <span>Popular Venues</span>
+
+            <h2>Top Rated Sports Facilities</h2>
+
+        </div>
+
+        <div class="venue-grid">
+
+            <div class="venue-card">
+
+                <img src="images/ground1.jpeg" alt="Venue">
+
+                <div class="venue-content">
+
+                    <h3>Elite Sports Arena</h3>
+
+                    <p>📍 Ahmedabad</p>
+
+                    <p>🏸 Badminton • TT • Chess</p>
+
+                    <span>⭐ 4.9 Rating</span>
+
+                </div>
+
+            </div>
+
+            <div class="venue-card">
+
+                <img src="images/ground2.jpeg" alt="Venue">
+
+                <div class="venue-content">
+
+                    <h3>Victory Cricket Ground</h3>
+
+                    <p>📍 Surat</p>
+
+                    <p>🏏 Cricket Stadium</p>
+
+                    <span>⭐ 4.8 Rating</span>
+
+                </div>
+
+            </div>
+
+            <div class="venue-card">
+
+                <img src="images/ground3.jpeg" alt="Venue">
+
+                <div class="venue-content">
+
+                    <h3>Champion Football Turf</h3>
+
+                    <p>📍 Vadodara</p>
+
+                    <p>⚽ Football Ground</p>
+
+                    <span>⭐ 4.8 Rating</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Featured Coaches ================= -->
+
+    <section class="coaches">
+
+        <div class="section-title">
+
+            <span>Professional Coaches</span>
+
+            <h2>Train With Experts</h2>
+
+        </div>
+
+        <div class="coach-grid">
+
+            <div class="coach-card">
+
+                <img src="images/coach1.jpeg" alt="Coach">
+
+                <h3>Rohit Sharma</h3>
+
+                <p>Cricket Coach</p>
+
+                <span>10+ Years Experience</span>
+
+            </div>
+
+            <div class="coach-card">
+
+                <img src="images/coach2.jpeg" alt="Coach">
+
+                <h3>Anjali Patel</h3>
+
+                <p>Badminton Coach</p>
+
+                <span>National Certified</span>
+
+            </div>
+
+            <div class="coach-card">
+
+                <img src="images/coach3.jpeg" alt="Coach">
+
+                <h3>Karan Mehta</h3>
+
+                <p>Football Coach</p>
+
+                <span>UEFA Certified</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Upcoming Events ================= -->
+
+    <section class="events">
+
+        <div class="section-title">
+
+            <span>Upcoming Events</span>
+
+            <h2>Don't Miss These Sports Events</h2>
+
+        </div>
+
+        <div class="event-grid">
+
+            <div class="event-card">
+
+                <h3>Weekend Cricket League</h3>
+
+                <p>📅 12 August 2026</p>
+
+                <p>📍 Ahmedabad</p>
+
+                <a href="tournaments.html" class="card-btn">
+                    View Event
+                </a>
+
+            </div>
+
+            <div class="event-card">
+
+                <h3>State Badminton Championship</h3>
+
+                <p>📅 20 August 2026</p>
+
+                <p>📍 Vadodara</p>
+
+                <a href="tournaments.html" class="card-btn">
+                    View Event
+                </a>
+
+            </div>
+
+            <div class="event-card">
+
+                <h3>Football Friendly Cup</h3>
+
+                <p>📅 1 September 2026</p>
+
+                <p>📍 Surat</p>
+
+                <a href="tournaments.html" class="card-btn">
+                    View Event
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Download App ================= -->
+
+    <section class="download-app">
+
+        <div class="app-box">
+
+            <div class="app-text">
+
+                <span>Play Anywhere</span>
+
+                <h2>Download the PlayConnect App</h2>
+
+                <p>
+
+                    Book matches, connect with players,
+                    receive instant notifications and
+                    stay active on the go.
+
+                </p>
+
+                <div class="app-buttons">
+
+                    <a href="#" class="primary-btn">
+
+                        <i class="fa-brands fa-google-play"></i>
+
+                        Google Play
+
+                    </a>
+
+                    <a href="#" class="secondary-btn">
+
+                        <i class="fa-brands fa-apple"></i>
+
+                        App Store
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="app-image">
+
+                <img src="images/mobile-app.png" alt="App">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Newsletter ================= -->
+
+    <section class="newsletter">
+
+        <div class="newsletter-box">
+
+            <h2>Stay Updated</h2>
+
+            <p>
+
+                Subscribe to receive sports news,
+                tournament announcements and community updates.
+
+            </p>
+
+            <form>
+
+                <input
+                    type="email"
+                    placeholder="Enter your email address">
+
+                <button type="submit">
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Footer Starts -->
+         <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Company -->
+
+            <div class="footer-box">
+
+                <div class="logo">
+
+                    <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+                    <span>PlayConnect</span>
+
+                </div>
+
+                <p>
+
+                    PlayConnect helps sports enthusiasts discover local
+                    players, create matches, join tournaments, and grow
+                    an active sports community.
+
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="sports.html">Sports</a></li>
+
+                    <li><a href="players.html">Players</a></li>
+
+                    <li><a href="create-match.html">Create Match</a></li>
+
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+
+                    <li><a href="tournaments.html">Tournaments</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Support -->
+
+            <div class="footer-box">
+
+                <h3>Support</h3>
+
+                <ul>
+
+                    <li><a href="about.html">About Us</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li><a href="#">Privacy Policy</a></li>
+
+                    <li><a href="#">Terms & Conditions</a></li>
+
+                    <li><a href="#">Help Center</a></li>
+
+                    <li><a href="#">FAQs</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="footer-box">
+
+                <h3>Contact</h3>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Ahmedabad, Gujarat, India
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +91 98765 43210
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    info@playconnect.com
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    Mon - Sat | 9:00 AM - 7:00 PM
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 PlayConnect. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= BACK TO TOP ================= -->
+
+    <button id="backToTop" class="back-to-top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/app.js"></script>
+
+    <script src="js/search.js"></script>
+
+    <script src="js/filter.js"></script>
+
+    <script src="js/storage.js"></script>
+
+</body>
+
+</html>

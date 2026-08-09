@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Players | PlayConnect</title>
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+   <link rel="stylesheet" href="css/global.css">
+   <link rel="stylesheet" href="css/players.css">
+</head>
+
+<body>
+
+    <!-- Loader -->
+
+    <div class="loader" id="loader">
+
+        <div class="loader-circle"></div>
+
+    </div>
+
+    <!-- Progress Bar -->
+
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+            <span>PlayConnect</span>
+
+        </div>
+
+        <nav id="navbar">
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="sports.html">Sports</a></li>
+
+                <li><a href="players.html" class="active">Players</a></li>
+
+                <li><a href="create-match.html">Create Match</a></li>
+
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+
+                <li><a href="tournaments.html">Tournaments</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="header-buttons">
+
+            <a href="login.html" class="login-btn">
+
+                Login
+
+            </a>
+
+            <a href="signup.html" class="signup-btn">
+
+                Sign Up
+
+            </a>
+
+        </div>
+
+        <div class="menu-btn" id="menuBtn">
+
+            <i class="fas fa-bars"></i>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="page-hero">
+
+        <div class="hero-text">
+
+            <span>Find Your Perfect Teammate</span>
+
+            <h1>Connect With Local Sports Players</h1>
+
+            <p>
+
+                Search thousands of verified players based on
+                sport, city, skill level and availability.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SEARCH ================= -->
+
+    <section class="player-search">
+
+        <div class="search-wrapper">
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Search players by name or sport...">
+
+                <button>
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    Search
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FILTERS ================= -->
+
+    <section class="filters">
+
+        <div class="filter-container">
+
+            <select>
+
+                <option>All Sports</option>
+
+                <option>Cricket</option>
+
+                <option>Football</option>
+
+                <option>Badminton</option>
+
+                <option>Basketball</option>
+
+                <option>Chess</option>
+
+            </select>
+
+            <select>
+
+                <option>Skill Level</option>
+
+                <option>Beginner</option>
+
+                <option>Intermediate</option>
+
+                <option>Advanced</option>
+
+                <option>Professional</option>
+
+            </select>
+
+            <select>
+
+                <option>City</option>
+
+                <option>Ahmedabad</option>
+
+                <option>Vadodara</option>
+
+                <option>Surat</option>
+
+                <option>Rajkot</option>
+
+            </select>
+
+            <button class="primary-btn">
+
+                Apply Filters
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PLAYERS GRID ================= -->
+
+    <section class="players-page">
+
+        <div class="section-title">
+
+            <span>Verified Members</span>
+
+            <h2>Featured Players</h2>
+
+        </div>
+
+        <div class="players-grid">
+
+            <!-- Player 1 -->
+
+            <div class="player-card">
+
+                <img src="images/player3.jpeg" alt="Player">
+
+                <div class="player-info">
+
+                    <div class="status online"></div>
+
+                    <h3>Rahul Patel</h3>
+
+                    <p>🏸 Badminton</p>
+
+                    <p>📍 Ahmedabad</p>
+
+                    <p>⭐ 4.9 Rating</p>
+
+                    <p>🎯 Advanced</p>
+
+                    <div class="player-actions">
+
+                        <a href="profile.html" class="card-btn">
+
+                            View Profile
+
+                        </a>
+
+                        <button class="icon-btn">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Player 2 -->
+
+            <div class="player-card">
+
+                <img src="images/player2.jpeg" alt="Player">
+
+                <div class="player-info">
+
+                    <div class="status online"></div>
+
+                    <h3>Priya Shah</h3>
+
+                    <p>🏏 Cricket</p>
+
+                    <p>📍 Surat</p>
+
+                    <p>⭐ 4.8 Rating</p>
+
+                    <p>🎯 Intermediate</p>
+
+                    <div class="player-actions">
+
+                        <a href="profile.html" class="card-btn">
+
+                            View Profile
+
+                        </a>
+
+                        <button class="icon-btn">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Player 3 -->
+
+            <div class="player-card">
+
+                <img src="images/player4.jpeg" alt="Player">
+
+                <div class="player-info">
+
+                    <div class="status offline"></div>
+
+                    <h3>Aman Verma</h3>
+
+                    <p>⚽ Football</p>
+
+                    <p>📍 Vadodara</p>
+
+                    <p>⭐ 5.0 Rating</p>
+
+                    <p>🎯 Professional</p>
+
+                    <div class="player-actions">
+
+                        <a href="profile.html" class="card-btn">
+
+                            View Profile
+
+                        </a>
+
+                        <button class="icon-btn">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- More Player Cards Continue Below -->
+                         <!-- Player 4 -->
+
+            <div class="player-card">
+
+                <img src="images/player1.jpeg" alt="Player">
+
+                <div class="player-info">
+
+                    <div class="status online"></div>
+
+                    <h3>Neha Joshi</h3>
+
+                    <p>♟ Chess</p>
+
+                    <p>📍 Rajkot</p>
+
+                    <p>⭐ 4.7 Rating</p>
+
+                    <p>🎯 Advanced</p>
+
+                    <div class="player-actions">
+
+                        <a href="profile.html" class="card-btn">
+                            View Profile
+                        </a>
+
+                        <a href="chat.html" class="icon-btn">
+                            <i class="fa-solid fa-comment-dots"></i>
+                        </a>
+
+                        <button class="icon-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Player 5 -->
+
+            <div class="player-card">
+
+                <img src="images/player5.jpeg" alt="Player">
+
+                <div class="player-info">
+
+                    <div class="status online"></div>
+
+                    <h3>Karan Mehta</h3>
+
+                    <p>🏀 Basketball</p>
+
+                    <p>📍 Ahmedabad</p>
+
+                    <p>⭐ 4.9 Rating</p>
+
+                    <p>🎯 Professional</p>
+
+                    <div class="player-actions">
+
+                        <a href="profile.html" class="card-btn">
+                            View Profile
+                        </a>
+
+                        <a href="chat.html" class="icon-btn">
+                            <i class="fa-solid fa-comment-dots"></i>
+                        </a>
+
+                        <button class="icon-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Player 6 -->
+
+            <div class="player-card">
+
+                <img src="images/player6.jpeg" alt="Player">
+
+                <div class="player-info">
+
+                    <div class="status offline"></div>
+
+                    <h3>Meera Patel</h3>
+
+                    <p>🏐 Volleyball</p>
+
+                    <p>📍 Surat</p>
+
+                    <p>⭐ 4.6 Rating</p>
+
+                    <p>🎯 Intermediate</p>
+
+                    <div class="player-actions">
+
+                        <a href="profile.html" class="card-btn">
+                            View Profile
+                        </a>
+
+                        <a href="chat.html" class="icon-btn">
+                            <i class="fa-solid fa-comment-dots"></i>
+                        </a>
+
+                        <button class="icon-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Player 7 -->
+
+            <div class="player-card">
+
+                <img src="images/player7.jpeg" alt="Player">
+
+                <div class="player-info">
+
+                    <div class="status online"></div>
+
+                    <h3>Yash Trivedi</h3>
+
+                    <p>🏓 Table Tennis</p>
+
+                    <p>📍 Vadodara</p>
+
+                    <p>⭐ 4.8 Rating</p>
+
+                    <p>🎯 Advanced</p>
+
+                    <div class="player-actions">
+
+                        <a href="profile.html" class="card-btn">
+                            View Profile
+                        </a>
+
+                        <a href="chat.html" class="icon-btn">
+                            <i class="fa-solid fa-comment-dots"></i>
+                        </a>
+
+                        <button class="icon-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Player 8 -->
+
+            <div class="player-card">
+
+                <img src="images/player8.jpeg" alt="Player">
+
+                <div class="player-info">
+
+                    <div class="status online"></div>
+
+                    <h3>Sneha Desai</h3>
+
+                    <p>🎾 Tennis</p>
+
+                    <p>📍 Gandhinagar</p>
+
+                    <p>⭐ 4.9 Rating</p>
+
+                    <p>🎯 Professional</p>
+
+                    <div class="player-actions">
+
+                        <a href="profile.html" class="card-btn">
+                            View Profile
+                        </a>
+
+                        <a href="chat.html" class="icon-btn">
+                            <i class="fa-solid fa-comment-dots"></i>
+                        </a>
+
+                        <button class="icon-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Player 9 -->
+
+            <div class="player-card">
+
+                <img src="images/player9.jpeg" alt="Player">
+
+                <div class="player-info">
+
+                    <div class="status offline"></div>
+
+                    <h3>Harsh Solanki</h3>
+
+                    <p>🏊 Swimming</p>
+
+                    <p>📍 Bhavnagar</p>
+
+                    <p>⭐ 4.5 Rating</p>
+
+                    <p>🎯 Intermediate</p>
+
+                    <div class="player-actions">
+
+                        <a href="profile.html" class="card-btn">
+                            View Profile
+                        </a>
+
+                        <a href="chat.html" class="icon-btn">
+                            <i class="fa-solid fa-comment-dots"></i>
+                        </a>
+
+                        <button class="icon-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Player 10 -->
+
+            <div class="player-card">
+
+                <img src="images/player1.jpeg" alt="Player">
+
+                <div class="player-info">
+
+                    <div class="status online"></div>
+
+                    <h3>Riya Kapoor</h3>
+
+                    <p>🏸 Badminton</p>
+
+                    <p>📍 Anand</p>
+
+                    <p>⭐ 5.0 Rating</p>
+
+                    <p>🎯 Professional</p>
+
+                    <div class="player-actions">
+
+                        <a href="profile.html" class="card-btn">
+                            View Profile
+                        </a>
+
+                        <a href="chat.html" class="icon-btn">
+                            <i class="fa-solid fa-comment-dots"></i>
+                        </a>
+
+                        <button class="icon-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Player 11 -->
+
+            <div class="player-card">
+
+                <img src="images/player10.jpeg" alt="Player">
+
+                <div class="player-info">
+
+                    <div class="status online"></div>
+
+                    <h3>Dev Chauhan</h3>
+
+                    <p>🏏 Cricket</p>
+
+                    <p>📍 Jamnagar</p>
+
+                    <p>⭐ 4.8 Rating</p>
+
+                    <p>🎯 Advanced</p>
+
+                    <div class="player-actions">
+
+                        <a href="profile.html" class="card-btn">
+                            View Profile
+                        </a>
+
+                        <a href="chat.html" class="icon-btn">
+                            <i class="fa-solid fa-comment-dots"></i>
+                        </a>
+
+                        <button class="icon-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Player 12 -->
+
+            <div class="player-card">
+
+                <img src="images/player3.jpeg" alt="Player">
+
+                <div class="player-info">
+
+                    <div class="status offline"></div>
+
+                    <h3>Arjun Nair</h3>
+
+                    <p>⚽ Football</p>
+
+                    <p>📍 Bharuch</p>
+
+                    <p>⭐ 4.7 Rating</p>
+
+                    <p>🎯 Intermediate</p>
+
+                    <div class="player-actions">
+
+                        <a href="profile.html" class="card-btn">
+                            View Profile
+                        </a>
+
+                        <a href="chat.html" class="icon-btn">
+                            <i class="fa-solid fa-comment-dots"></i>
+                        </a>
+
+                        <button class="icon-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Featured Player Statistics Starts -->
+         <!-- ================= Player Statistics ================= -->
+
+    <section class="player-statistics">
+
+        <div class="section-title">
+
+            <span>Community Insights</span>
+
+            <h2>Player Statistics</h2>
+
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>15,000+</h3>
+
+                <p>Registered Players</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-user-check"></i>
+
+                <h3>10,800+</h3>
+
+                <p>Verified Members</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <h3>3,500+</h3>
+
+                <p>Matches Completed</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-trophy"></i>
+
+                <h3>120+</h3>
+
+                <p>Tournaments Hosted</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Top Rated Players ================= -->
+
+    <section class="top-rated">
+
+        <div class="section-title">
+
+            <span>Hall of Fame</span>
+
+            <h2>Top Rated Players</h2>
+
+        </div>
+
+        <div class="top-player-grid">
+
+            <div class="top-player-card">
+
+                <img src="images/player1.jpeg" alt="Top Player">
+
+                <h3>Riya Kapoor</h3>
+
+                <p>🏸 Badminton Champion</p>
+
+                <span>⭐ 5.0 Rating</span>
+
+            </div>
+
+            <div class="top-player-card">
+
+                <img src="images/player3.jpeg" alt="Top Player">
+
+                <h3>Aman Verma</h3>
+
+                <p>⚽ Football Captain</p>
+
+                <span>⭐ 5.0 Rating</span>
+
+            </div>
+
+            <div class="top-player-card">
+
+                <img src="images/player5.jpeg" alt="Top Player">
+
+                <h3>Karan Mehta</h3>
+
+                <p>🏀 Basketball Pro</p>
+
+                <span>⭐ 4.9 Rating</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Invite Players ================= -->
+
+    <section class="invite-match">
+
+        <div class="invite-content">
+
+            <span>Create Your Team</span>
+
+            <h2>Invite Players to Your Match</h2>
+
+            <p>
+
+                Create a match and invite nearby players
+                based on sport, skill level and location.
+
+            </p>
+
+            <a href="create-match.html" class="primary-btn">
+
+                Create Match
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Testimonials ================= -->
+
+    <section class="testimonials">
+
+        <div class="section-title">
+
+            <span>Success Stories</span>
+
+            <h2>What Players Say</h2>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    I found a great badminton partner in less
+                    than a week. The community is very active.
+
+                </p>
+
+                <h4>Rahul Patel</h4>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Creating football matches is simple and
+                    notifications make it easy to organize games.
+
+                </p>
+
+                <h4>Aman Verma</h4>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Excellent interface with verified profiles.
+                    Highly recommended for sports lovers.
+
+                </p>
+
+                <h4>Riya Kapoor</h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Nearby Players ================= -->
+
+    <section class="nearby-players">
+
+        <div class="section-title">
+
+            <span>Nearby Community</span>
+
+            <h2>Players Active Today</h2>
+
+        </div>
+
+        <div class="nearby-grid">
+
+            <div class="nearby-card">
+
+                <h3>Ahmedabad</h3>
+
+                <p>👥 420 Players Online</p>
+
+            </div>
+
+            <div class="nearby-card">
+
+                <h3>Vadodara</h3>
+
+                <p>👥 260 Players Online</p>
+
+            </div>
+
+            <div class="nearby-card">
+
+                <h3>Surat</h3>
+
+                <p>👥 310 Players Online</p>
+
+            </div>
+
+            <div class="nearby-card">
+
+                <h3>Rajkot</h3>
+
+                <p>👥 185 Players Online</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Call To Action ================= -->
+
+    <section class="cta">
+
+        <div class="cta-content">
+
+            <h2>
+
+                Ready to Join the Sports Community?
+
+            </h2>
+
+            <p>
+
+                Meet new teammates, improve your skills,
+                organize local matches and enjoy every game.
+
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="signup.html" class="primary-btn">
+
+                    Join Now
+
+                </a>
+
+                <a href="sports.html" class="secondary-btn">
+
+                    Explore Sports
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer Starts Here -->
+         <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Company -->
+
+            <div class="footer-box">
+
+                <div class="logo">
+
+                    <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+
+                    <span>PlayConnect</span>
+
+                </div>
+
+                <p>
+
+                    Connect with sports enthusiasts, discover nearby players,
+                    organize matches, and build a stronger sports community
+                    through PlayConnect.
+
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="sports.html">Sports</a></li>
+
+                    <li><a href="players.html">Players</a></li>
+
+                    <li><a href="create-match.html">Create Match</a></li>
+
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+
+                    <li><a href="tournaments.html">Tournaments</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Support -->
+
+            <div class="footer-box">
+
+                <h3>Support</h3>
+
+                <ul>
+
+                    <li><a href="about.html">About Us</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li><a href="#">Privacy Policy</a></li>
+
+                    <li><a href="#">Terms & Conditions</a></li>
+
+                    <li><a href="#">Help Center</a></li>
+
+                    <li><a href="#">FAQs</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="footer-box">
+
+                <h3>Contact</h3>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Ahmedabad, Gujarat, India
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +91 98765 43210
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    info@playconnect.com
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    Monday - Saturday | 9:00 AM - 7:00 PM
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 PlayConnect. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= BACK TO TOP ================= -->
+
+    <button id="backToTop" class="back-to-top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- ================= JAVASCRIPT FILES ================= -->
+
+    <script src="js/app.js"></script>
+
+    <script src="js/search.js"></script>
+
+    <script src="js/filter.js"></script>
+
+    <script src="js/storage.js"></script>
+
+</body>
+
+</html>

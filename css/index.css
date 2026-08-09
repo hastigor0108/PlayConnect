@@ -1,0 +1,1742 @@
+/*==================================================
+  PlayConnect - index.css
+  Part 1/5
+  Hero • Search • Hero Stats
+==================================================*/
+
+/*==============================
+  HERO SECTION
+==============================*/
+
+.hero{
+    width:100%;
+    min-height:100vh;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items:center;
+    gap:70px;
+    padding:130px 8% 80px;
+    background:linear-gradient(135deg,#f8fbff 0%,#eef6ff 100%);
+    overflow:hidden;
+}
+
+.hero-content{
+    animation:fadeUp .8s ease;
+}
+
+.hero-content .tag{
+    display:inline-block;
+    background:#e8f1ff;
+    color:var(--primary);
+    padding:10px 20px;
+    border-radius:50px;
+    font-size:.9rem;
+    font-weight:600;
+    margin-bottom:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.hero-content h1{
+    font-size:3.7rem;
+    line-height:1.2;
+    color:var(--secondary);
+    margin-bottom:25px;
+}
+
+.hero-content p{
+    max-width:580px;
+    font-size:1.08rem;
+    color:var(--gray);
+    margin-bottom:35px;
+    line-height:1.9;
+}
+
+.hero-buttons{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+    margin-bottom:50px;
+}
+
+.hero-buttons .primary-btn,
+.hero-buttons .secondary-btn{
+    min-width:190px;
+    text-align:center;
+}
+
+/*==============================
+  HERO IMAGE
+==============================*/
+
+.hero-image{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.hero-image::before{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:rgba(37,99,235,.08);
+    border-radius:50%;
+    z-index:0;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:560px;
+    position:relative;
+    z-index:2;
+    animation:floating 4s ease-in-out infinite;
+}
+
+/*==============================
+  HERO STATS
+==============================*/
+
+.hero-stats{
+    display:flex;
+    flex-wrap:wrap;
+    gap:22px;
+}
+
+.hero-stats div{
+    min-width:150px;
+    background:#fff;
+    padding:22px;
+    text-align:center;
+    border-radius:18px;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.hero-stats div:hover{
+    transform:translateY(-8px);
+    box-shadow:var(--shadow-lg);
+}
+
+.hero-stats h2{
+    color:var(--primary);
+    font-size:2rem;
+    margin-bottom:8px;
+}
+
+.hero-stats span{
+    color:var(--gray);
+    font-size:.95rem;
+}
+
+/*==============================
+  SEARCH SECTION
+==============================*/
+
+.search-section{
+    padding:90px 8%;
+    background:#fff;
+}
+
+.search-container{
+    max-width:1200px;
+    margin:auto;
+    text-align:center;
+}
+
+.search-container h2{
+    color:var(--secondary);
+    margin-bottom:15px;
+}
+
+.search-container p{
+    color:var(--gray);
+    margin-bottom:40px;
+}
+
+.search-box{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+    align-items:center;
+}
+
+.search-box .input-box{
+    position:relative;
+}
+
+.search-box .input-box i{
+    position:absolute;
+    left:18px;
+    top:50%;
+    transform:translateY(-50%);
+    color:var(--primary);
+    font-size:1rem;
+}
+
+.search-box input,
+.search-box select{
+    width:100%;
+    height:58px;
+    padding:0 18px 0 48px;
+    border:1px solid var(--border);
+    border-radius:14px;
+    background:#fff;
+    transition:var(--transition);
+    font-size:.95rem;
+}
+
+.search-box input:focus,
+.search-box select:focus{
+    border-color:var(--primary);
+    box-shadow:0 0 0 4px rgba(37,99,235,.10);
+}
+
+.search-box button{
+    height:58px;
+    border:none;
+    border-radius:14px;
+    background:var(--primary);
+    color:#fff;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:var(--transition);
+}
+
+.search-box button:hover{
+    background:var(--primary-dark);
+    transform:translateY(-3px);
+}
+
+/*==============================
+  COMMON SECTION TITLE
+==============================*/
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title span{
+    display:inline-block;
+    color:var(--primary);
+    font-weight:600;
+    background:#eef4ff;
+    padding:8px 18px;
+    border-radius:50px;
+    margin-bottom:15px;
+}
+
+.section-title h2{
+    color:var(--secondary);
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:700px;
+    margin:auto;
+    color:var(--gray);
+}
+
+/*==============================
+  RESPONSIVE
+==============================*/
+
+@media(max-width:1100px){
+
+    .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:50px;
+    }
+
+    .hero-content p{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-stats{
+        justify-content:center;
+    }
+
+}
+
+@media(max-width:900px){
+
+    .search-box{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero{
+        padding:120px 6% 70px;
+    }
+
+    .hero-content h1{
+        font-size:2.8rem;
+    }
+
+    .hero-image::before{
+        width:320px;
+        height:320px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .hero-content h1{
+        font-size:2.2rem;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .hero-buttons a{
+        width:100%;
+    }
+
+    .hero-stats{
+        flex-direction:column;
+    }
+
+    .hero-stats div{
+        width:100%;
+    }
+
+    .search-box{
+        grid-template-columns:1fr;
+    }
+
+}
+/*==================================================
+  PlayConnect - index.css
+  Part 2/5
+  Popular Sports • Featured Players
+==================================================*/
+
+/*==============================
+  POPULAR SPORTS SECTION
+==============================*/
+
+.sports-section{
+    padding:90px 8%;
+    background:#f8fbff;
+}
+
+.sports-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+}
+
+.sport-card{
+    background:#fff;
+    border-radius:20px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:var(--transition);
+    border:1px solid rgba(0,0,0,.05);
+    cursor:pointer;
+}
+
+.sport-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
+
+.sport-card i{
+    width:90px;
+    height:90px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 22px;
+    border-radius:50%;
+    background:#eef5ff;
+    color:var(--primary);
+    font-size:2.5rem;
+    transition:var(--transition);
+}
+
+.sport-card:hover i{
+    transform:rotate(10deg) scale(1.1);
+    background:var(--primary);
+    color:#fff;
+}
+
+.sport-card h3{
+    color:var(--secondary);
+    margin-bottom:10px;
+}
+
+.sport-card p{
+    color:var(--gray);
+    font-size:.95rem;
+}
+
+/*==============================
+  FEATURED PLAYERS
+==============================*/
+
+.featured-players{
+    padding:90px 8%;
+    background:#ffffff;
+}
+
+.players-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+    gap:30px;
+}
+
+/*==============================
+  PLAYER CARD
+==============================*/
+
+.player-card{
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:var(--transition);
+    border:1px solid rgba(0,0,0,.05);
+}
+
+.player-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
+
+.player-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.player-card:hover img{
+    transform:scale(1.06);
+}
+
+.player-info{
+    padding:25px;
+}
+
+.player-info h3{
+    color:var(--secondary);
+    margin-bottom:10px;
+}
+
+.player-info .sport{
+    display:inline-block;
+    background:#eef5ff;
+    color:var(--primary);
+    padding:8px 16px;
+    border-radius:30px;
+    font-size:.85rem;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.player-info p{
+    color:var(--gray);
+    margin-bottom:10px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:.94rem;
+}
+
+.player-info p i{
+    color:var(--primary);
+    width:18px;
+}
+
+/*==============================
+  CARD BUTTON
+==============================*/
+
+.card-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:18px;
+    width:100%;
+    padding:13px;
+    border-radius:12px;
+    background:var(--primary);
+    color:#fff;
+    font-weight:600;
+    transition:var(--transition);
+}
+
+.card-btn:hover{
+    background:var(--primary-dark);
+    transform:translateY(-3px);
+}
+
+/*==============================
+  CARD ANIMATION
+==============================*/
+
+.player-card,
+.sport-card{
+    animation:fadeUp .8s ease;
+}
+
+.player-card:nth-child(2),
+.sport-card:nth-child(2){
+    animation-delay:.1s;
+}
+
+.player-card:nth-child(3),
+.sport-card:nth-child(3){
+    animation-delay:.2s;
+}
+
+.player-card:nth-child(4),
+.sport-card:nth-child(4){
+    animation-delay:.3s;
+}
+
+/*==============================
+  RESPONSIVE
+==============================*/
+
+@media(max-width:992px){
+
+    .sports-section,
+    .featured-players{
+        padding:80px 6%;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .sports-grid,
+    .players-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:24px;
+    }
+
+    .player-card img{
+        height:240px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .sports-grid,
+    .players-grid{
+        grid-template-columns:1fr;
+    }
+
+    .sport-card{
+        padding:30px 20px;
+    }
+
+    .player-info{
+        padding:20px;
+    }
+
+    .player-card img{
+        height:260px;
+    }
+
+    .card-btn{
+        width:100%;
+    }
+
+}
+/*==================================================
+  PlayConnect - index.css
+  Part 3/5
+  Upcoming Matches • Nearby Grounds • CTA
+==================================================*/
+
+/*==============================
+  UPCOMING MATCHES
+==============================*/
+
+.matches{
+
+    padding:90px 8%;
+
+    background:#f8fbff;
+
+}
+
+.match-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.match-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:var(--transition);
+
+    border-top:5px solid var(--primary);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.match-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:linear-gradient(90deg,var(--primary),#60a5fa);
+
+}
+
+.match-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.match-card h3{
+
+    color:var(--secondary);
+
+    margin-bottom:18px;
+
+    font-size:1.4rem;
+
+}
+
+.match-card p{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:14px;
+
+    color:var(--gray);
+
+}
+
+.match-card p i{
+
+    color:var(--primary);
+
+    width:18px;
+
+}
+
+.match-card .card-btn{
+
+    margin-top:20px;
+
+}
+
+/*==============================
+  SPORTS GROUNDS
+==============================*/
+
+.grounds{
+
+    padding:90px 8%;
+
+    background:#fff;
+
+}
+
+.grounds-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.ground-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:var(--transition);
+
+}
+
+.ground-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.ground-card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.ground-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.ground-content{
+
+    padding:25px;
+
+}
+
+.ground-content h3{
+
+    color:var(--secondary);
+
+    margin-bottom:12px;
+
+}
+
+.ground-content p{
+
+    color:var(--gray);
+
+    margin-bottom:10px;
+
+    font-size:.95rem;
+
+}
+
+/*==============================
+  CTA SECTION
+==============================*/
+
+.cta{
+
+    padding:100px 8%;
+
+    background:linear-gradient(135deg,var(--primary),#3b82f6);
+
+}
+
+.cta-content{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    color:#fff;
+
+}
+
+.cta-content h2{
+
+    color:#fff;
+
+    font-size:2.7rem;
+
+    margin-bottom:20px;
+
+}
+
+.cta-content p{
+
+    color:rgba(255,255,255,.9);
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.cta .primary-btn{
+
+    background:#fff;
+
+    color:var(--primary);
+
+}
+
+.cta .primary-btn:hover{
+
+    background:#f3f4f6;
+
+}
+
+.cta .secondary-btn{
+
+    background:transparent;
+
+    color:#fff;
+
+    border:2px solid #fff;
+
+}
+
+.cta .secondary-btn:hover{
+
+    background:#fff;
+
+    color:var(--primary);
+
+}
+
+/*==============================
+  SECTION ANIMATION
+==============================*/
+
+.match-card,
+.ground-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.match-card:nth-child(2),
+.ground-card:nth-child(2){
+
+    animation-delay:.1s;
+
+}
+
+.match-card:nth-child(3),
+.ground-card:nth-child(3){
+
+    animation-delay:.2s;
+
+}
+
+/*==============================
+  RESPONSIVE
+==============================*/
+
+@media(max-width:992px){
+
+    .matches,
+    .grounds,
+    .cta{
+
+        padding:80px 6%;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .match-grid,
+    .grounds-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .cta-content h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .cta-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .cta-buttons a{
+
+        width:100%;
+
+        max-width:320px;
+
+        text-align:center;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .match-card,
+    .ground-content{
+
+        padding:22px;
+
+    }
+
+    .ground-card img{
+
+        height:210px;
+
+    }
+
+    .cta-content h2{
+
+        font-size:1.8rem;
+
+    }
+
+    .cta-content p{
+
+        font-size:.95rem;
+
+    }
+
+}
+/*==================================================
+  PlayConnect - index.css
+  Part 4/5
+  Testimonials • Leaderboard • Tournament Preview
+==================================================*/
+
+/*==============================
+  TESTIMONIALS
+==============================*/
+
+.testimonials{
+
+    padding:90px 8%;
+
+    background:#f8fbff;
+
+}
+
+.testimonial-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.testimonial-card{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:var(--transition);
+
+    position:relative;
+
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.quote{
+
+    font-size:2.4rem;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.testimonial-card p{
+
+    color:var(--gray);
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+
+}
+
+.user{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.user img{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid var(--primary);
+
+}
+
+.user h3{
+
+    color:var(--secondary);
+
+    margin-bottom:5px;
+
+}
+
+.user span{
+
+    color:var(--gray);
+
+    font-size:.9rem;
+
+}
+
+/*==============================
+  LEADERBOARD
+==============================*/
+
+.leaderboard-preview{
+
+    padding:90px 8%;
+
+    background:#fff;
+
+}
+
+.leaderboard-table{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.leaderboard-table table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.leaderboard-table thead{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+.leaderboard-table th{
+
+    padding:20px;
+
+    text-align:left;
+
+    font-weight:600;
+
+}
+
+.leaderboard-table td{
+
+    padding:18px 20px;
+
+    border-bottom:1px solid #ececec;
+
+    color:var(--secondary);
+
+}
+
+.leaderboard-table tbody tr{
+
+    transition:var(--transition);
+
+}
+
+.leaderboard-table tbody tr:hover{
+
+    background:#f5f9ff;
+
+}
+
+.leaderboard-table tbody tr:last-child td{
+
+    border-bottom:none;
+
+}
+
+/*==============================
+  TOURNAMENT PREVIEW
+==============================*/
+
+.tournament-preview{
+
+    padding:90px 8%;
+
+    background:#f8fbff;
+
+}
+
+.tournament-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.tournament-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:var(--transition);
+
+    border-top:5px solid var(--primary);
+
+}
+
+.tournament-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.tournament-card i{
+
+    font-size:3rem;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.tournament-card h3{
+
+    color:var(--secondary);
+
+    margin-bottom:18px;
+
+}
+
+.tournament-card p{
+
+    color:var(--gray);
+
+    margin-bottom:12px;
+
+}
+
+.tournament-card .card-btn{
+
+    margin-top:20px;
+
+}
+
+/*==============================
+  CARD ANIMATION
+==============================*/
+
+.testimonial-card,
+.tournament-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.testimonial-card:nth-child(2),
+.tournament-card:nth-child(2){
+
+    animation-delay:.1s;
+
+}
+
+.testimonial-card:nth-child(3),
+.tournament-card:nth-child(3){
+
+    animation-delay:.2s;
+
+}
+
+/*==============================
+  RESPONSIVE
+==============================*/
+
+@media(max-width:992px){
+
+    .testimonials,
+    .leaderboard-preview,
+    .tournament-preview{
+
+        padding:80px 6%;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .testimonial-grid,
+    .tournament-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .leaderboard-table{
+
+        overflow-x:auto;
+
+    }
+
+    .leaderboard-table table{
+
+        min-width:700px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .testimonial-card,
+    .tournament-card{
+
+        padding:25px;
+
+    }
+
+    .user{
+
+        align-items:flex-start;
+
+    }
+
+    .user img{
+
+        width:55px;
+
+        height:55px;
+
+    }
+
+}
+/*==================================================
+  PlayConnect - index.css
+  Part 5/5
+  Mobile App • Statistics • Newsletter
+  Final Animations & Responsive
+==================================================*/
+
+/*==============================
+  MOBILE APP SECTION
+==============================*/
+
+.mobile-app{
+
+    padding:100px 8%;
+
+    background:#ffffff;
+
+}
+
+.app-content{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.app-text span{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:40px;
+
+    background:#eef5ff;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.app-text h2{
+
+    color:var(--secondary);
+
+    margin-bottom:20px;
+
+    font-size:2.6rem;
+
+}
+
+.app-text p{
+
+    color:var(--gray);
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+.app-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+.app-buttons a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.app-image{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.app-image img{
+
+    width:100%;
+
+    max-width:420px;
+
+    animation:floating 5s ease-in-out infinite;
+
+}
+
+/*==============================
+  STATISTICS
+==============================*/
+
+.stats-section{
+
+    padding:90px 8%;
+
+    background:linear-gradient(135deg,var(--primary),#3b82f6);
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.stat-box{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    text-align:center;
+
+    padding:35px 20px;
+
+    color:#fff;
+
+    transition:var(--transition);
+
+}
+
+.stat-box:hover{
+
+    transform:translateY(-8px);
+
+    background:rgba(255,255,255,.18);
+
+}
+
+.stat-box h2{
+
+    color:#fff;
+
+    font-size:2.4rem;
+
+    margin-bottom:10px;
+
+}
+
+.stat-box span{
+
+    color:rgba(255,255,255,.9);
+
+    font-size:1rem;
+
+}
+
+/*==============================
+  NEWSLETTER
+==============================*/
+
+.newsletter{
+
+    padding:100px 8%;
+
+    background:#f8fbff;
+
+}
+
+.newsletter-box{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:#fff;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    padding:60px 50px;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.08);
+
+}
+
+.newsletter-box h2{
+
+    color:var(--secondary);
+
+    margin-bottom:18px;
+
+}
+
+.newsletter-box p{
+
+    color:var(--gray);
+
+    max-width:650px;
+
+    margin:0 auto 35px;
+
+    line-height:1.8;
+
+}
+
+.newsletter form{
+
+    display:flex;
+
+    gap:15px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.newsletter input{
+
+    flex:1;
+
+    min-width:260px;
+
+    padding:16px 20px;
+
+    border:1px solid var(--border);
+
+    border-radius:50px;
+
+    font-size:1rem;
+
+}
+
+.newsletter button{
+
+    padding:16px 34px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+.newsletter button:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-3px);
+
+}
+
+/*==============================
+  HOMEPAGE ANIMATIONS
+==============================*/
+
+.hero-content,
+.sport-card,
+.player-card,
+.match-card,
+.ground-card,
+.testimonial-card,
+.tournament-card,
+.stat-box{
+
+    animation:fadeUp .8s ease both;
+
+}
+
+.hero-content{
+
+    animation-delay:.1s;
+
+}
+
+.sport-card:nth-child(2),
+.player-card:nth-child(2),
+.match-card:nth-child(2),
+.ground-card:nth-child(2),
+.testimonial-card:nth-child(2),
+.tournament-card:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+.sport-card:nth-child(3),
+.player-card:nth-child(3),
+.match-card:nth-child(3),
+.ground-card:nth-child(3),
+.testimonial-card:nth-child(3),
+.tournament-card:nth-child(3){
+
+    animation-delay:.3s;
+
+}
+
+/*==============================
+  FINAL RESPONSIVE
+==============================*/
+
+@media(max-width:1100px){
+
+    .app-content{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .app-buttons{
+
+        justify-content:center;
+
+    }
+
+    .stats-section{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .mobile-app,
+    .newsletter{
+
+        padding:80px 6%;
+
+    }
+
+    .app-text h2{
+
+        font-size:2.1rem;
+
+    }
+
+    .newsletter-box{
+
+        padding:40px 25px;
+
+    }
+
+    .newsletter form{
+
+        flex-direction:column;
+
+    }
+
+    .newsletter input,
+    .newsletter button{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .stats-section{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+    .stat-box{
+
+        padding:30px 20px;
+
+    }
+
+    .app-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .app-buttons a{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .app-image img{
+
+        max-width:300px;
+
+    }
+
+    .newsletter-box h2{
+
+        font-size:1.8rem;
+
+    }
+
+}
